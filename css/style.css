@@ -1078,6 +1078,74 @@ body {
 
 
 /* Ð¡Ð¾Ñ†ÑÐµÑ‚Ð¸ */
+.social-news__block {
+	border-radius: 16px;
+	background: var(--color-primary) url('../img/oazis-roz/voln-social.png') no-repeat center bottom;
+	background-size: 100%;
+	padding: 60px 70px;
+}
+
+.social-news__title {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.social-news__items {
+	display: flex;
+	justify-content: center;
+	grid-gap: 25px;
+	flex-wrap: wrap;
+}
+
+.social-news__item {
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+	border-radius: 16px;
+	padding: 16px;
+	width: 100%;
+	max-width: 310px;
+	transition: 0.3s transform linear;
+}
+
+.social-news__item:hover {
+	transform: translateY(-10px);
+}
+
+.social-news__icon {
+	border-radius: 16px;
+	width: 72px;
+	margin-right: 24px;
+}
+
+.social-news__text {
+	font-weight: 400;
+	font-size: 24px;
+	color: #fff;
+}
+
+@media(max-width: 990px) {
+	.social-news__title {
+		font-size: 24px;
+	}
+
+	.social-news__block {
+		padding: 50px 30px;
+	}
+}
+
+@media(max-width: 576px) {
+	.social-news__block {
+		margin: 0 -15px;
+		padding: 30px 15px;
+		border-radius: 0;
+	}
+}
+
 
 .social {
 	padding-top     : 50px;

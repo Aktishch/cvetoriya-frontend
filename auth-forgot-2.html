@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="source/waves.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<link rel="stylesheet" href="css/auth-page.css">
+
+
+	<script src="js/swiper.js"></script>
+	<title>Смена пароля</title>
+</head>
+
+<body>
+
+	<section class="container-block page--block auth-page">
+		<div class="auth-form">
+			<div class="text-h5 text-md-h1 text--center mb-5">Смена пароля</div>
+			<div class="fade-80 text--center mb-6 mb-md-7">
+				Введите номер телефона.
+				Код для смены пароля будет выслан по СМС
+			</div>
+
+			<div class="auth-form-code-inputs">
+				<input type="number" class="ui-form-input -code-input-" required>
+				<input type="number" class="ui-form-input -code-input-" required>
+				<input type="number" class="ui-form-input -code-input-" required>
+				<input type="number" class="ui-form-input -code-input-" required>
+				<input type="number" class="ui-form-input -code-input-" required>
+				<input type="number" class="ui-form-input -code-input-" required>
+			</div>
+
+			<button class="btn btn--accent btn--fill mt-7 w-100">Восстановить</button>
+
+			<button class="btn btn--link w-100 mt-7">Не получили код?</button>
+		</div>
+
+	</section>
+
+	<script>
+		document.addEventListener('input',(event)=>{
+		  if(!event.target.classList.contains('-code-input-')) return;
+		  const value = event.target.value;
+	  
+		  if(value.length > 1){
+			event.target.value = value[value.length - 1];
+		  }
+	  
+	  
+		  if(event.target.value){
+			const next = event.target.nextElementSibling
+	  
+			if(next){
+			  next.focus()
+			}
+		  }
+	  
+		})
+	  
+		document.addEventListener('keydown', (event) => {
+		  if(!event.target.classList.contains('-code-input-')) return;
+	  
+		  if(event.keyCode == 8 && !event.target.value){
+			const previous = event.target.previousElementSibling
+	  
+			if(previous){
+			  previous.focus()
+			  previous.value = '';
+			}
+		  }
+	  
+		  if(event.keyCode == 37){
+			const previous = event.target.previousElementSibling
+	  
+			if(previous){
+			  previous.focus()
+			  // previous.selectionStart = previous.value.length
+			  setTimeout(() => {
+				const val = previous.value;
+				previous.value = '';
+				previous.value = val;
+				
+			  }, 0);
+			}
+		  }
+	  
+		  if(event.keyCode == 39){
+			const next = event.target.nextElementSibling
+	  
+			if(next){
+			  next.focus()
+			  // next.selectionStart = next.value.length
+			  setTimeout(() => {
+				const val = next.value;
+				next.value = '';
+				next.value = val;
+			  }, 0);
+			}
+		  }
+	  
+		})
+	  </script>
+
+	<script src="source/waves.js"></script>
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/frontend--swipe.js"></script>
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/show-pass.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

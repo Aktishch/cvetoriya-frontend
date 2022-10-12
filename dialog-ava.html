@@ -1,0 +1,59 @@
+<div class="fancybox-content">
+	<form class="dialog-ava -dialog-form-">
+		<div class="dialog-ava__pic">
+			<input class="dialog-ava__choice -file-" type="file" id="file" name="Fid">
+			<input type="hidden" name="Del_old">
+			<img class="dialog-ava__img -dialog-img-" src="" alt="">
+		</div>
+		<div class="dialog-ava__btns">
+			<button class="dialog-ava__btn btn btn--accent btn--light mr-2" type="button">
+				<img class="mr-2 icon" src="img/oazis-roz/trash.svg" alt="">
+				Удалить
+			</button>
+			<label class="dialog-ava__btn btn btn--accent" for="file">Заменить фото</label>
+		</div>
+	</form>
+</div>
+
+<script>
+	document.addEventListener('change', (event) => {
+
+	if (event.target.classList.contains('-file-')) {
+
+		let readFile = new FileReader();
+		let files = event.target.files[0];
+		readFile.readAsDataURL(files);
+
+		readFile.addEventListener('loadend', () => {
+
+			event.target.nextElementSibling.src = readFile.result;
+
+		});
+
+		const dialogForm = document.querySelector('.-dialog-form-')
+		const dialogImg = document.querySelector('.-dialog-img-')
+		const lkImg = document.querySelector('.-lk-ava-')
+		let formData = new FormData(dialogForm)
+    
+        let promise = fetch('', {
+    
+            method: 'POST',
+            body: formData
+    
+        }).then((response) => {
+    
+            response.text()
+                    
+        }).then((result) => {
+    
+			dialogImg.src = readFile.result;
+			lkImg.src = readFile.result;
+            jQuery.fancybox.close()
+
+    
+        })
+
+	}
+
+	});
+</script>

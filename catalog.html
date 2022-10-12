@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<script src="js/swiper.js"></script>
+	<title>Каталог</title>
+</head>
+
+<body>
+
+	<nav class="container-block nav-top">
+		<a class="nav-top__link" href="#">Главная</a>
+		<a class="nav-top__link" href="#">Гарантия</a>
+		<a class="nav-top__link" href="#">Контакты</a>
+		<a class="nav-top__link" href="#">О нас</a>
+		<a class="nav-top__link" href="#">Оплата и доставка</a>
+		<a class="nav-top__link nav-top__link--lk" href="#">
+			<img class="nav-top__icon" src="img/oazis-roz/user.svg" alt="">
+			<span>Личный кабинет</span>
+		</a>
+	</nav>
+
+	<header class="container-block header">
+		<div class="header__top">
+			<a class="header__main" href="">
+				<img class="header__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<div class="header__content">
+					<div class="header__title">ОАЗИС РОЗ</div>
+					<div class="header__subtitle">Питомники со всей России</div>
+				</div>
+			</a>
+			<div class="header__text">
+				Лучшие растения для вашего сада <br>
+				по разумным ценам
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+				</div>
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<a class="header__catalog" href="">
+				<img class="header__catalog-icon" src="img/oazis-roz/lines.svg" alt="">
+				<span class="header__catalog-text">Каталог</span>
+			</a>
+			<label class="header__label">
+				<input class="header__search" type="text" placeholder="Поиск по сайту">
+				<img class="header__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/info.svg" alt="">
+				<span class="header__item-text">Помощь</span>
+			</a>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/cub.svg" alt="">
+				<span class="header__item-text">Отследить заказ</span>
+			</a>
+			<div class="header__btns">
+				<a class="header__btn" href="#">
+					<img class="header__btn-icon" src="img/oazis-roz/heart.svg" alt="">
+				</a>
+				<a class="header__btn" href="#">
+					<img class="header__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<nav class="container-block nav-bottom">
+		<a class="nav-bottom__link" href="#">
+			<img class="nav-bottom__link-icon" src="img/oazis-roz/flow.svg" alt="">
+			<span>Акции</span>
+		</a>
+		<a class="nav-bottom__link" href="#">Аллиум</a>
+		<a class="nav-bottom__link" href="#">Бархатцы</a>
+		<a class="nav-bottom__link" href="#">Астра</a>
+		<a class="nav-bottom__link" href="#">Василек</a>
+		<a class="nav-bottom__link" href="#">Вербена</a>
+		<a class="nav-bottom__link" href="#">Гербера</a>
+		<a class="nav-bottom__link" href="#">Календула</a>
+	</nav>
+
+	<header class="header-mobile">
+		<div class="container-block header-mobile__top">
+			<button class="header-mobile__burger burger" id="burger" data-toggle-link="mobil">
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+			</button>
+			<a class="header-mobile__main" href="">
+				<img class="header-mobile__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="header-mobile__text">ОАЗИС РОЗ</span>
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--basket" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--user" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/user.svg" alt="">
+			</a>
+		</div>
+		<div class="container-block header-mobile__bottom">
+			<label class="header-mobile__label">
+				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
+				<img class="header-mobile__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+		</div>
+	</header>
+
+	<section class="modal-menu" id="mobil">
+		<div class="modal-menu__head">
+			<button class="modal-menu__close" data-toggle-link="mobil">
+				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
+			</button>
+			<a class="modal-menu__main" href="">
+				<img class="modal-menu__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="modal-menu__text">ОАЗИС РОЗ</span>
+			</a>
+		</div>
+		<div class="modal-menu__body">
+			<nav class="modal-menu__nav">
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Главная</a>
+				<a class="modal-menu__link" href="">Гарантия</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
+				<a class="modal-menu__link" href="">Контакты</a>
+			</nav>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/heart.svg" alt="">
+					<span class="modal-menu__item-text">Избранное</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/basket.svg" alt="">
+					<span class="modal-menu__item-text">Корзина</span>
+				</a>
+			</div>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/info.svg" alt="">
+					<span class="modal-menu__item-text">Помощь</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/cub.svg" alt="">
+					<span class="modal-menu__item-text">Отследить заказ</span>
+				</a>
+			</div>
+			<div class="modal-menu__phones">
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+					</div>
+				</div>
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-block page--block">
+		<!-- <button class="back-btn btn btn-sm btn--primary btn--contur">назад</button> -->
+		<!-- <a href="javascript:window.history.back();"
+			class="back-btn btn waves-effect">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#arrow-left"></use>
+			</svg>
+			назад
+		</a> -->
+		<div class="page--link">Главная / Каталог</div>
+		<div class="page--title">Каталог</div>
+
+		<div class="grid grid-spacing-lg-7">
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/103/600/400" alt="">
+					</div>
+					<div class="catalog-item__die">
+						<img class="catalog-item__icon icon mr-1" src="img/oazis-roz/die-1.svg" alt="">
+						<span class="catalog-item__die-text">Новинка</span>
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/111/600/400" alt="">
+					</div>
+					<div class="catalog-item__die">
+						<img class="catalog-item__icon icon mr-1" src="img/oazis-roz/die-2.svg" alt="">
+						<span class="catalog-item__die-text">Супер скидка!</span>
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/133/600/400" alt="">
+					</div>
+					<div class="catalog-item__die">
+						<img class="catalog-item__icon icon mr-1" src="img/oazis-roz/die-3.svg" alt="">
+						<span class="catalog-item__die-text">Сезонные</span>
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/202/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/212/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/311/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/320/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/322/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/323/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/325/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/327/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/328/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/330/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/335/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/337/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/340/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/342/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/351/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/353/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+			<div class="grid-col-lg-3 grid-col-6">
+				<a class="catalog-item catalog-item--sm">
+					<div class="catalog-item__img ui-progress-container">
+						<div class="ui-progress">
+							<svg class="icon">
+								<use xlink:href="img/utils.svg#CircularProgress" />
+							</svg>
+						</div>
+						<img src="https://picsum.photos/id/360/600/400" alt="">
+					</div>
+					<div class="catalog-item__title">Клубника</div>
+				</a>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Соцсети -->
+	<section class="container-block social">
+		<div class="social__title">Мы в социальных сетях:</div>
+		<div class="social__icons">
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/vk.svg">
+			</a>
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/ok.svg">
+			</a>
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/z.svg">
+			</a>
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/yt.svg">
+			</a>
+		</div>
+		<div class="social__text">Подписывайтесь!</div>
+	</section>
+
+	<!-- Подвал -->
+	<footer class="footer container-block">
+		<div class="footer__item footer__item--1">
+			<a class="footer__logo" href="#">
+				<img class="footer__logo-img" src="img/oazis-roz/or-logo.svg" alt="">
+			</a>
+			<a class="footer__tel" href="tel: +7 (800) 000-00-00">
+				<img src="img/oazis-roz/tel.svg" alt="">
+				<span>+7 (800) 000-00-00</span>
+			</a>
+			<a class="footer__mail" href="mailto: info@oazis-roz.ru">
+				<img src="img/oazis-roz/mail.svg" alt="">
+				<span>info@oazis-roz.ru</span>
+			</a>
+			<span class="footer__text">Наши мессенджеры</span>
+			<div class="footer__elems">
+				<a class="footer__elem" href="">
+					<img class="footer__icon" src="img/oazis-roz/tg.svg" alt="">
+				</a>
+				<a class="footer__elem" href="">
+					<img class="footer__icon" src="img/oazis-roz/wt.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="footer__item footer__item--2">
+			<div class="footer__title">Работаем по всей РФ</div>
+			<img class="footer__map" src="img/oazis-roz/map.svg" alt="">
+			<span class="footer__geo">
+				<img class="footer__icon" src="img/oazis-roz/geo.svg" alt="">
+				<span>
+					Смоленская область, г. Смоленск <br>
+					ул. Рыленкова д 50
+				</span>
+			</span>
+		</div>
+		<div class="footer__item footer__item--3">
+			<div class="footer__title">Реквизиты</div>
+			<span class="footer__text">ООО “Социокиберинженерия”</span>
+			<span class="footer__text">КПП 236001001</span>
+			<span class="footer__text">ИНН 2360011971</span>
+			<span class="footer__text">ОГРН 11 923 750 645 95</span>
+		</div>
+		<div class="footer__item footer__item--4">
+			<div class="footer__title">Покупателям</div>
+			<div class="footer__links">
+				<a class="footer__text" href="">Оплата и доставка</a>
+				<a class="footer__text" href="">Гарантия</a>
+				<a class="footer__text" href="">Отследить заказ</a>
+				<a class="footer__text" href="">Контакты</a>
+				<a class="footer__text" href="">Пользовательское соглашение</a>
+				<a class="footer__text" href="">Условия покупки</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Мобильный подвал -->
+	<div class="container-block modil-footer">
+		<div class="modil-footer-icon">
+			<img src="img/mf_1.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Избранное</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_2.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Профиль</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_3.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Сервисы</span>
+		</div>
+	</div>
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+
+</html>

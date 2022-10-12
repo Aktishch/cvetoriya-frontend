@@ -1,0 +1,68 @@
+.limited {
+    background    : #F2F2F2;
+    border-radius : 16px;
+    padding-top   : 35px;
+    padding-bottom: 80px;
+    width         : calc(100% - 30px);
+    margin        : 0 auto;
+
+    &-item {
+        background   : #FFFFFF;
+        box-shadow   : 0px 4px 12px rgba(0, 0, 0, 0.06);
+        border-radius: 16px;
+        overflow     : hidden;
+        position     : relative;
+        transition   : .2s ease;
+        cursor       : pointer;
+
+        @media(hover) {
+            &:hover {
+                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+
+            }
+
+            &:hover &__title {
+                text-decoration: underline;
+            }
+        }
+
+        &__sign {
+            background   : linear-gradient(270deg, #E3364A 0%, rgba(227, 54, 74, 0.0104167) 99.99%, rgba(0, 0, 0, 0) 100%), #CE2337;
+            border-radius: 16px 0px;
+            position     : absolute;
+            top          : 8px;
+            left         : 8px;
+            display      : flex;
+            align-items  : center;
+            font-weight  : 500;
+            font-size    : 18px;
+            color        : #fff;
+            padding      : 12px 16px;
+
+            .icon {
+                font-size   : 24px;
+                margin-right: 12px;
+            }
+        }
+
+        &__img {
+            height: 258px;
+
+            img {
+                width     : 100%;
+                height    : 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        &__content {
+            padding: 18px 20px;
+        }
+
+        &__title {
+            display    : flex;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+	<link rel="stylesheet" href="source/waves.css">
+
+
+	<link rel="stylesheet" href="css/lk-styles.css">
+
+	<title>Мои заказы</title>
+</head>
+
+<body>
+
+	<nav class="container-block nav-top">
+		<a class="nav-top__link" href="#">Главная</a>
+		<a class="nav-top__link" href="#">Гарантия</a>
+		<a class="nav-top__link" href="#">Контакты</a>
+		<a class="nav-top__link" href="#">О нас</a>
+		<a class="nav-top__link" href="#">Оплата и доставка</a>
+		<a class="nav-top__link nav-top__link--lk" href="#">
+			<img class="nav-top__icon" src="img/oazis-roz/user.svg" alt="">
+			<span>Личный кабинет</span>
+		</a>
+	</nav>
+
+	<header class="container-block header">
+		<div class="header__top">
+			<a class="header__main" href="">
+				<img class="header__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<div class="header__content">
+					<div class="header__title">ОАЗИС РОЗ</div>
+					<div class="header__subtitle">Питомники со всей России</div>
+				</div>
+			</a>
+			<div class="header__text">
+				Лучшие растения для вашего сада <br>
+				по разумным ценам
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+				</div>
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<a class="header__catalog" href="">
+				<img class="header__catalog-icon" src="img/oazis-roz/lines.svg" alt="">
+				<span class="header__catalog-text">Каталог</span>
+			</a>
+			<label class="header__label">
+				<input class="header__search" type="text" placeholder="Поиск по сайту">
+				<img class="header__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/info.svg" alt="">
+				<span class="header__item-text">Помощь</span>
+			</a>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/cub.svg" alt="">
+				<span class="header__item-text">Отследить заказ</span>
+			</a>
+			<div class="header__btns">
+				<div class="header__btn header__btn--disabled">
+					<img class="header__btn-icon" src="img/oazis-roz/heart.svg" alt="">
+					<div class="nav-korz bx-basket-block">
+						<div class="nav__int">18</div>
+					</div>
+				</div>
+				<div class="header__btn">
+					<img class="header__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+					<div class="nav-korz bx-basket-block">
+						<div class="nav__int">18</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="container-block nav-bottom">
+		<a class="nav-bottom__link" href="#">
+			<img class="nav-bottom__link-icon" src="img/oazis-roz/flow.svg" alt="">
+			<span>Акции</span>
+		</a>
+		<a class="nav-bottom__link" href="#">Аллиум</a>
+		<a class="nav-bottom__link" href="#">Бархатцы</a>
+		<a class="nav-bottom__link" href="#">Астра</a>
+		<a class="nav-bottom__link" href="#">Василек</a>
+		<a class="nav-bottom__link" href="#">Вербена</a>
+		<a class="nav-bottom__link" href="#">Гербера</a>
+		<a class="nav-bottom__link" href="#">Календула</a>
+	</nav>
+
+	<header class="header-mobile">
+		<div class="container-block header-mobile__top">
+			<button class="header-mobile__burger burger" id="burger" data-toggle-link="mobil">
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+			</button>
+			<a class="header-mobile__main" href="">
+				<img class="header-mobile__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="header-mobile__text">ОАЗИС РОЗ</span>
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--basket" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--user" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/user.svg" alt="">
+			</a>
+		</div>
+		<div class="container-block header-mobile__bottom">
+			<label class="header-mobile__label">
+				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
+				<img class="header-mobile__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+		</div>
+	</header>
+
+	<section class="modal-menu" id="mobil">
+		<div class="modal-menu__head">
+			<button class="modal-menu__close" data-toggle-link="mobil">
+				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
+			</button>
+			<a class="modal-menu__main" href="">
+				<img class="modal-menu__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="modal-menu__text">ОАЗИС РОЗ</span>
+			</a>
+		</div>
+		<div class="modal-menu__body">
+			<nav class="modal-menu__nav">
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Главная</a>
+				<a class="modal-menu__link" href="">Гарантия</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
+				<a class="modal-menu__link" href="">Контакты</a>
+			</nav>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/heart.svg" alt="">
+					<span class="modal-menu__item-text">Избранное</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/basket.svg" alt="">
+					<span class="modal-menu__item-text">Корзина</span>
+				</a>
+			</div>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/info.svg" alt="">
+					<span class="modal-menu__item-text">Помощь</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/cub.svg" alt="">
+					<span class="modal-menu__item-text">Отследить заказ</span>
+				</a>
+			</div>
+			<div class="modal-menu__phones">
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+					</div>
+				</div>
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-block page--block pb-1">
+		<div class="page--link">Главная / Личный кабинет</div>
+		<div class="page--title">Личный кабинет</div>
+	</section>
+
+
+	<section class="lk-wrapper container-block">
+		<div class="lk-aside">
+			<div class="lk-aside-user mb-8">
+				<div class="lk-aside-user__img">
+					<img src="https://picsum.photos/id/550/600/400" alt="">
+					<div class="lk-aside-user__circle">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#pen" />
+						</svg>
+					</div>
+				</div>
+				<div class="lk-aside-user__title">
+					Администратор ТЕСТОВИЧ-АБДУЛА-МАХМУТОВИЧ
+				</div>
+			</div>
+
+			<div class="lk-aside-links" data-toggle-cover>
+				<div class="lk-aside-link lk-aside-toggler" data-toggle-link>Мой аккаунт
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#navigate-right" />
+					</svg>
+				</div>
+				<div class="lk-aside-links-inner" data-toggle-height="true" data-toggle-static="true" data-toggle-content>
+
+					<div class="lk-aside-link waves">
+						<svg class="icon mr-4">
+							<use xlink:href="img/icons.svg#box-2" />
+						</svg>
+						Заказы
+					</div>
+					<div class="lk-aside-link active waves">
+						<svg class="icon mr-4">
+							<use xlink:href="img/icons.svg#user" />
+						</svg>
+						Настройки профиля
+					</div>
+					<div class="lk-aside-link waves">
+						<svg class="icon mr-4">
+							<use xlink:href="img/icons.svg#settings" />
+						</svg>
+						Изменить пароль
+					</div>
+					<div class="lk-aside-link lk-aside-link--exit waves">
+						<svg class="icon mr-4">
+							<use xlink:href="img/icons.svg#door" />
+						</svg>
+						Выйти
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="lk-content">
+			<div class="lk-profile">
+				<!-- <div class="lk-profile-images">
+					<label class="lk-profile-image-loader" data-input-dropable>
+						<input type="file" accept="image/*" data-input-file data-preview="lk-profile-photo"
+							data-error="lk-profile-images-error" data-accept="image" data-max="8192">
+						<img src="img/icons/upload.svg" alt="">
+						Нажмите <span class="d-none d-md-inline"> или <br>
+							перетащите <br>
+							изображение <br></span>
+						для загрузки
+					</label>
+					<div class="lk-profile-image-item">
+						<img src="https://picsum.photos/id/1081/600/400" alt="" class="lk-profile-image-item-img"
+							id="lk-profile-photo">
+						<div class="lk-profile-image-item-remove" data-remove-src="lk-profile-photo">
+							<img src="img/icons/delete.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="text-body-2 mt-1 color-red" id="lk-profile-images-error"></div> -->
+
+				<div class="lk-profile__title mb-8">
+					<div class="text-h6">
+						Личные данные
+					</div>
+				</div>
+
+				<div class="lk-profile-data">
+					<!-- <label class="ui-form-field form-field form-field-error">
+						<div class="text-body-1 mb-3"><span class="color-red">*</span>Ф.И.О</div>
+						<div class="ui-form-input-cover">
+							<input type="text" class="ui-form-input form-input">
+						</div>
+						<span class="form__err">Обязательное поле для заполнения</span>
+					</label> -->
+
+
+					<div class="grid grid-spacing-5 grid-spacing-md-7 ">
+						<div class="grid-col-md-4">
+							<label class="ui-form-field form-field form-field-error">
+								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Фамилия</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input form-input">
+								</div>
+								<span class="form__err">Введите фамилию</span>
+							</label>
+						</div>
+						<div class="grid-col-md-4">
+							<label class="ui-form-field form-field">
+								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Имя</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-md-4">
+							<label class="ui-form-field form-field">
+								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Отчество</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-md-6">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Номер</div>
+								<div class="ui-form-input-cover">
+									<input type="tel" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-md-6">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">E-mail</div>
+								<div class="ui-form-input-cover">
+									<input type="email" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-md-6">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Дата рождения</div>
+								<div class="ui-form-input-cover">
+									<input type="date" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-md-6">
+							<div class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Пол</div>
+								<div class="ui-form-items">
+									<label class="ui-form-field ui-form-checkbox ui-form-item">
+										<input type="radio" class="ui-form-input" name="gender" checked>
+										<!-- <div class="ui-form-gender-target">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#male" />
+											</svg>
+										</div> -->
+										<div class="text-body-1 ui-form-gender-target">Мужской</div>
+									</label>
+									<label class="ui-form-field ui-form-checkbox ui-form-item">
+										<input type="radio" class="ui-form-input" name="gender">
+										<!-- <div class="ui-form-gender-target">
+											<svg class="icon">
+												<use xlink:href="img/icons.svg#female" />
+											</svg>
+										</div> -->
+										<div class="text-body-1 ui-form-gender-target">Женский</div>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="bd-bottom d-md-none mt-10"></div>
+
+						<div class="grid-col-md-6">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Садоводческий стаж</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-md-6">
+							<div class="text-body-1 text--demibold mb-3">Зона USDA</div>
+							<!-- <label class="ui-form-field ui-form-select">
+								<div class="ui-form-input-cover">
+
+									<select name="" id="" class="ui-form-input">
+										<option value="">Первая</option>
+										<option value="">Вторая</option>
+										<option value="">Третья</option>
+										<option value="">4-я</option>
+										<option value="">5-я</option>
+										<option value="">6-я</option>
+										<option value="">7-я</option>
+										<option value="">8-я</option>
+										<option value="">10-я</option>
+									</select>
+								</div>
+							</label> -->
+
+
+							<div class="select" data-toggle-cover data-content="select-area-content">
+								<select class="select-target">
+									<option value="0"></option>
+									<option value="1"></option>
+									<option value="2"></option>
+									<option value="3"></option>
+								</select>
+								<div class="select-toggler ui-form-input" data-toggle-link>
+									<div class="select-item-inner color-light">
+										<span class="color-text">Первая</span>, Центральная Сибирь
+									</div>
+								</div>
+								<div class="select-list" data-toggle-content>
+									<div class="select-item" data-toggle-link data-value="0">
+										<div class="select-item-inner color-light">
+											<span class="color-text">Первая</span>, Центральная Сибирь
+										</div>
+										<div class="select-item-content">
+											Морозостойкость от −45.6 °C до −51.1 °C (Центральная Сибирь)
+										</div>
+									</div>
+									<div class="select-item" data-toggle-link data-value="1">
+										<div class="select-item-inner color-light">
+											<span class="color-text">Вторая</span>, Южная Сибирь
+										</div>
+										<div class="select-item-content">Морозостойкость от −40 °C до −45.6 °C (Южная Сибирь)</div>
+									</div>
+									<div class="select-item" data-toggle-link data-value="2">
+										<div class="select-item-inner color-light">
+											<span class="color-text">Третья</span>, Урал, Восточная Сибирь
+										</div>
+										<div class="select-item-content">
+											Морозостойкость от −34.4 °C до −40 °C (Урал, Восточная Сибирь)
+										</div>
+									</div>
+									<div class="select-item" data-toggle-link data-value="3">
+										<div class="select-item-inner color-light">
+											<span class="color-text">Четвертая</span>, Московская область и большая большая
+										</div>
+										<div class="select-item-content">
+											Морозостойкость от −28.9 °C до −34.4 °C (Московская область и большая часть Центральной России)
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="text-body-2 text--fade mt-2" id="select-area-content">
+								Максимально возможная зимняя температура до -45С (Екатеринбург, Красноярск)
+							</div> -->
+						</div>
+
+						<div class="bd-bottom d-md-none mt-5"></div>
+
+						<div class="grid-col-12">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">О себе</div>
+								<div class="ui-form-input-cover">
+									<textarea class="ui-form-input"></textarea>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-h6 mb-8 mt-10">Адрес для доставки</div>
+
+				<div class="lk-profile-address">
+					<div class="grid grid-spacing-5 grid-spacing-md-7">
+						<div class="grid-col-md-12">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Местоположение</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="lk-profile-address-search ui-form-input" placeholder="Введите название">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-12 grid-col-lg-6">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Улица</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-12 grid-col-md-4 grid-col-lg-2">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Дом</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-12 grid-col-md-4 grid-col-lg-2">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Квартира</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-12 grid-col-md-4 grid-col-lg-2">
+							<label class="ui-form-field">
+								<div class="text-body-1 text--demibold mb-3">Индекс</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input">
+								</div>
+							</label>
+						</div>
+						<div class="grid-col-6 d-block d-md-none"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="mt-10">
+				<button class="btn btn--accent">Сохранить изменения</button>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script src="js/swiper.js"></script>
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/frontend--swipe.js"></script>
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="source/waves.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/profile-load-photo.js"></script>
+</body>
+
+</html>

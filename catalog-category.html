@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="source/waves.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+
+
+	<script src="js/swiper.js"></script>
+	<title>Плодовые</title>
+</head>
+
+<body>
+
+	<section class="container-block page--block">
+		<div class="category-block">
+			<div class="category-header">
+				<div class="back-btn-mobile">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#navigate-left" />
+					</svg>
+				</div>
+				<!-- <button class="back-btn btn btn-sm btn--primary btn--contur">назад</button> -->
+				<!-- <a href="javascript:window.history.back();" class="back-btn btn waves-effect">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#arrow-left"></use>
+					</svg>
+					назад
+				</a> -->
+				<div class="page--link">Главная / Каталог / Саженцы</div>
+				<div class="page--title">Плодовые</div>
+
+				<div class="catalog-control-mobile">
+					<div class="control-item" data-toggle-cover>
+						<button class="control-item-top" data-toggle-link>
+							<div class="control-item-top-title">Сортировка: <span>по популярности</span></div>
+							<div class="control-item-top-icon">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#navigate-down" />
+								</svg>
+							</div>
+						</button>
+						<div class="control-mobile" data-toggle-link>
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#sort" />
+							</svg>
+						</div>
+						<div class="control-item-menu" data-toggle-content>
+							<div class="control-item-link">Цена по убывыанию</div>
+							<div class="control-item-link">Цена по возрастанию</div>
+							<div class="control-item-link active">По популярности</div>
+							<div class="control-item-link">По новизне</div>
+						</div>
+					</div>
+					<div class="control-mobile" data-toggle-link="catalog-filter">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#sliders" />
+						</svg>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="category-menu">
+				<div class="category-menu__fruit">Абрикос</div>
+				<div class="category-menu__fruit">Айва</div>
+				<div class="category-menu__fruit">Алыча</div>
+				<div class="category-menu__fruit">Вишня</div>
+				<div class="category-menu__fruit">Грецкий орех</div>
+				<div class="category-menu__fruit">Груша</div>
+				<div class="category-menu__fruit">Дюк</div>
+				<div class="category-menu__fruit">Инжир</div>
+				<div class="category-menu__fruit">Кизил</div>
+				<div class="category-menu__fruit">Колонновидные деревья</div>
+				<div class="category-menu__fruit">Миндаль</div>
+				<div class="category-menu__fruit">Нектарин</div>
+				<div class="category-menu__fruit">Облепиха</div>
+				<div class="category-menu__fruit">Персик</div>
+				<div class="category-menu__fruit">Рябина</div>
+				<div class="category-menu__fruit">Слива</div>
+				<div class="category-menu__fruit">Фундук</div>
+				<div class="category-menu__fruit">Хурма</div>
+				<div class="category-menu__fruit">Черешня</div>
+				<div class="category-menu__fruit">Шелковица</div>
+				<div class="category-menu__fruit">Яблоня</div>
+			</div> -->
+		</div>
+
+
+		<div class="category-block">
+			<div class="category-filter" id="catalog-filter">
+				<!-- <div class="category-filter__title" data-toggle-link="catalog-filter">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#cross" />
+					</svg>
+					Фильтр
+				</div> -->
+				<div class="category-filter-block mb-2">
+					<div class="category-filter-body " data-toggle-cover>
+						<button class="category-filter__toggler w-100 text--demibold toggle-active" data-toggle-link>
+							Раздел
+							<svg class="icon ml-auto text-small color-accent">
+								<use xlink:href="img/icons.svg#triangle-right" />
+							</svg>
+						</button>
+						<div class="toggle-active" data-toggle-content data-toggle-height="true"
+							data-toggle-static="true">
+							<div class="category-filter-fields">
+								<div class="category-filter-field">
+									<div class="category-filter-checklist">
+										<label class="ui-form-field ui-form-checkbox">
+											<input type="checkbox" class="ui-form-input">
+											<div class="ui-form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ui-form-label">Хризантема </div>
+										</label>
+										<label class="ui-form-field ui-form-checkbox">
+											<input type="checkbox" class="ui-form-input">
+											<div class="ui-form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ui-form-label">Гвоздика </div>
+										</label>
+										<label class="ui-form-field ui-form-checkbox">
+											<input type="checkbox" class="ui-form-input">
+											<div class="ui-form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ui-form-label">Роза </div>
+										</label>
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="category-filter-block mb-2">
+					<div class="category-filter-body " data-toggle-cover>
+						<button class="category-filter__toggler w-100 text--demibold" data-toggle-link>
+							Расстояние при посадке
+							<svg class="icon ml-auto text-small color-accent">
+								<use xlink:href="img/icons.svg#triangle-right" />
+							</svg>
+						</button>
+						<div class="" data-toggle-content data-toggle-height="true" data-toggle-static="true">
+							<div class="category-filter-fields">
+								<div class="category-filter-field">
+									<div class="category-filter-checklist">
+										<label class="ui-form-field ui-form-checkbox">
+											<input type="checkbox" class="ui-form-input">
+											<div class="ui-form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ui-form-label">80 cм </div>
+										</label>
+										<label class="ui-form-field ui-form-checkbox">
+											<input type="checkbox" class="ui-form-input">
+											<div class="ui-form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="img/icons.svg#gal-ochka" />
+												</svg>
+											</div>
+											<div class="ui-form-label"> 100 см </div>
+										</label>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="category-filter-block">
+					<div class="text-h6 mb-4 mt-3">Цена</div>
+					<div class="category-filter-body">
+						<div class="category-filter-fields">
+							<div class="category-filter-field">
+								<div class="grid">
+									<div class="grid-col-6">
+										<div class="text-body-2 mb-1">От</div>
+										<div class="ui-form-field">
+											<input type="text" class="-cost-range-slider-from- ui-form-input">
+										</div>
+									</div>
+									<div class="grid-col-6">
+										<div class="text-body-2 mb-1">До</div>
+										<div class="ui-form-field">
+											<input type="text" class="-cost-range-slider-to- ui-form-input">
+										</div>
+									</div>
+								</div>
+								<div class="category-filter-range ui-form-range">
+									<input type="text" class="-cost-range-slider-" data-type="double" data-min="0"
+										data-max="2400" data-from="200" data-to="2400" />
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<script>
+					(() => {
+						var $range = $(".-cost-range-slider-");
+						var $inputFrom = $(".-cost-range-slider-from-");
+						var $inputTo = $(".-cost-range-slider-to-");
+						var instance;
+						var min = 0;
+						var max = 1000;
+						var from = 0;
+						var to = 0;
+
+						$range.ionRangeSlider({
+							skin: 'round',
+							hide_min_max: true,
+							hide_from_to: true,
+							onStart: updateInputs,
+							onChange: updateInputs,
+							onFinish: updateInputs
+						});
+
+						instance = $range.data("ionRangeSlider");
+
+						function updateInputs(data) {
+							from = data.from;
+							to = data.to;
+
+							$inputFrom.prop("value", from);
+							$inputTo.prop("value", to);
+						}
+
+						$inputFrom.on("input", function () {
+							var val = $(this).prop("value");
+
+							// validate
+							if (val < min) {
+								val = min;
+							} else if (val > to) {
+								val = to;
+							}
+
+							instance.update({
+								from: val
+							});
+
+							$(this).prop("value", val);
+
+						});
+
+						$inputTo.on("input", function () {
+							var val = $(this).prop("value");
+
+							// validate
+							if (val < from) {
+								val = from;
+							} else if (val > max) {
+								val = max;
+							}
+
+							instance.update({
+								to: val
+							});
+
+							$(this).prop("value", val);
+						});
+					})();
+				</script>
+<div class="category-filter-block">
+	<button class="btn btn--accent btn--fill w-100 mt-6">Показать</button>
+	<button class="btn btn--accent btn--light w-100 mt-4">Сбросить</button>
+</div>
+			</div>
+			<div class="catalog-block-cards">
+
+				<div class="catalog-control">
+					<div class="control-item" data-toggle-cover>
+						<button class="control-item-top" data-toggle-link>
+							<div class="control-item-top-title">Сортировка: <span>по популярности</span></div>
+							<div class="control-item-top-icon">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#navigate-down" />
+								</svg>
+							</div>
+						</button>
+						<div class="control-mobile" data-toggle-link>
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#sort" />
+							</svg>
+						</div>
+						<div class="control-item-menu" data-toggle-content>
+							<div class="control-item-link">Цена по убывыанию</div>
+							<div class="control-item-link">Цена по возрастанию</div>
+							<div class="control-item-link active">По популярности</div>
+							<div class="control-item-link">По новизне</div>
+						</div>
+					</div>
+					<div class="control-mobile" data-toggle-link="catalog-filter">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#sliders" />
+						</svg>
+					</div>
+				</div>
+
+				<!-- <div class="banner">
+					<img src="img/banner.png" alt="" class="banner__background">
+					<span class="banner__title">Только по предзаказу на весну </span>
+				</div> -->
+
+				<div class="catalog-cards">
+					<div class="card-page">
+						<div class="card-page__title card-page__discount">Скидка</div>
+						<button class="card-page__like"></button>
+
+
+						<img src="https://picsum.photos/id/365/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price card-page-text__discount">390 руб. <span>600
+										руб.</span></div>
+								<!-- <button class="card-page-card-icon" data-fancybox-modal
+									data-src="dialog-addtocart.html">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</button> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+						</div>
+					</div>
+					<div class="card-page">
+						<div class="card-page__title">ХИТ ПРОДАЖ</div>
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/367/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<div class="card-page__title newColor">НОВИНКИ</div>
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/368/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/369/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/371/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/373/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/375/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/376/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/380/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/382/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/388/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+
+
+						<img src="https://picsum.photos/id/390/600/400" loading="lazy" class="card-page__image">
+
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<!-- <div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div> -->
+							<div class="card-page-control">
+								<div class="card-page-text__price">390 руб.</div>
+								<!-- <div class="card-page-card-icon">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#shopping-cart" />
+									</svg>
+								</div> -->
+							</div>
+							<button class="btn btn--accent btn--light">
+								<svg class="icon mr-1">
+									<use xlink:href="img/icons.svg#basket"></use>
+								</svg>
+								В корзину
+							</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="category-block-link">
+					<span class="category-block-link__button">Показать еще</span>
+					<div class="category-block-link-page">
+						<a href="#" class="category-block-link-page__arrow">
+							<img src="img/arrow-left_2.svg">
+						</a>
+						<a href="#" class="category-block-link-page__numder">1</a>
+						<a href="#" class="category-block-link-page__numder">2</a>
+						<a href="#" class="category-block-link-page__numder">3</a>
+						<a href="#" class="category-block-link-page__numder category-block-link-page__active">4</a>
+						<a href="#" class="category-block-link-page__numder">...</a>
+						<a href="#" class="category-block-link-page__numder">13</a>
+						<a href="#" class="category-block-link-page__arrow">
+							<img src="img/arrow-right_2.svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Соцсети -->
+	<section class="container-block social">
+		<div class="social__title">Мы в социальных сетях:</div>
+		<div class="social__icons">
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/vk.svg">
+			</a>
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/ok.svg">
+			</a>
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/z.svg">
+			</a>
+			<a class="social__link" href="#">
+				<img class="social__icon" src="img/oazis-roz/yt.svg">
+			</a>
+		</div>
+		<div class="social__text">Подписывайтесь!</div>
+	</section>
+
+	<!-- Подвал -->
+	<footer class="footer container-block">
+		<div class="footer__item footer__item--1">
+			<a class="footer__logo" href="#">
+				<img class="footer__logo-img" src="img/oazis-roz/or-logo.svg" alt="">
+			</a>
+			<a class="footer__tel" href="tel: +7 (800) 000-00-00">
+				<img src="img/oazis-roz/tel.svg" alt="">
+				<span>+7 (800) 000-00-00</span>
+			</a>
+			<a class="footer__mail" href="mailto: info@oazis-roz.ru">
+				<img src="img/oazis-roz/mail.svg" alt="">
+				<span>info@oazis-roz.ru</span>
+			</a>
+			<span class="footer__text">Наши мессенджеры</span>
+			<div class="footer__elems">
+				<a class="footer__elem" href="">
+					<img class="footer__icon" src="img/oazis-roz/tg.svg" alt="">
+				</a>
+				<a class="footer__elem" href="">
+					<img class="footer__icon" src="img/oazis-roz/wt.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="footer__item footer__item--2">
+			<div class="footer__title">Работаем по всей РФ</div>
+			<img class="footer__map" src="img/oazis-roz/map.svg" alt="">
+			<span class="footer__geo">
+				<img class="footer__icon" src="img/oazis-roz/geo.svg" alt="">
+				<span>
+					Смоленская область, г. Смоленск <br>
+					ул. Рыленкова д 50
+				</span>
+			</span>
+		</div>
+		<div class="footer__item footer__item--3">
+			<div class="footer__title">Реквизиты</div>
+			<span class="footer__text">ООО “Социокиберинженерия”</span>
+			<span class="footer__text">КПП 236001001</span>
+			<span class="footer__text">ИНН 2360011971</span>
+			<span class="footer__text">ОГРН 11 923 750 645 95</span>
+		</div>
+		<div class="footer__item footer__item--4">
+			<div class="footer__title">Покупателям</div>
+			<div class="footer__links">
+				<a class="footer__text" href="">Оплата и доставка</a>
+				<a class="footer__text" href="">Гарантия</a>
+				<a class="footer__text" href="">Отследить заказ</a>
+				<a class="footer__text" href="">Контакты</a>
+				<a class="footer__text" href="">Пользовательское соглашение</a>
+				<a class="footer__text" href="">Условия покупки</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Мобильный подвал -->
+	<div class="container-block modil-footer">
+		<div class="modil-footer-icon">
+			<img src="img/mf_1.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Избранное</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_2.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Профиль</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_3.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Сервисы</span>
+		</div>
+	</div>
+
+	<script src="source/waves.js"></script>
+
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+
+	<script src="source/frontend--swipe.js"></script>
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/filter-check.js"></script>
+</body>
+
+</html>

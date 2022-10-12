@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<script src="js/swiper.js"></script>
+	<title>Корзина</title>
+</head>
+
+<body>
+	<div id="top"></div>
+
+	<nav class="container-block nav-top">
+		<a class="nav-top__link" href="#">Главная</a>
+		<a class="nav-top__link" href="#">Гарантия</a>
+		<a class="nav-top__link" href="#">Контакты</a>
+		<a class="nav-top__link" href="#">О нас</a>
+		<a class="nav-top__link" href="#">Оплата и доставка</a>
+		<a class="nav-top__link nav-top__link--lk" href="#">
+			<img class="nav-top__icon" src="img/oazis-roz/user.svg" alt="">
+			<span>Личный кабинет</span>
+		</a>
+	</nav>
+
+	<header class="container-block header">
+		<div class="header__top">
+			<a class="header__main" href="">
+				<img class="header__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<div class="header__content">
+					<div class="header__title">ОАЗИС РОЗ</div>
+					<div class="header__subtitle">Питомники со всей России</div>
+				</div>
+			</a>
+			<div class="header__text">
+				Лучшие растения для вашего сада <br>
+				по разумным ценам
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+				</div>
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<a class="header__catalog" href="">
+				<img class="header__catalog-icon" src="img/oazis-roz/lines.svg" alt="">
+				<span class="header__catalog-text">Каталог</span>
+			</a>
+			<label class="header__label">
+				<input class="header__search" type="text" placeholder="Поиск по сайту">
+				<img class="header__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/info.svg" alt="">
+				<span class="header__item-text">Помощь</span>
+			</a>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/cub.svg" alt="">
+				<span class="header__item-text">Отследить заказ</span>
+			</a>
+			<div class="header__btns">
+				<div class="header__btn header__btn--disabled">
+					<img class="header__btn-icon" src="img/oazis-roz/heart.svg" alt="">
+					<div class="nav-korz bx-basket-block">
+						<div class="nav__int">18</div>
+					</div>
+				</div>
+				<div class="header__btn">
+					<img class="header__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+					<div class="nav-korz bx-basket-block">
+						<div class="nav__int">18</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="container-block nav-bottom">
+		<a class="nav-bottom__link" href="#">
+			<img class="nav-bottom__link-icon" src="img/oazis-roz/flow.svg" alt="">
+			<span>Акции</span>
+		</a>
+		<a class="nav-bottom__link" href="#">Аллиум</a>
+		<a class="nav-bottom__link" href="#">Бархатцы</a>
+		<a class="nav-bottom__link" href="#">Астра</a>
+		<a class="nav-bottom__link" href="#">Василек</a>
+		<a class="nav-bottom__link" href="#">Вербена</a>
+		<a class="nav-bottom__link" href="#">Гербера</a>
+		<a class="nav-bottom__link" href="#">Календула</a>
+	</nav>
+
+	<header class="header-mobile">
+		<div class="container-block header-mobile__top">
+			<button class="header-mobile__burger burger" id="burger" data-toggle-link="mobil">
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+			</button>
+			<a class="header-mobile__main" href="">
+				<img class="header-mobile__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="header-mobile__text">ОАЗИС РОЗ</span>
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--basket" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--user" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/user.svg" alt="">
+			</a>
+		</div>
+		<div class="container-block header-mobile__bottom">
+			<label class="header-mobile__label">
+				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
+				<img class="header-mobile__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+		</div>
+	</header>
+
+	<section class="modal-menu" id="mobil">
+		<div class="modal-menu__head">
+			<button class="modal-menu__close" data-toggle-link="mobil">
+				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
+			</button>
+			<a class="modal-menu__main" href="">
+				<img class="modal-menu__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="modal-menu__text">ОАЗИС РОЗ</span>
+			</a>
+		</div>
+		<div class="modal-menu__body">
+			<nav class="modal-menu__nav">
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Главная</a>
+				<a class="modal-menu__link" href="">Гарантия</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
+				<a class="modal-menu__link" href="">Контакты</a>
+			</nav>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/heart.svg" alt="">
+					<span class="modal-menu__item-text">Избранное</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/basket.svg" alt="">
+					<span class="modal-menu__item-text">Корзина</span>
+				</a>
+			</div>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/info.svg" alt="">
+					<span class="modal-menu__item-text">Помощь</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/cub.svg" alt="">
+					<span class="modal-menu__item-text">Отследить заказ</span>
+				</a>
+			</div>
+			<div class="modal-menu__phones">
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+					</div>
+				</div>
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="container-block page--block basket">
+		<div class="basket-products">
+			<div class="page--link">Главная / Избранное</div>
+			<div class="basket-products__title">Корзина</div>
+			<div class="basket-products-note">
+				<svg class="icon"><use xlink:href="img/icons.svg#i-note" /></svg>
+
+				<div class="basket-products-note-content">
+					<b>Не хотите приз - просто удалите его из заказа </b> <br>
+Заново крутить колесо фортуны можно сразу после оплаты заказа
+				</div>
+			</div>
+
+
+			<div class="basket-products-order">
+				<div class="basket-products-order-image">
+					<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+				</div>
+				<div class="basket-products-order-quantity">
+					<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+					<div class=" basket-products-order-quantity-counter">
+						<div class="counter">
+							<button class="counter-btn">-</button>
+							<input type="text" class="counter-input">
+							<button class="counter-btn">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="basket-products-order__price">779 ₽</div>
+				<div class="basket-products-order-garbage">
+					<img src="img/oazis-roz/trash.svg">
+				</div>
+			</div>
+			<div class="basket-products-order">
+				<div class="basket-products-order-image">
+					<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+				</div>
+				<div class="basket-products-order-quantity">
+					<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+					<div class=" basket-products-order-quantity-counter">
+						<div class="counter">
+							<button class="counter-btn">-</button>
+							<input type="text" class="counter-input">
+							<button class="counter-btn">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="basket-products-order__price">779 ₽</div>
+				<div class="basket-products-order-garbage">
+					<img src="img/oazis-roz/trash.svg">
+				</div>
+			</div>
+			<div class="basket-products-order">
+				<div class="basket-products-order-image">
+					<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+				</div>
+				<div class="basket-products-order-quantity">
+					<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+					<div class=" basket-products-order-quantity-counter">
+						<div class="counter">
+							<button class="counter-btn">-</button>
+							<input type="text" class="counter-input">
+							<button class="counter-btn">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="basket-products-order__price">779 ₽</div>
+				<div class="basket-products-order-garbage">
+					<img src="img/oazis-roz/trash.svg">
+				</div>
+			</div>
+		</div>
+		<div class="basket-form">
+			<div class="basket-price">
+				<div class="basket-price__all"><span>К оплате</span><span class="basket-price__line">.......................</span><span>2100 руб.</span></div>
+				<div class="basket-price__product"><span>Товары, 3 шт.</span><span class="basket-price__line">.......................</span><span>2100 руб.</span></div>
+				<div class="basket-price__subtitle">Без учета стоимости доставки</div>
+				<div class="basket-price__order">Оформить заказ </div>
+				<button class="btn btn--accent mb-7">
+					<svg class="icon mr-2">
+						<use xlink:href="img/icons.svg#castle" />
+					</svg>
+					<span>
+						Cумма заказа от 1450 ₽
+					</span>
+				</button>
+				<div class="basket-price__die">
+					<span>Минимальная сумма заказа 1450 ₽ </span> <br>
+					В вашей корзине не хватает товаров
+				</div>
+			</div>
+			<div class="basket-form__conditions">Читать условия доставки и оплаты</div>
+		</div>
+	</section>
+
+	<section class="pray container-block">
+		<div class="pray-title">Отгрузка посадочного материала из питомника <b class="color-primary">с 30 сентября </b>
+		</div>
+		<div class="pray-subtitle">Точную дату сбора Вашего заказа подскажет Вам персональный консультант </div>
+		<div class="pray-form">
+			<label class="pray-form-field">
+				<div class="pray-form-label">Имя</div>
+				<input class="pray-form-input" placeholder="Введите имя" />
+			</label>
+			<label class="pray-form-field">
+				<div class="pray-form-label">Телефон</div>
+				<input class="pray-form-input" placeholder="+7 " type="tel" />
+			</label>
+			<button class="pray-form-btn btn btn--accent">Заказать обратный звонок</button>
+		</div>
+		<div class="pray-agree">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#gal-ochka" />
+			</svg>
+			<div class="pray-agree-content">
+				Нажимая на кнопку “Заказать обратный вопрос”, Вы соглашаетесь на обработку персональных данных
+			</div>
+		</div>
+	</section>
+
+	<section class="container-block gift">
+		<div class="gift-title">Специальные предложения</div>
+		<div class="gift-subtitle">При выполнении условий акций, ваш подарок к заказу добавит менеджер</div>
+		<div class="gift-list">
+			<div class="gift-block">
+				<div class="gift-block-icon">
+					<img src="img/gift.svg" class="gift-block-icon__image">
+					<span class="gift-block-icon__info">Получите в подарок отличного соседа! </span>
+				</div>
+				<div class="gift-block-text">При заказе саженцев винограда от 3000 руб, вы получаете подарок - саженец груши.
+				</div>
+			</div>
+			<div class="gift-block">
+				<div class="gift-block-icon">
+					<img src="img/gift.svg" class="gift-block-icon__image">
+					<span class="gift-block-icon__info">Лучшее сочетание культур в саду - это малина и яблоня!</span>
+				</div>
+				<div class="gift-block-text">Поэтому при покупке малины от 3000р, вы получаете саженец яблони в подарок!</div>
+			</div>
+			<div class="gift-block">
+				<div class="gift-block-icon">
+					<img src="img/gift.svg" class="gift-block-icon__image">
+					<span class="gift-block-icon__info">Сумасшедшего вкуса малина </span>
+				</div>
+				<div class="gift-block-text">Бывает дачный участок без ягод? При покупке малины от 3000р, вы получаете рассаду
+					клубники (5шт)</div>
+			</div>
+			<div class="gift-block">
+				<div class="gift-block-icon">
+					<img src="img/gift.svg" class="gift-block-icon__image">
+					<span class="gift-block-icon__info">Фундук в подарок!</span>
+				</div>
+				<div class="gift-block-text">При заказе любых товаров из нашего магазина от 6 000р мы подарим вам 2 саженца
+					Фундука </div>
+			</div>
+			<div class="gift-block">
+				<div class="gift-block-icon">
+					<img src="img/gift.svg" class="gift-block-icon__image">
+					<span class="gift-block-icon__info">Много роз не бывает!</span>
+				</div>
+				<div class="gift-block-text">Что может быть лучше сада из роз?
+					Закажите 12 саженцев роз и еще 2 саженца получите в подарок
+				</div>
+			</div>
+			<div class="gift-block">
+				<div class="gift-block-icon">
+					<img src="img/gift.svg" class="gift-block-icon__image">
+					<span class="gift-block-icon__info">Витамины круглый год!</span>
+				</div>
+				<div class="gift-block-text">Свежая зелень дома каждый день! Семена микрозелени в подарок при заказе семян и
+					луковиц от 2500р</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-block card">
+		<div class="card__title">ВАМ МОЖЕТ ПОНРАВИТЬСЯ</div>
+		<div class="image-slider swiper-container swiper-mp">
+			<div class="image-slider__wrapper swiper-wrapper">
+				<div class="image-slider__slide swiper-slide">
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+						<picture>
+							<source srcset="img/new-1.webp" type="image/webp">
+							<img src="img/new-1.png" loading="lazy" class="card-page__image">
+						</picture>
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div>
+							<div class="card-page-text__price">390 руб.</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+						<picture>
+							<source srcset="img/new-2.webp" type="image/webp">
+							<img src="img/new-2.png" loading="lazy" class="card-page__image">
+						</picture>
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div>
+							<div class="card-page-text__price">390 руб.</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+						<picture>
+							<source srcset="img/new-3.webp" type="image/webp">
+							<img src="img/new-3.png" loading="lazy" class="card-page__image">
+						</picture>
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div>
+							<div class="card-page-text__price">390 руб.</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="card-page">
+						<img src="img/like.svg" class="card-page__like"></img>
+						<picture>
+							<source srcset="img/new-4.webp" type="image/webp">
+							<img src="img/new-4.png" loading="lazy" class="card-page__image">
+						</picture>
+						<div class="card-page-text">
+							<div class="card-page-text__subtitle">Роза Беби Маскарад (Baby Masquerade)</div>
+							<div class="card-page-text-grade">
+								<div class="card-page-text-grade-stars">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-1.svg">
+									<img src="img/star-2.svg">
+								</div>
+								<div class="card-page-text-grade__review">0 отзывов</div>
+							</div>
+							<div class="card-page-text__price">390 руб.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</section>
+
+	<!-- Соцсети -->
+	<section class="container-block social">
+		<div class="social__title">Мы в социальных сетях:</div>
+		<div class="social-icons">
+			<a href="#"><img src="img/ok.svg" class="social-icons_image"></a>
+			<a href="#"><img src="img/vk.svg" class="social-icons_image"></a>
+			<a href="#"><img src="img/instagramm.svg" class="social-icons_image"></a>
+			<a href="#"><img src="img/youtube.svg" class="social-icons_image"></a>
+			<a href="#"><img src="img/dzen.svg" class="social-icons_image"></a>
+		</div>
+	</section>
+
+
+	<div class="to-top-wrapper">
+		<a href="#top" class="to-top"></a>
+
+	</div>
+
+
+	<!-- Подвал -->
+	<footer class="container-block footer">
+		<div class="footer-block">
+			<div class="footer-block-icons">
+				<img src="img/Group 5590.svg" class="footer-block-icons__image">
+				<img src="img/КСП.svg" class="footer-block-icons__image">
+			</div>
+			<a href="tel: +78001008975" class="footer-block__link">+7 (800) 100-89-75</a>
+			<a href="mailto: klubsadprof@mail.ru" class="footer-block__link">klubsadprof@mail.ru</a>
+			<div class="footer-block-social">
+				<a href="#"><img src="img/watsapp.svg" class="footer-block-social__image"></a>
+				<a href="#"><img src="img/telegramm.svg" class="footer-block-social__image"></a>
+			</div>
+		</div>
+		<div class="footer-block" data-toggle-cover>
+			<div class="footer-block__title" data-toggle-link>Реквизиты</div>
+			<div class="heightOver" data-toggle-content data-toggle-height="true" data-toggle-static="true">
+				<div class="footer-block__requaer">ООО “Социокиберинженерия”</div>
+				<div class="footer-block__requaer">КПП 236001001</div>
+				<div class="footer-block__requaer">ИНН 2360011971</div>
+				<div class="footer-block__requaer">ОГРН 11 923 750 645 95</div>
+			</div>
+		</div>
+		<div class="footer-block" data-toggle-cover>
+			<div class="footer-block__title" data-toggle-link>Покупателям</div>
+			<div class="heightOver" data-toggle-content data-toggle-height="true" data-toggle-static="true">
+				<a href="#" class="footer-block__link">Оплата и доставка</a>
+				<a href="#" class="footer-block__link">Гарантия</a>
+				<a href="#" class="footer-block__link">Отследить заказ</a>
+				<a href="#" class="footer-block__link">Контакты</a>
+				<a href="#" class="footer-block__link">Пользовательское соглашение</a>
+				<a href="#" class="footer-block__link">Условия покупки</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Мобильный подвал -->
+	<div class="container-block modil-footer">
+		<div class="modil-footer-icon">
+			<img src="img/mf_1.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Избранное</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_2.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Профиль</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_3.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Сервисы</span>
+		</div>
+	</div>
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+	<script src="source/waves.js"></script>
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

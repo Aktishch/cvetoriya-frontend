@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<script src="js/swiper.js"></script>
+	<title>Статус доставки</title>
+</head>
+
+<body>
+	<nav class="container-block nav-top">
+		<a class="nav-top__link" href="#">Главная</a>
+		<a class="nav-top__link" href="#">Гарантия</a>
+		<a class="nav-top__link" href="#">Контакты</a>
+		<a class="nav-top__link" href="#">О нас</a>
+		<a class="nav-top__link" href="#">Оплата и доставка</a>
+		<a class="nav-top__link nav-top__link--lk" href="#">
+			<img class="nav-top__icon" src="img/oazis-roz/user.svg" alt="">
+			<span>Личный кабинет</span>
+		</a>
+	</nav>
+
+	<header class="container-block header">
+		<div class="header__top">
+			<a class="header__main" href="">
+				<img class="header__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<div class="header__content">
+					<div class="header__title">ОАЗИС РОЗ</div>
+					<div class="header__subtitle">Питомники со всей России</div>
+				</div>
+			</a>
+			<div class="header__text">
+				Лучшие растения для вашего сада <br>
+				по разумным ценам
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+				</div>
+			</div>
+			<div class="header__phone">
+				<div class="header__pic">
+					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+				</div>
+				<div class="header__department">
+					<span class="header__name">Отдел продаж</span>
+					<a class="header__link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<a class="header__catalog" href="">
+				<img class="header__catalog-icon" src="img/oazis-roz/lines.svg" alt="">
+				<span class="header__catalog-text">Каталог</span>
+			</a>
+			<label class="header__label">
+				<input class="header__search" type="text" placeholder="Поиск по сайту">
+				<img class="header__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/info.svg" alt="">
+				<span class="header__item-text">Помощь</span>
+			</a>
+			<a class="header__item" href="#">
+				<img class="header__item-icon" src="img/oazis-roz/cub.svg" alt="">
+				<span class="header__item-text">Отследить заказ</span>
+			</a>
+			<div class="header__btns">
+				<div class="header__btn header__btn--disabled">
+					<img class="header__btn-icon" src="img/oazis-roz/heart.svg" alt="">
+					<div class="nav-korz bx-basket-block">
+						<div class="nav__int">18</div>
+					</div>
+				</div>
+				<div class="header__btn">
+					<img class="header__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+					<div class="nav-korz bx-basket-block">
+						<div class="nav__int">18</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="container-block nav-bottom">
+		<a class="nav-bottom__link" href="#">
+			<img class="nav-bottom__link-icon" src="img/oazis-roz/flow.svg" alt="">
+			<span>Акции</span>
+		</a>
+		<a class="nav-bottom__link" href="#">Аллиум</a>
+		<a class="nav-bottom__link" href="#">Бархатцы</a>
+		<a class="nav-bottom__link" href="#">Астра</a>
+		<a class="nav-bottom__link" href="#">Василек</a>
+		<a class="nav-bottom__link" href="#">Вербена</a>
+		<a class="nav-bottom__link" href="#">Гербера</a>
+		<a class="nav-bottom__link" href="#">Календула</a>
+	</nav>
+
+	<header class="header-mobile">
+		<div class="container-block header-mobile__top">
+			<button class="header-mobile__burger burger" id="burger" data-toggle-link="mobil">
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+			</button>
+			<a class="header-mobile__main" href="">
+				<img class="header-mobile__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="header-mobile__text">ОАЗИС РОЗ</span>
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--basket" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--user" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/user.svg" alt="">
+			</a>
+		</div>
+		<div class="container-block header-mobile__bottom">
+			<label class="header-mobile__label">
+				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
+				<img class="header-mobile__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+		</div>
+	</header>
+
+	<section class="modal-menu" id="mobil">
+		<div class="modal-menu__head">
+			<button class="modal-menu__close" data-toggle-link="mobil">
+				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
+			</button>
+			<a class="modal-menu__main" href="">
+				<img class="modal-menu__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="modal-menu__text">ОАЗИС РОЗ</span>
+			</a>
+		</div>
+		<div class="modal-menu__body">
+			<nav class="modal-menu__nav">
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Главная</a>
+				<a class="modal-menu__link" href="">Гарантия</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
+				<a class="modal-menu__link" href="">Контакты</a>
+			</nav>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/heart.svg" alt="">
+					<span class="modal-menu__item-text">Избранное</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/basket.svg" alt="">
+					<span class="modal-menu__item-text">Корзина</span>
+				</a>
+			</div>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/info.svg" alt="">
+					<span class="modal-menu__item-text">Помощь</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/cub.svg" alt="">
+					<span class="modal-menu__item-text">Отследить заказ</span>
+				</a>
+			</div>
+			<div class="modal-menu__phones">
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+					</div>
+				</div>
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-block page--block pb-1">
+		<div class="page--link">Главная / Личный кабинет</div>
+		<div class="page--title mb-1">Статус заказа</div>
+	</section>
+
+	<section class="container-block page--block">
+		<div class="order-status">
+			<div class="order-status__block">
+				<div class="order-status__items">
+					<div class="order-status__item">
+						<div class="order-status__pic">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#box-2" />
+							</svg>
+						</div>
+						<div class="order-status__info">
+							<div class="order-status__info-title mb-2">Номер заказа</div>
+							<div class="order-status__info-subtitle">123456789</div>
+						</div>
+					</div>
+					<div class="order-status__item">
+						<div class="order-status__pic">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#date" />
+							</svg>
+						</div>
+						<div class="order-status__info">
+							<div class="order-status__info-title mb-2">Дата заказа</div>
+							<div class="order-status__info-subtitle">02.03.2022</div>
+						</div>
+					</div>
+					<div class="order-status__item">
+						<div class="order-status__pic">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#settings-2" />
+							</svg>
+						</div>
+						<div class="order-status__info">
+							<div class="order-status__info-title mb-2">Создание заказа</div>
+							<div class="order-status__info-subtitle">02.03.2022</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-status__content">
+				<div class="order-status__title mb-9">Сведения о заказе</div>
+				<div class="order-status__elems">
+					<div class="order-status__elem">
+						<div class="order-status__subtitle">Получатель</div>
+						<ul class="order-status__list">
+							<li class="mb-3">Марьяна Турчанова</li>
+							<li class="mb-3">марьяна.ми@gmail.com</li>
+							<li class="mb-3">+7 900 000 00 00</li>
+						</ul>
+					</div>
+					<div class="order-status__elem">
+						<div class="order-status__subtitle">Доставка</div>
+						<ul class="order-status__list">
+							<li class="mb-3">Компания СДЭК</li>
+							<li class="mb-3">
+								г. Краснодар, ул. им Петра Метальникова, д. 5 корп. 1
+							</li>
+						</ul>
+					</div>
+					<div class="order-status__elem">
+						<div class="order-status__subtitle">Оплачено</div>
+						<ul class="order-status__list">
+							<li class="mb-3">Карта Сбербанка VISA**0000</li>
+							<li class="mb-3">Товары, 3 шт. <span class="order-status__line"> ......................</span><span>1558 ₽</span></li>
+							<li class="mb-3">Скидка <span class="order-status__line"> ......................</span><span>- 256 ₽</span></li>
+							<li class="mb-3"><b>Итого<span class="order-status__line"> ......................</span><span>- 256 ₽</span></b></li>
+						</ul>
+					</div>
+				</div>
+				<div class="order-status__products">
+					<div class="order-status__product">
+						<div class="order-status__product-info">
+							<div class="order-status__product-pic">
+								<img class="order-status__product-img" src="img/new-4.png" alt="">
+							</div>
+							<div class="order-status__text">
+								<div class="order-status__name mb-3">
+									Роза Августа Луиза (Augusta Luise)
+								</div>
+								<div class="order-status__quantity">Кол-во: 1</div>
+							</div>
+						</div>
+						<div class="order-status__price">779 ₽</div>
+					</div>
+					<div class="order-status__product">
+						<div class="order-status__product-info">
+							<div class="order-status__product-pic">
+								<img class="order-status__product-img" src="img/new-4.png" alt="">
+							</div>
+							<div class="order-status__text">
+								<div class="order-status__name mb-3">
+									Роза Августа Луиза (Augusta Luise)
+								</div>
+								<div class="order-status__quantity">Кол-во: 1</div>
+							</div>
+						</div>
+						<div class="order-status__price">779 ₽</div>
+					</div>
+					<div class="order-status__product">
+						<div class="order-status__product-info">
+							<div class="order-status__product-pic">
+								<img class="order-status__product-img" src="img/new-4.png" alt="">
+							</div>
+							<div class="order-status__text">
+								<div class="order-status__name mb-3">
+									Роза Августа Луиза (Augusta Luise)
+								</div>
+								<div class="order-status__quantity">Кол-во: 1</div>
+							</div>
+						</div>
+						<div class="order-status__price">779 ₽</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+
+</html>

@@ -5238,15 +5238,33 @@ body {
 }
 
 .nav-top {
-	background-color: #F5F5F5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.nav-top__block {
+	background-color: #FFFFFF;
 	display         : flex;
 	align-items     : center;
 	justify-content : space-between;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.nav-top__links {
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 5px;
+	width: 100%;
+	max-width: 800px;
 }
 
 .nav-top__link {
 	font-style : normal;
-	font-weight: 400;
+	font-weight: 500;
 	font-size  : 16px;
 	line-height: 19px;
 	color      : #383838;
@@ -5254,13 +5272,18 @@ body {
 	padding    : 12px;
 }
 
-.nav-top__link--lk {
-	display    : flex;
-	align-items: center;
-	grid-gap   : 7px;
-	color      : #DD4949;
-	font-weight: 600;
-	opacity    : 1;
+@media(hover) {
+	.nav-top__link:hover {
+		opacity: 1;
+	}
+}
+
+.nav-top__btn {
+	padding: 0 12px !important;
+}
+
+.nav-top__icon {
+	margin-right: 8px;
 }
 
 @media(max-width: 1200px) {
@@ -5269,7 +5292,29 @@ body {
 	}
 }
 
-.header {
+.nav__int {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #09A98C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 12px;
+	color: #fff;
+}
+
+.header__block {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 10px;
+}
+/* .header {
 	background-color: #fff;
 	padding-top     : 23px;
 	padding-bottom  : 23px;
@@ -5488,31 +5533,15 @@ body {
 .header__btn--disabled {
 	pointer-events: none;
 	opacity: 0.6;
-}
+} */
 
-.nav__int {
-	position: absolute;
-	top: -10px;
-	right: -10px;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #09A98C;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: 500;
-	font-size: 12px;
-	color: #fff;
-}
-
-.header__btn:hover {
+/* .header__btn:hover {
 	background-color: rgba(204, 204, 204, 0.5);
 }
 
 .header__btn-icon {
 	width: 20px;
-}
+} */
 
 @media(max-width: 1200px) {
 	.header {

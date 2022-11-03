@@ -14,7 +14,7 @@
 	<meta name="msapplication-TileColor" content="#2b5797">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
 	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
@@ -34,19 +34,28 @@
 <body>
 
 	<nav class="container-block nav-top">
-		<a class="nav-top__link" href="#">Главная</a>
-		<a class="nav-top__link" href="#">Гарантия</a>
-		<a class="nav-top__link" href="#">Контакты</a>
-		<a class="nav-top__link" href="#">О нас</a>
-		<a class="nav-top__link" href="#">Оплата и доставка</a>
-		<a class="nav-top__link nav-top__link--lk" href="#">
-			<img class="nav-top__icon" src="img/oazis-roz/user.svg" alt="">
-			<span>Личный кабинет</span>
-		</a>
+		<div class="nav-top__block">
+			<div class="nav-top__links">
+				<a class="nav-top__link" href="#">Главная</a>
+				<a class="nav-top__link" href="#">Гарантия</a>
+				<a class="nav-top__link" href="#">Контакты</a>
+				<a class="nav-top__link" href="#">О нас</a>
+				<a class="nav-top__link" href="#">Оплата и доставка</a>
+			</div>
+			<a class="nav-top__btn btn btn--accent" href="#">
+				<svg class="nav-top__icon icon">
+					<use xlink:href="img/icons.svg#user"></use>
+				</svg>
+				<span>Личный кабинет</span>
+			</a>
+		</div>
 	</nav>
 
 	<header class="container-block header">
-		<div class="header__top">
+		<div class="header__block">
+			
+		</div>
+		<!-- <div class="header__top">
 			<a class="header__main" href="">
 				<img class="header__logo" src="img/oazis-roz/header-logo.svg" alt="">
 				<div class="header__content">
@@ -108,7 +117,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</header>
 
 	<nav class="container-block nav-bottom">

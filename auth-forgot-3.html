@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
 	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
@@ -25,52 +25,54 @@
 <body>
 
 	<section class="container-block page--block auth-page">
+		<div class="flex mb-5">
+			<a href="javascript:window.history.back();" class="btn btn--accent btn--contur">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#arrow-left"></use>
+				</svg>
+				Назад
+			</a>
+		</div>
+		<div class="text-h5 text-md-h1 text--center mb-7">Восстановление пароля</div>
 		<div class="auth-form">
-			<div class="text-h5 text-md-h1 text--center mb-5">Смена пароля</div>
-			<div class="fade-80 text--center mb-6 mb-md-7">Придумайте новый пароль</div>
-
-			<div class="ui-form-field mb-4">
-				<div class="text-subtitle-2 mb-2">Пароль</div>
-				<div class="ui-form-input-cover">
-					<input type="password" class="ui-form-input" id="pass">
-					<div class="ui-form-input-end pr-4">
-						<button type="button" class="btn btn--link" data-show-pass="pass">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#eye" />
-							</svg>
-						</button>
+			<div class="auth-form__inner">
+				<div class="ui-form-field mb-4">
+					<div class="text-subtitle-2 mb-2">Пароль</div>
+					<div class="ui-form-input-cover">
+						<input type="password" class="ui-form-input" id="pass">
+						<svg class="icon start-icon"><use xlink:href="img/icons.svg#lock" /></svg>
+						<div class="ui-form-input-end pr-4">
+							<button type="button" class="btn btn--link" data-show-pass="pass">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#eye" />
+								</svg>
+							</button>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="ui-form-field">
-				<div class="text-subtitle-2 mb-2">Повторите пароль</div>
-				<div class="ui-form-input-cover">
-					<input type="password" class="ui-form-input" id="newpass">
-					<div class="ui-form-input-end pr-4">
-						<button type="button" class="btn btn--link" data-show-pass="newpass">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#eye" />
-							</svg>
-						</button>
+				<div class="ui-form-field">
+					<div class="text-subtitle-2 mb-2">Повторите пароль</div>
+					<div class="ui-form-input-cover">
+						<input type="password" class="ui-form-input" id="newpass">
+						<svg class="icon start-icon"><use xlink:href="img/icons.svg#lock" /></svg>
+						<div class="ui-form-input-end pr-4">
+							<button type="button" class="btn btn--link" data-show-pass="newpass">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#eye" />
+								</svg>
+							</button>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="auth-form-note mt-2">
-				<span class="fade-80">
-					Минимум 8 символов с прописными или строчными
-					буквами и цифрами
-				</span>
-			</div>
+				<div class="auth-form-note mt-2">
+					<span class="fade-80">
+						Минимум 8 символов с прописными или строчными
+						буквами и цифрами
+					</span>
+				</div>
 
-			<button class="btn btn--accent btn--fill mt-7 w-100">Изменить</button>
+				<button class="btn btn--primary btn--fill mt-7 w-100 btn--big">Восстановить пароль</button>
 
-			<div class="mt-6 auth-form-something">
-				Пароль должен быть не менее <b> 8 символов длиной</b> 
-				<div class="mb-2"></div>
-				Пароль должен содержать <b>латинские символы
-				нижнего регистра (a-z)</b>
-				<div class="mb-2"></div>
-				Пароль должен содержать <b>цифры (0-9)</b>
 			</div>
 		</div>
 

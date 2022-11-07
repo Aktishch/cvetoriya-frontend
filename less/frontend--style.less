@@ -614,7 +614,7 @@ body {
 
 .counter {
 	border       : 1px solid #CCCCCC;
-	border-radius: 50px;
+	border-radius: 8px;
 	width        : 100px;
 	height       : 30px;
 
@@ -4111,6 +4111,18 @@ body {
 		background-color: #fff;
 		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 		padding: 50px;
+
+		&__list {
+			&:first-child {
+				border-right: 1px solid #D9D9D9;
+				border-radius: 10px;
+
+				@media(max-width:991px) {
+					border-right: none;
+				}
+			}
+
+		}
 
 		@media(max-width:991px) {
 			grid-template-columns: 1fr;

@@ -2341,15 +2341,19 @@ body {
 }
 
 .basket-products-order {
-	display              : grid;
-	grid-template-columns: 148px 2fr 1fr auto;
-	grid-gap             : 1.3em;
-	align-items          : center;
-	margin-bottom        : 30px;
-	border               : 1px solid rgba(153, 153, 153, 0.2);
-	border-radius        : 10px;
-	padding              : 8px;
-	padding-right        : 24px;
+	display        : flex;
+	flex-wrap      : wrap;
+	align-items    : center;
+	justify-content: space-between;
+	grid-gap       : 30px;
+	padding        : 30px;
+	background     : #FFFFFF;
+	box-shadow     : 0px 4px 12px rgba(0, 0, 0, 0.1);
+	margin-bottom  : 20px;
+}
+
+.basket-products-order:last-child {
+	margin-bottom: 0;
 }
 
 .basket-item-block-image,
@@ -2366,6 +2370,23 @@ body {
 .basket-products-order-image img {
 	width        : 100%;
 	border-radius: 10px;
+}
+
+.basket-products-order-image {
+	border-radius: 15px;
+	width        : 150px;
+	height       : 120px;
+	overflow     : hidden;
+	position     : relative;
+}
+
+.basket-products-order-image img {
+	object-fit: cover;
+	position  : absolute;
+	top       : 0;
+	left      : 0;
+	width     : 100%;
+	height    : 100%;
 }
 
 .basket-products-order-quantity__title {
@@ -2405,7 +2426,6 @@ body {
 }
 
 .basket-products-order-garbage {
-	background     : rgba(221, 73, 73, 0.2);
 	border-radius  : 8px;
 	cursor         : pointer;
 	width          : 40px;
@@ -2413,6 +2433,7 @@ body {
 	display        : flex;
 	align-items    : center;
 	justify-content: center;
+	opacity        : 0.6;
 }
 
 .basket-products-order-garbage img {
@@ -2623,12 +2644,7 @@ body {
 		padding-right: 0 !important;
 	}
 
-	.basket-items-list-item-descriptions-inner,
-	.basket-products-order {
-		grid-template-columns: 120px 1fr;
-	}
-
-	.basket-items-list-item-amount {
+	.basket-items-list-item-descriptions-inner .basket-items-list-item-amount {
 		margin-left: calc(120px + 20px) !important;
 
 	}
@@ -2689,8 +2705,7 @@ body {
 
 @media(max-width: 368px) {
 
-	.basket-items-list-item-descriptions-inner,
-	.basket-products-order {
+	.basket-items-list-item-descriptions-innern {
 		grid-template-columns: 120px 1fr;
 		grid-gap             : 10px;
 	}

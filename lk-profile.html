@@ -5,95 +5,124 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
 	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/frontend--style.css">
-	<link rel="stylesheet" href="source/waves.css">
-
-
 	<link rel="stylesheet" href="css/lk-styles.css">
 
-	<title>Мои заказы</title>
+	<!-- Лимитированные предложения -->
+	<link rel="stylesheet" href="css/index-limited.css">
+	<!-- Наши преимущества -->
+	<link rel="stylesheet" href="css/new-advantages.css">
+
+
+	<title>Главная</title>
 </head>
 
 <body>
 
 	<nav class="container-block nav-top">
-		<a class="nav-top__link" href="#">Главная</a>
-		<a class="nav-top__link" href="#">Гарантия</a>
-		<a class="nav-top__link" href="#">Контакты</a>
-		<a class="nav-top__link" href="#">О нас</a>
-		<a class="nav-top__link" href="#">Оплата и доставка</a>
-		<a class="nav-top__link nav-top__link--lk" href="#">
-			<img class="nav-top__icon" src="img/oazis-roz/user.svg" alt="">
-			<span>Личный кабинет</span>
-		</a>
+		<div class="nav-top__block">
+			<div class="nav-top__links">
+				<a class="nav-top__link" href="#">Главная</a>
+				<a class="nav-top__link" href="#">Гарантия</a>
+				<a class="nav-top__link" href="#">Контакты</a>
+				<a class="nav-top__link" href="#">О нас</a>
+				<a class="nav-top__link" href="#">Оплата и доставка</a>
+			</div>
+			<a class="nav-top__btn btn btn--accent" href="#">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#user"></use>
+				</svg>
+				<span>Арсений М.</span>
+			</a>
+		</div>
 	</nav>
 
 	<header class="container-block header">
-		<div class="header__top">
-			<a class="header__main" href="">
-				<img class="header__logo" src="img/oazis-roz/header-logo.svg" alt="">
-				<div class="header__content">
-					<div class="header__title">ОАЗИС РОЗ</div>
-					<div class="header__subtitle">Питомники со всей России</div>
-				</div>
+		<div class="header__block">
+			<a class="header__logo" href="">
+				<img src="img/cvetoriya/logo.png" alt="">
 			</a>
-			<div class="header__text">
-				Лучшие растения для вашего сада <br>
-				по разумным ценам
-			</div>
-			<div class="header__phone">
-				<div class="header__pic">
-					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
+			<div class="header__items">
+				<div class="header-top">
+					<button class="btn btn--accent">
+						<svg class="header-top__pilot icon">
+							<use xlink:href="img/icons.svg#pilot"></use>
+						</svg>
+						Отследить заказ
+					</button>
+					<button class="btn btn--accent">
+						<svg class="header-top__question icon">
+							<use xlink:href="img/icons.svg#question"></use>
+						</svg>
+						Помощь
+					</button>
+					<a class="header-top__tel" href="tel: 8 (800) 100-89-75">
+						<div class="header-top__tel-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#tel-manager"></use>
+							</svg>
+						</div>
+						<div class="header-top__content">
+							<div class="header-top__phone">8 (800) 100-89-75</div>
+							<div class="header-top__text">Вопросы по заказам</div>
+						</div>
+					</a>
+					<a class="header-top__tel" href="tel: 8 (999) 444-16-97">
+						<div class="header-top__tel-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#tel-manager"></use>
+							</svg>
+						</div>
+						<div class="header-top__content">
+							<div class="header-top__phone">8 (999) 444-16-97</div>
+							<div class="header-top__text">Консультирование</div>
+						</div>
+					</a>
 				</div>
-				<div class="header__department">
-					<span class="header__name">Отдел продаж</span>
-					<a class="header__link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
-				</div>
-			</div>
-			<div class="header__phone">
-				<div class="header__pic">
-					<img class="header__tel" src="img/oazis-roz/phone.svg" alt="">
-				</div>
-				<div class="header__department">
-					<span class="header__name">Отдел продаж</span>
-					<a class="header__link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
-				</div>
-			</div>
-		</div>
-		<div class="header__bottom">
-			<a class="header__catalog" href="">
-				<img class="header__catalog-icon" src="img/oazis-roz/lines.svg" alt="">
-				<span class="header__catalog-text">Каталог</span>
-			</a>
-			<label class="header__label">
-				<input class="header__search" type="text" placeholder="Поиск по сайту">
-				<img class="header__search-icon" src="img/oazis-roz/search.svg" alt="">
-			</label>
-			<a class="header__item" href="#">
-				<img class="header__item-icon" src="img/oazis-roz/info.svg" alt="">
-				<span class="header__item-text">Помощь</span>
-			</a>
-			<a class="header__item" href="#">
-				<img class="header__item-icon" src="img/oazis-roz/cub.svg" alt="">
-				<span class="header__item-text">Отследить заказ</span>
-			</a>
-			<div class="header__btns">
-				<div class="header__btn header__btn--disabled">
-					<img class="header__btn-icon" src="img/oazis-roz/heart.svg" alt="">
-					<div class="nav-korz bx-basket-block">
-						<div class="nav__int">18</div>
-					</div>
-				</div>
-				<div class="header__btn">
-					<img class="header__btn-icon" src="img/oazis-roz/basket.svg" alt="">
-					<div class="nav-korz bx-basket-block">
-						<div class="nav__int">18</div>
+				<div class="header-bottom">
+					<button class="btn btn--primary">
+						<svg class="header-bottom__icon icon">
+							<use xlink:href="img/icons.svg#squares"></use>
+						</svg>
+						Каталог
+					</button>
+					<label class="header-bottom__label">
+						<input class="header-bottom__search" type="text" placeholder="Поиск по сайту">
+						<img class="header-bottom__search-icon" src="img/cvetoriya/Search.svg" alt="">
+					</label>
+					<button class="btn btn--primary">Поиск</button>
+					<div class="header-bottom__btns">
+						<div class="header-bottom__btn header-bottom__btn--disabled">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#heart"></use>
+							</svg>
+							<div class="nav-korz bx-basket-block">
+								<div class="nav__int">18</div>
+							</div>
+						</div>
+						<div class="header-bottom__btn">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#box-4"></use>
+							</svg>
+							<div class="nav-korz bx-basket-block">
+								<div class="nav__int">18</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -101,9 +130,11 @@
 	</header>
 
 	<nav class="container-block nav-bottom">
-		<a class="nav-bottom__link" href="#">
-			<img class="nav-bottom__link-icon" src="img/oazis-roz/flow.svg" alt="">
-			<span>Акции</span>
+		<a class="nav-bottom__link nav-bottom__link--main btn btn--white" href="">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#bell"></use>
+			</svg>
+			Акции
 		</a>
 		<a class="nav-bottom__link" href="#">Аллиум</a>
 		<a class="nav-bottom__link" href="#">Бархатцы</a>
@@ -122,20 +153,23 @@
 				<span class="header-mobile__line"></span>
 			</button>
 			<a class="header-mobile__main" href="">
-				<img class="header-mobile__logo" src="img/oazis-roz/header-logo.svg" alt="">
-				<span class="header-mobile__text">ОАЗИС РОЗ</span>
+				<img class="header-mobile__logo" src="img/cvetoriya/logo.png" alt="">
 			</a>
 			<a class="header-mobile__btn header-mobile__btn--basket" href="">
-				<img class="header-mobile__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#box-4"></use>
+				</svg>
 			</a>
 			<a class="header-mobile__btn header-mobile__btn--user" href="">
-				<img class="header-mobile__btn-icon" src="img/oazis-roz/user.svg" alt="">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#user"></use>
+				</svg>
 			</a>
 		</div>
 		<div class="container-block header-mobile__bottom">
 			<label class="header-mobile__label">
 				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
-				<img class="header-mobile__search-icon" src="img/oazis-roz/search.svg" alt="">
+				<img class="header-mobile__search-icon" src="img/cvetoriya/Search.svg" alt="">
 			</label>
 		</div>
 	</header>
@@ -146,81 +180,94 @@
 				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
 			</button>
 			<a class="modal-menu__main" href="">
-				<img class="modal-menu__logo" src="img/oazis-roz/header-logo.svg" alt="">
-				<span class="modal-menu__text">ОАЗИС РОЗ</span>
+				<img class="modal-menu__logo" src="img/cvetoriya/logo.png" alt="">
 			</a>
 		</div>
 		<div class="modal-menu__body">
 			<nav class="modal-menu__nav">
-				<a class="modal-menu__link" href="">О нас</a>
 				<a class="modal-menu__link" href="">Главная</a>
 				<a class="modal-menu__link" href="">Гарантия</a>
-				<a class="modal-menu__link" href="">Оплата и доставка</a>
 				<a class="modal-menu__link" href="">Контакты</a>
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
 			</nav>
-			<div class="modal-menu__items">
-				<a class="modal-menu__item" href="">
-					<img class="modal-menu__item-icon" src="img/oazis-roz/heart.svg" alt="">
-					<span class="modal-menu__item-text">Избранное</span>
-				</a>
-				<a class="modal-menu__item" href="">
-					<img class="modal-menu__item-icon" src="img/oazis-roz/basket.svg" alt="">
-					<span class="modal-menu__item-text">Корзина</span>
-				</a>
-			</div>
-			<div class="modal-menu__items">
-				<a class="modal-menu__item" href="">
-					<img class="modal-menu__item-icon" src="img/oazis-roz/info.svg" alt="">
-					<span class="modal-menu__item-text">Помощь</span>
-				</a>
-				<a class="modal-menu__item" href="">
-					<img class="modal-menu__item-icon" src="img/oazis-roz/cub.svg" alt="">
-					<span class="modal-menu__item-text">Отследить заказ</span>
-				</a>
-			</div>
-			<div class="modal-menu__phones">
-				<div class="modal-menu__phone">
-					<div class="modal-menu__pic">
-						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+			<div class="modal-menu__items header-top">
+				<button class="modal-menu__btn btn btn--primary">
+					<svg class="header-bottom__icon icon">
+						<use xlink:href="img/icons.svg#squares"></use>
+					</svg>
+					Каталог
+				</button>
+				<button class="modal-menu__btn btn btn--accent">
+					<svg class="header-top__pilot icon">
+						<use xlink:href="img/icons.svg#pilot"></use>
+					</svg>
+					Отследить заказ
+				</button>
+				<button class="modal-menu__btn btn btn--accent">
+					<svg class="header-top__question icon">
+						<use xlink:href="img/icons.svg#question"></use>
+					</svg>
+					Помощь
+				</button>
+				<a class="header-top__tel" href="tel: 8 (800) 100-89-75">
+					<div class="header-top__tel-img">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#tel-manager"></use>
+						</svg>
 					</div>
-					<div class="modal-menu__department">
-						<span class="modal-menu__name">Отдел продаж</span>
-						<a class="modal-menu__department-link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+					<div class="header-top__content">
+						<div class="header-top__phone">8 (800) 100-89-75</div>
+						<div class="header-top__text">Вопросы по заказам</div>
 					</div>
-				</div>
-				<div class="modal-menu__phone">
-					<div class="modal-menu__pic">
-						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+				</a>
+				<a class="header-top__tel" href="tel: 8 (999) 444-16-97">
+					<div class="header-top__tel-img">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#tel-manager"></use>
+						</svg>
 					</div>
-					<div class="modal-menu__department">
-						<span class="modal-menu__name">Отдел продаж</span>
-						<a class="modal-menu__department-link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+					<div class="header-top__content">
+						<div class="header-top__phone">8 (999) 444-16-97</div>
+						<div class="header-top__text">Консультирование</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="container-block page--block pb-1">
-		<div class="page--link">Главная / Личный кабинет</div>
+	<section class="container-block page--block pb-0">
+		<div class="back-btn-mobile">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#navigate-left" />
+			</svg>
+		</div>
+		<div class="navigation text-body-0 fade-60 mb-5">
+			<a class="" href="">Главная</a> > <a class="" href="">Каталог</a> > <span class="text--bold">Астры</span>
+		</div>
+		<a href="javascript:window.history.back();"
+				class="back-btn btn btn--accent btn--contur waves-effect mb-5">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#back"></use>
+				</svg>
+				Назад
+			</a>
 		<div class="page--title">Личный кабинет</div>
 	</section>
 
 
 	<section class="lk-wrapper container-block">
-		<div class="lk-aside">
-			<div class="lk-aside-user mb-8">
-				<div class="lk-aside-user__img">
-					<img src="https://picsum.photos/id/550/600/400" alt="">
+		<div class="lk-aside br-main">
+			<div class="lk-aside-user mb-5">
+				<div class="lk-aside-user__img" data-fancybox data-type="ajax" data-src="dialog-ava.html">
+					<img class="-lk-ava-" src="https://picsum.photos/id/550/600/400" alt="">
 					<div class="lk-aside-user__circle">
 						<svg class="icon">
 							<use xlink:href="img/icons.svg#pen" />
 						</svg>
 					</div>
 				</div>
-				<div class="lk-aside-user__title">
-					Администратор ТЕСТОВИЧ-АБДУЛА-МАХМУТОВИЧ
-				</div>
+				<div class="lk-aside-user__title">Администратор ТЕСТОВИЧ</div>
 			</div>
 
 			<div class="lk-aside-links" data-toggle-cover>
@@ -233,71 +280,52 @@
 
 					<div class="lk-aside-link waves">
 						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#box-2" />
+							<use xlink:href="img/icons.svg#box-5" />
 						</svg>
-						Заказы
+						Мои заказы
 					</div>
 					<div class="lk-aside-link active waves">
 						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#user" />
+							<use xlink:href="img/icons.svg#settings" />
 						</svg>
 						Настройки профиля
 					</div>
 					<div class="lk-aside-link waves">
 						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#settings" />
+							<use xlink:href="img/icons.svg#pass" />
 						</svg>
 						Изменить пароль
 					</div>
-					<div class="lk-aside-link lk-aside-link--exit waves">
+					<div class="lk-aside-link waves">
 						<svg class="icon mr-4">
+							<use xlink:href="img/icons.svg#like-2" />
+						</svg>
+						Избранное
+					</div>
+					<hr>
+					<button class="lk-aside__exit btn btn--accent mt-5">
+						<svg class="text-h6 icon">
 							<use xlink:href="img/icons.svg#door" />
 						</svg>
 						Выйти
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
 
 		<div class="lk-content">
 			<div class="lk-profile">
-				<!-- <div class="lk-profile-images">
-					<label class="lk-profile-image-loader" data-input-dropable>
-						<input type="file" accept="image/*" data-input-file data-preview="lk-profile-photo"
-							data-error="lk-profile-images-error" data-accept="image" data-max="8192">
-						<img src="img/icons/upload.svg" alt="">
-						Нажмите <span class="d-none d-md-inline"> или <br>
-							перетащите <br>
-							изображение <br></span>
-						для загрузки
-					</label>
-					<div class="lk-profile-image-item">
-						<img src="https://picsum.photos/id/1081/600/400" alt="" class="lk-profile-image-item-img"
-							id="lk-profile-photo">
-						<div class="lk-profile-image-item-remove" data-remove-src="lk-profile-photo">
-							<img src="img/icons/delete.svg" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="text-body-2 mt-1 color-red" id="lk-profile-images-error"></div> -->
-
-				<div class="lk-profile__title mb-8">
-					<div class="text-h6">
-						Личные данные
-					</div>
-				</div>
-
-				<div class="lk-profile-data">
-					<!-- <label class="ui-form-field form-field form-field-error">
-						<div class="text-body-1 mb-3"><span class="color-red">*</span>Ф.И.О</div>
-						<div class="ui-form-input-cover">
-							<input type="text" class="ui-form-input form-input">
-						</div>
-						<span class="form__err">Обязательное поле для заполнения</span>
-					</label> -->
-
-
+				<div class="lk-content-title">Личные данные</div>
+				<div class="lk-profile-data br-main">
 					<div class="grid grid-spacing-5 grid-spacing-md-7 ">
+						<div class="grid-col-md-4">
+							<label class="ui-form-field form-field">
+								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Имя</div>
+								<div class="ui-form-input-cover">
+									<input type="text" class="ui-form-input form-input">
+								</div>
+							</label>
+						</div>
 						<div class="grid-col-md-4">
 							<label class="ui-form-field form-field form-field-error">
 								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Фамилия</div>
@@ -305,14 +333,6 @@
 									<input type="text" class="ui-form-input form-input">
 								</div>
 								<span class="form__err">Введите фамилию</span>
-							</label>
-						</div>
-						<div class="grid-col-md-4">
-							<label class="ui-form-field form-field">
-								<div class="text-body-1 text--demibold mb-3"><span class="color-red">*</span>Имя</div>
-								<div class="ui-form-input-cover">
-									<input type="text" class="ui-form-input form-input">
-								</div>
 							</label>
 						</div>
 						<div class="grid-col-md-4">
@@ -348,61 +368,7 @@
 							</label>
 						</div>
 						<div class="grid-col-md-6">
-							<div class="ui-form-field">
-								<div class="text-body-1 text--demibold mb-3">Пол</div>
-								<div class="ui-form-items">
-									<label class="ui-form-field ui-form-checkbox ui-form-item">
-										<input type="radio" class="ui-form-input" name="gender" checked>
-										<!-- <div class="ui-form-gender-target">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#male" />
-											</svg>
-										</div> -->
-										<div class="text-body-1 ui-form-gender-target">Мужской</div>
-									</label>
-									<label class="ui-form-field ui-form-checkbox ui-form-item">
-										<input type="radio" class="ui-form-input" name="gender">
-										<!-- <div class="ui-form-gender-target">
-											<svg class="icon">
-												<use xlink:href="img/icons.svg#female" />
-											</svg>
-										</div> -->
-										<div class="text-body-1 ui-form-gender-target">Женский</div>
-									</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="bd-bottom d-md-none mt-10"></div>
-
-						<div class="grid-col-md-6">
-							<label class="ui-form-field">
-								<div class="text-body-1 text--demibold mb-3">Садоводческий стаж</div>
-								<div class="ui-form-input-cover">
-									<input type="text" class="ui-form-input">
-								</div>
-							</label>
-						</div>
-						<div class="grid-col-md-6">
 							<div class="text-body-1 text--demibold mb-3">Зона USDA</div>
-							<!-- <label class="ui-form-field ui-form-select">
-								<div class="ui-form-input-cover">
-
-									<select name="" id="" class="ui-form-input">
-										<option value="">Первая</option>
-										<option value="">Вторая</option>
-										<option value="">Третья</option>
-										<option value="">4-я</option>
-										<option value="">5-я</option>
-										<option value="">6-я</option>
-										<option value="">7-я</option>
-										<option value="">8-я</option>
-										<option value="">10-я</option>
-									</select>
-								</div>
-							</label> -->
-
-
 							<div class="select" data-toggle-cover data-content="select-area-content">
 								<select class="select-target">
 									<option value="0"></option>
@@ -448,28 +414,26 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- <div class="text-body-2 text--fade mt-2" id="select-area-content">
-								Максимально возможная зимняя температура до -45С (Екатеринбург, Красноярск)
-							</div> -->
 						</div>
-
-						<div class="bd-bottom d-md-none mt-5"></div>
-
-						<div class="grid-col-12">
-							<label class="ui-form-field">
-								<div class="text-body-1 text--demibold mb-3">О себе</div>
-								<div class="ui-form-input-cover">
-									<textarea class="ui-form-input"></textarea>
-								</div>
-							</label>
+						<div class="grid-col-md-6">
+							<div class="text-body-1 text--demibold mb-3">Пол</div>
+							<div class="lk-radios">
+								<label class="radio">
+									<input class="radio__input" type="radio" name="female" checked>
+									<span>Мужской</span>
+								</label>
+								<label class="radio">
+									<input class="radio__input" type="radio" name="female">
+									<span>Женский</span>
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="text-h6 mb-8 mt-10">Адрес для доставки</div>
+				<div class="lk-content-title mt-5">Адрес доставки</div>
 
-				<div class="lk-profile-address">
+				<div class="lk-profile-address br-main">
 					<div class="grid grid-spacing-5 grid-spacing-md-7">
 						<div class="grid-col-md-12">
 							<label class="ui-form-field">
@@ -516,30 +480,126 @@
 				</div>
 			</div>
 			
-			<div class="mt-10">
+			<div class="lk-profile__btns mt-10">
 				<button class="btn btn--accent">Сохранить изменения</button>
+				<button class="btn btn--accent btn--light">Отменить</button>
 			</div>
 		</div>
 	</section>
 
 
-
-
-	<script src="js/swiper.js"></script>
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/maskedinput.js"></script>
-	<script src="source/maskedinput.custom.js"></script>
-	<script src="source/jquery.fancybox.min.js"></script>
-	<script src="source/jquery.fancybox.custom.js"></script>
-	<script src="source/ion.rangeSlider.min.js"></script>
-	<script src="source/frontend--swipe.js"></script>
-	<script src="source/ui--tab.js"></script>
-	<script src="source/ui--toggle.js"></script>
-	<script src="js/slider.js"></script>
-	<script src="source/waves.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/select.js"></script>
-	<script src="js/profile-load-photo.js"></script>
-</body>
-
-</html>
+		<!-- Подвал -->
+		<footer class="footer container-block">
+			<div class="footer__block">
+				<div class="footer__info">
+					<a class="footer__logo" href="">
+						<img src="img/cvetoriya/logo.png" alt="">
+					</a>
+					<div class="footer__items">
+						<a class="footer__item" href="mailto: cvetoria@mail.ru">
+							<div class="footer__item-img">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#emeil"></use>
+								</svg>
+							</div>
+							<div class="footer__item-content">
+								<div class="fade-60 text-body-2">Наша почта</div>
+								<div class="footer__item-text">cvetoria@mail.ru</div>
+							</div>
+						</a>
+						<div class="footer__item footer__item--big">
+							<div class="footer__item-img">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#geo"></use>
+								</svg>
+							</div>
+							<div class="footer__item-content">
+								<div class="fade-60 text-body-2">Наш адрес</div>
+								<div class="footer__item-text">г. Смоленск ул. Рыленкова, д. 50 </div>
+							</div>
+						</div>
+						<a class="footer__item" href="tel: 8 (800) 100-89-75">
+							<div class="footer__item-img">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#phone-2"></use>
+								</svg>
+							</div>
+							<div class="footer__item-content">
+								<div class="fade-60 text-body-2">Наш телефон</div>
+								<div class="footer__item-text">8 (800) 100-89-75</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="footer__requisites">
+					<div class="requisites br-main mb-3">
+						<div class="requisites__title">Реквизиты</div>
+						<div class="requisites__items">
+							<div class="requisites__item">ООО “Зеленый мир”</div>
+							<div class="requisites__item">КПП 236001001</div>
+							<div class="requisites__item">ИНН 2360011971</div>
+							<div class="requisites__item">ОГРН 11 923 750 645 95</div>
+						</div>
+					</div>
+					<div class="footer__social">
+						<div class="text-body-1 text--bold mb-2">Мы всегда на связи</div>
+						<div class="footer__social-items">
+							<a class="footer__social-item" href="">
+								<img src="img/cvetoriya/tg.svg" alt="">
+							</a>
+							<a class="footer__social-item" href="">
+								<img src="img/cvetoriya/wa.svg" alt="">
+							</a>
+							<a class="footer__social-item" href="">
+								<img src="img/cvetoriya/wb.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__nav br-main">
+					<div class="footer__nav-title">Покупателям</div>
+					<div class="footer__nav-items">
+						<a class="btn btn--white btn--light">Оплата и доставка</a>
+						<a class="btn btn--white btn--light">Контакты</a>
+						<a class="btn btn--white btn--light">Гарантия</a>
+						<a class="btn btn--white btn--light">Условия покупки</a>
+						<a class="btn btn--white btn--light">Отследить заказ</a>
+						<a class="btn btn--white btn--light">Помощь с заказом</a>
+						<a class="footer__nav-item btn btn--white btn--light">Пользовательское соглашение</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+		<!-- Мобильный подвал -->
+		<div class="container-block modil-footer">
+			<div class="modil-footer-icon">
+				<img src="img/mf_1.svg" class="modil-footer-icon__image">
+				<span class="modil-footer-icon__title">Избранное</span>
+			</div>
+			<div class="modil-footer-icon">
+				<img src="img/mf_2.svg" class="modil-footer-icon__image">
+				<span class="modil-footer-icon__title">Профиль</span>
+			</div>
+			<div class="modil-footer-icon">
+				<img src="img/mf_3.svg" class="modil-footer-icon__image">
+				<span class="modil-footer-icon__title">Сервисы</span>
+			</div>
+		</div>
+	
+		<script src="js/swiper.js"></script>
+		<script src="source/jquery-3.5.0.min.js"></script>
+		<!-- <script src="source/maskedinput.js"></script>
+		<script src="source/maskedinput.custom.js"></script> -->
+		<script src="source/jquery.fancybox.min.js"></script>
+		<script src="source/jquery.fancybox.custom.js"></script>
+		<script src="source/ion.rangeSlider.min.js"></script>
+		<script src="source/frontend--swipe.js"></script>
+		<script src="source/ui--tab.js"></script>
+		<script src="source/ui--toggle.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/input-tel.js"></script>
+	</body>
+	
+	</html>

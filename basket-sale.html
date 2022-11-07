@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/frontend--style.css">
-	<link rel="stylesheet" href="css/lk-styles.css">
 
 	<!-- Лимитированные предложения -->
 	<link rel="stylesheet" href="css/index-limited.css">
@@ -236,7 +235,8 @@
 		</div>
 	</section>
 
-	<section class="container-block page--block pb-0">
+	
+	<section class="container-block page--block">
 		<div class="back-btn-mobile">
 			<svg class="icon">
 				<use xlink:href="img/icons.svg#navigate-left" />
@@ -252,167 +252,114 @@
 				</svg>
 				Назад
 			</a>
-		<div class="page--title">Личный кабинет</div>
-	</section>
-
-	<section class="lk-wrapper container-block">
-		<div class="lk-aside br-main">
-			<div class="lk-aside-user mb-5">
-				<div class="lk-aside-user__img" data-fancybox data-type="ajax" data-src="dialog-ava.html">
-					<img class="-lk-ava-" src="https://picsum.photos/id/550/600/400" alt="">
-					<div class="lk-aside-user__circle">
-						<svg class="icon">
-							<use xlink:href="img/icons.svg#pen" />
-						</svg>
+		<div class="page--title">Контакты</div>
+		<div class="basket">
+			<div class="basket-products-block">
+				<div class="basket-products">
+					<div class="basket-products-order br-main">
+						<div class="basket-products-order-image">
+							<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+						</div>
+						<div class="basket-products-order-quantity">
+							<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+						</div>
+						<div class=" basket-products-order-quantity-counter">
+							<div class="counter">
+								<button class="counter-btn">-</button>
+								<input type="text" class="counter-input">
+								<button class="counter-btn">+</button>
+							</div>
+						</div>
+						<div class="basket-products-order__price">779 ₽</div>
+						<div class="basket-products-order-garbage">
+							<img src="img/oazis-roz/trash.svg">
+						</div>
+					</div>
+					<div class="basket-products-order br-main">
+						<div class="basket-products-order-image">
+							<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+						</div>
+						<div class="basket-products-order-quantity">
+							<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+						</div>
+						<div class=" basket-products-order-quantity-counter">
+							<div class="counter">
+								<button class="counter-btn">-</button>
+								<input type="text" class="counter-input">
+								<button class="counter-btn">+</button>
+							</div>
+						</div>
+						<div class="basket-products-order__price">779 ₽</div>
+						<div class="basket-products-order-garbage">
+							<img src="img/oazis-roz/trash.svg">
+						</div>
+					</div>
+					<div class="basket-products-order br-main">
+						<div class="basket-products-order-image">
+							<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+						</div>
+						<div class="basket-products-order-quantity">
+							<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+						</div>
+						<div class=" basket-products-order-quantity-counter">
+							<div class="counter">
+								<button class="counter-btn">-</button>
+								<input type="text" class="counter-input">
+								<button class="counter-btn">+</button>
+							</div>
+						</div>
+						<div class="basket-products-order__price">779 ₽</div>
+						<div class="basket-products-order-garbage">
+							<img src="img/oazis-roz/trash.svg">
+						</div>
 					</div>
 				</div>
-				<div class="lk-aside-user__title">Администратор ТЕСТОВИЧ</div>
+				<div class="basket__feedback-mail feedback-mail">
+					<div class="feedback-mail__block br-main">
+						<div class="feedback-mail__content">
+							<div class="feedback-mail__title">Промокод на скидку</div>
+						</div>
+						<form class="feedback-mail__form">
+							<div class="feedback-mail__cover">
+								<div class="feedback-mail__img">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#promo"></use>
+									</svg>
+								</div>
+								<input class="feedback-mail__input" type="text" placeholder="Введите промокод">
+							</div>
+							<button class="btn btn--accent">Применить</button>
+						</form>
+					</div>
+				</div>
 			</div>
-
-			<div class="lk-aside-links" data-toggle-cover>
-				<div class="lk-aside-link lk-aside-toggler" data-toggle-link>Мой аккаунт
-					<svg class="icon">
-						<use xlink:href="img/icons.svg#navigate-right" />
-					</svg>
-				</div>
-				<div class="lk-aside-links-inner" data-toggle-height="true" data-toggle-static="true" data-toggle-content>
-
-					<div class="lk-aside-link active waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#box-5" />
+			<div class="basket-form">
+				<div class="basket-price br-main">
+					<div class="basket-price__all"><span>К оплате</span><span class="basket-price__line"></span><span>2100 руб.</span></div>
+					<div class="basket-price__product"><span>Товары, 3 шт.</span><span class="basket-price__line"></span><span>2100 руб.</span></div>
+					<div class="basket-price__subtitle">Без учета стоимости доставки</div>
+					<div class="basket-price__order">Оформить заказ </div>
+					<button class="btn btn--accent br-main mb-4" data-fancybox data-type="ajax" data-src="dialog-one-click.html">
+						<svg class="icon mr-2">
+							<use xlink:href="img/icons.svg#check" />
 						</svg>
-						Мои заказы
-					</div>
-					<div class="lk-aside-link waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#settings" />
-						</svg>
-						Настройки профиля
-					</div>
-					<div class="lk-aside-link waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#pass" />
-						</svg>
-						Изменить пароль
-					</div>
-					<div class="lk-aside-link waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#like-2" />
-						</svg>
-						Избранное
-					</div>
-					<hr>
-					<button class="lk-aside__exit btn btn--accent mt-5">
-						<svg class="text-h6 icon">
-							<use xlink:href="img/icons.svg#door" />
-						</svg>
-						Выйти
+						<span>
+							Перейти к оформлению
+						</span>
 					</button>
+					<button class="btn btn--accent br-main">
+						<svg class="text-h6 icon mr-2">
+							<use xlink:href="img/icons.svg#tel-manager" />
+						</svg>
+						<span>
+							С помощью менеджера
+						</span>
+					</button>
+					<div class="basket-form__conditions">Читать условия доставки и оплаты</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="lk-content">
-			<div class="lk-content-title">История заказов</div>
-
-			<div class="lk-orders">
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
-						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
-						</div>
-						<div class="lk-order-date">20.04.2021</div> 
-					</div>
-				</div>
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
-						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
-						</div>
-						<div class="lk-order-date">20.04.2021</div> 
-					</div>
-				</div>
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
-						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
-						</div>
-						<div class="lk-order-date">20.04.2021</div> 
-					</div>
-				</div>
-			</div>
-			<button class="btn btn--accent mx-auto mt-7">Показать еще</button>
 		</div>
 	</section>
-
-
-
 
 		<!-- Подвал -->
 		<footer class="footer container-block">

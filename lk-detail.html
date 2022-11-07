@@ -252,10 +252,10 @@
 				</svg>
 				Назад
 			</a>
-		<div class="page--title">Личный кабинет</div>
+		<div class="page--title">Отслеживание заказа</div>
 	</section>
 
-	<section class="lk-wrapper container-block">
+	<section class="container-block page--block lk-wrapper">
 		<div class="lk-aside br-main">
 			<div class="lk-aside-user mb-5">
 				<div class="lk-aside-user__img" data-fancybox data-type="ajax" data-src="dialog-ava.html">
@@ -313,106 +313,152 @@
 		</div>
 
 		<div class="lk-content">
-			<div class="lk-content-title">История заказов</div>
+			<div class="lk-content-title">Детали заказа</div>
+			<div class="grid grid-spacing-7">
+				<div class="grid-col-12 grid-col-lg-6">
+					<div class="lk-order-info br-main">
+						<div>
+							<div class="text-subtitle-2 text--bold mb-3">Получатель</div>
+							<div class="text-body-0">
+								<div>Федорова Маргарита Сергеевна</div>
+								<div>mar.gar@mail.ru</div>
+								<div>+7(999)999-99-99</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-12 grid-col-lg-6">
+					<div class="lk-order-info br-main">
+						<div>
+							<div class="text-subtitle-2 text--bold mb-3">Доставка</div>
+							<div class="text-body-0">
+								<div>Компания СДЭК</div>
+								<div>г. Краснодар, ул. Димитрова, д.230, кв. 145</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-12">
+					<div class="lk-order-info br-main">
+						<div>
+							<div class="text-subtitle-2 text--bold mb-3">Оплата</div>
+							<div class="text-body-0">
+								<div>Карта Сбербанка VISA**5678</div>
+								<div>Товары, 3 шт. ....................... 1 560 ₽</div>
+								<div>Скидка ................................. -745 ₽</div>
+								<div class="text--bold">Итого .................................... 815 ₽</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-12">
+					<div class="lk-order-info br-main">
+						<div>
+							<div class="lk-order-info__detail">
+								<div class="lk-order-info__img">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#doc"></use>
+									</svg>
+								</div>
+								<div class="lk-order-info__content">
+									<div class="text-subtitle-2 text--bold mb-2">Номер заказа</div>
+									<div class="text-subtitle-2">№34521</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-12">
+					<div class="lk-order-info br-main">
+						<div>
+							<div class="lk-order-info__detail">
+								<div class="lk-order-info__img">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#calendar"></use>
+									</svg>
+								</div>
+								<div class="lk-order-info__content">
+									<div class="text-subtitle-2 text--bold mb-2">Дата заказа</div>
+									<div class="text-subtitle-2">17.11.2022</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-12">
+					<div class="lk-order-info br-main">
+						<div>
+							<div class="lk-order-info__detail">
+								<div class="lk-order-info__img">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#status"></use>
+									</svg>
+								</div>
+								<div class="lk-order-info__content">
+									<div class="text-subtitle-2 text--bold mb-2">Статус заказа</div>
+									<div class="text-subtitle-2">Заказ создан</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-col-12">
+					<div class="basket-products-order br-main">
+						<div class="lk-order-info__items">
+							<div class="basket-products-order-image">
+								<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
+							</div>
+							<div class="basket-products-order-quantity">
+								<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+								<div class="text-body-2">Скидка <b>35%</b></div>
+							</div>
 
-			<div class="lk-orders">
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
 						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
+						<div class="lk-order-info__content">
+							<div class="text-body-1 mb-5">3 товара</div>
+							<div class="basket-products-order__price">779 ₽</div>
 						</div>
-						<div class="lk-order-date">20.04.2021</div> 
 					</div>
 				</div>
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
+				<div class="grid-col-12">
+					<div class="basket-products-order br-main">
+						<div class="lk-order-info__items">
+							<div class="basket-products-order-image">
+								<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
 							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
+							<div class="basket-products-order-quantity">
+								<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+								<div class="text-body-2">Скидка <b>35%</b></div>
+							</div>
+
 						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
+						<div class="lk-order-info__content">
+							<div class="text-body-1 mb-5">3 товара</div>
+							<div class="basket-products-order__price">779 ₽</div>
 						</div>
-						<div class="lk-order-date">20.04.2021</div> 
 					</div>
 				</div>
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
+				<div class="grid-col-12">
+					<div class="basket-products-order br-main">
+						<div class="lk-order-info__items">
+							<div class="basket-products-order-image">
+								<img src="https://picsum.photos/id/684/600/400" alt="" loading="lazy">
 							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
+							<div class="basket-products-order-quantity">
+								<div class="basket-products-order-quantity__title">Роза Августа Луиза (Augusta Luise)</div>
+								<div class="text-body-2">Скидка <b>35%</b></div>
+							</div>
+
 						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
+						<div class="lk-order-info__content">
+							<div class="text-body-1 mb-5">3 товара</div>
+							<div class="basket-products-order__price">779 ₽</div>
 						</div>
-						<div class="lk-order-date">20.04.2021</div> 
 					</div>
 				</div>
 			</div>
-			<button class="btn btn--accent mx-auto mt-7">Показать еще</button>
 		</div>
 	</section>
-
-
-
 
 		<!-- Подвал -->
 		<footer class="footer container-block">

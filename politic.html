@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+	<!-- Лимитированные предложения -->
+	<link rel="stylesheet" href="css/index-limited.css">
+	<!-- Наши преимущества -->
+	<link rel="stylesheet" href="css/new-advantages.css">
+
+
+	<title>Главная</title>
+</head>
+
+<body>
+
+	<nav class="container-block nav-top">
+		<div class="nav-top__block">
+			<div class="nav-top__links">
+				<a class="nav-top__link" href="#">Главная</a>
+				<a class="nav-top__link" href="#">Гарантия</a>
+				<a class="nav-top__link" href="#">Контакты</a>
+				<a class="nav-top__link" href="#">О нас</a>
+				<a class="nav-top__link" href="#">Оплата и доставка</a>
+			</div>
+			<a class="nav-top__btn btn btn--accent" href="#">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#user"></use>
+				</svg>
+				<span>Арсений М.</span>
+			</a>
+		</div>
+	</nav>
+
+	<header class="container-block header">
+		<div class="header__block">
+			<a class="header__logo" href="">
+				<img src="img/cvetoriya/logo.png" alt="">
+			</a>
+			<div class="header__items">
+				<div class="header-top">
+					<button class="btn btn--accent">
+						<svg class="header-top__pilot icon">
+							<use xlink:href="img/icons.svg#pilot"></use>
+						</svg>
+						Отследить заказ
+					</button>
+					<button class="btn btn--accent">
+						<svg class="header-top__question icon">
+							<use xlink:href="img/icons.svg#question"></use>
+						</svg>
+						Помощь
+					</button>
+					<a class="header-top__tel" href="tel: 8 (800) 100-89-75">
+						<div class="header-top__tel-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#tel-manager"></use>
+							</svg>
+						</div>
+						<div class="header-top__content">
+							<div class="header-top__phone">8 (800) 100-89-75</div>
+							<div class="header-top__text">Вопросы по заказам</div>
+						</div>
+					</a>
+					<a class="header-top__tel" href="tel: 8 (999) 444-16-97">
+						<div class="header-top__tel-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#tel-manager"></use>
+							</svg>
+						</div>
+						<div class="header-top__content">
+							<div class="header-top__phone">8 (999) 444-16-97</div>
+							<div class="header-top__text">Консультирование</div>
+						</div>
+					</a>
+				</div>
+				<div class="header-bottom">
+					<button class="btn btn--primary">
+						<svg class="header-bottom__icon icon">
+							<use xlink:href="img/icons.svg#squares"></use>
+						</svg>
+						Каталог
+					</button>
+					<label class="header-bottom__label">
+						<input class="header-bottom__search" type="text" placeholder="Поиск по сайту">
+						<img class="header-bottom__search-icon" src="img/cvetoriya/Search.svg" alt="">
+					</label>
+					<button class="btn btn--primary">Поиск</button>
+					<div class="header-bottom__btns">
+						<div class="header-bottom__btn header-bottom__btn--disabled">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#heart"></use>
+							</svg>
+							<div class="nav-korz bx-basket-block">
+								<div class="nav__int">18</div>
+							</div>
+						</div>
+						<div class="header-bottom__btn">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#box-4"></use>
+							</svg>
+							<div class="nav-korz bx-basket-block">
+								<div class="nav__int">18</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="container-block nav-bottom">
+		<a class="nav-bottom__link nav-bottom__link--main btn btn--white" href="">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#bell"></use>
+			</svg>
+			Акции
+		</a>
+		<a class="nav-bottom__link" href="#">Аллиум</a>
+		<a class="nav-bottom__link" href="#">Бархатцы</a>
+		<a class="nav-bottom__link" href="#">Астра</a>
+		<a class="nav-bottom__link" href="#">Василек</a>
+		<a class="nav-bottom__link" href="#">Вербена</a>
+		<a class="nav-bottom__link" href="#">Гербера</a>
+		<a class="nav-bottom__link" href="#">Календула</a>
+	</nav>
+
+	<header class="header-mobile">
+		<div class="container-block header-mobile__top">
+			<button class="header-mobile__burger burger" id="burger" data-toggle-link="mobil">
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+			</button>
+			<a class="header-mobile__main" href="">
+				<img class="header-mobile__logo" src="img/cvetoriya/logo.png" alt="">
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--basket" href="">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#box-4"></use>
+				</svg>
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--user" href="">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#user"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="container-block header-mobile__bottom">
+			<label class="header-mobile__label">
+				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
+				<img class="header-mobile__search-icon" src="img/cvetoriya/Search.svg" alt="">
+			</label>
+		</div>
+	</header>
+
+	<section class="modal-menu" id="mobil">
+		<div class="modal-menu__head">
+			<button class="modal-menu__close" data-toggle-link="mobil">
+				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
+			</button>
+			<a class="modal-menu__main" href="">
+				<img class="modal-menu__logo" src="img/cvetoriya/logo.png" alt="">
+			</a>
+		</div>
+		<div class="modal-menu__body">
+			<nav class="modal-menu__nav">
+				<a class="modal-menu__link" href="">Главная</a>
+				<a class="modal-menu__link" href="">Гарантия</a>
+				<a class="modal-menu__link" href="">Контакты</a>
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
+			</nav>
+			<div class="modal-menu__items header-top">
+				<button class="modal-menu__btn btn btn--primary">
+					<svg class="header-bottom__icon icon">
+						<use xlink:href="img/icons.svg#squares"></use>
+					</svg>
+					Каталог
+				</button>
+				<button class="modal-menu__btn btn btn--accent">
+					<svg class="header-top__pilot icon">
+						<use xlink:href="img/icons.svg#pilot"></use>
+					</svg>
+					Отследить заказ
+				</button>
+				<button class="modal-menu__btn btn btn--accent">
+					<svg class="header-top__question icon">
+						<use xlink:href="img/icons.svg#question"></use>
+					</svg>
+					Помощь
+				</button>
+				<a class="header-top__tel" href="tel: 8 (800) 100-89-75">
+					<div class="header-top__tel-img">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#tel-manager"></use>
+						</svg>
+					</div>
+					<div class="header-top__content">
+						<div class="header-top__phone">8 (800) 100-89-75</div>
+						<div class="header-top__text">Вопросы по заказам</div>
+					</div>
+				</a>
+				<a class="header-top__tel" href="tel: 8 (999) 444-16-97">
+					<div class="header-top__tel-img">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#tel-manager"></use>
+						</svg>
+					</div>
+					<div class="header-top__content">
+						<div class="header-top__phone">8 (999) 444-16-97</div>
+						<div class="header-top__text">Консультирование</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container-block page--block">
+		<div class="back-btn-mobile">
+			<svg class="icon">
+				<use xlink:href="img/icons.svg#navigate-left" />
+			</svg>
+		</div>
+		<div class="navigation text-body-0 fade-60 mb-5">
+			<a class="" href="">Главная</a> > <a class="" href="">Каталог</a> > <span class="text--bold">Астры</span>
+		</div>
+		<a href="javascript:window.history.back();"
+				class="back-btn btn btn--accent btn--contur waves-effect mb-5">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#back"></use>
+				</svg>
+				Назад
+			</a>
+		<div class="page--title">Пользовательское соглашение</div>
+		<div class="info-block">
+			<p>
+				Настоящий раздел интернет-страницы «Пользовательское соглашение» (далее – «Соглашение») представляет собой предложение ИП Белоусов Александр Андреевич,  размещенное на сайте https://dirijer-sada.ru/ (далее – «Сайт»), заключить договор на изложенных ниже условиях.
+			</p>
+			<p>
+				Соглашение обязательно для прочтения.
+			</p>
+			<p class="text-body-0 text--bold">1. ОБЩИЕ ПОЛОЖЕНИЯ</p>
+			<p>
+				1.1 Вы настоящим подтверждаете, что с момента регистрации на Сайте и в течение времени эксплуатации Сайта, а также  персонализированными сервисами Сайта, вы являетесь Пользователем Сайта вплоть до вашего личного обращения в администрацию Сайта с требованием об отказе от любых взаимоотношений с Сайтом.
+			</p>
+			<p>
+				1.2 Использование вами Сайта любым способом и в любой форме в пределах его объявленных функциональных возможностей, включая:
+				а) просмотр размещенных на Сайте материалов;
+				б) регистрация и/или авторизация на Сайте;
+				в) размещение или отображение на Сайте любых материалов, включая, но не ограничиваясь такими как: тексты, гипертекстовые ссылки, изображения, аудио и видео- файлы, сведения и/или иная информация; создает договор на условиях настоящего Соглашения в соответствии с положениями ст.437 и 438 Гражданского кодекса Российской Федерации.
+			</p>
+			<p>
+				1.3 Воспользовавшись любой из указанных выше возможностей по использованию Сайта вы подтверждаете, что:
+				а) ознакомились с условиями настоящего Соглашения в полном объеме до начала использования Сайта;
+				б) принимаете все условия настоящего Соглашения в полном объеме без каких-либо изъятий и ограничений с вашей стороны и обязуетесь их соблюдать или прекратить использование Сайта. Если вы не согласны с условиями настоящего Соглашения или не имеете права на заключение договора на их основе, вам следует незамедлительно прекратить любое использование Сайта;
+				в) Администрация Сайта вправе в любое время в одностороннем порядке изменять условия настоящего Соглашения без какого-либо специального уведомления. Такие изменения вступают в силу с момента размещения новой версии Соглашения на сайте. При несогласии Пользователя с внесеннымиизменениями он обязан отказаться от доступа к Сайту, прекратить использование материалов и сервисов Сайта.
+				г) Администрация сайта оставляет за собой право в любой момент без предварительного уведомления приостановить оказание услуг, являющихся предметом настоящего Соглашения, если это необходимо для обновления информации или проведения технических работ на Сайте, по соображениям безопасности или в результате форс-мажорных обстоятельств.
+				д) Модераторы Сайта оставляют за собой право удалять любые комментарии, которые нарушают условия, описанные в Части 3.
+			</p>
+			<p class="text-body-0 text--bold">2. ОБЩИЕ УСЛОВИЯ ПОЛЬЗОВАНИЯ САЙТОМ</p>
+			<p>
+				2.1 Сайт осуществляет продажу товара посредством веб-ресурса https://dirijer-sada.ru/ и сопутствующих сервисных служб Сайта.
+			</p>
+			<p>
+				2.2 Сайт осуществляет доставку товара способами, определенными в Части 5 настоящего Соглашения.
+			</p>
+			<p>
+				2.3 Сайт предоставляет доступ к персонализированным сервисам Сайта для получения наиболее полной информации по интересующему вас товару, создания рейтингов и мнений, участия в конкурсных программах и иных акциях, проводимых Сайтом.
+			</p>
+			<p>
+				2.4 Настоящим вы даете своё добровольное согласие на информирование вас обо всех действиях Сайта, связанных с продажей товара и/или оказанием услуг, в том числе о статусе выполнения заказа, а также об иных событиях любого характера, относящихся к сервисам Сайта.
+			</p>
+			<p>
+				2.5 Согласие на получение рассылки:<br>
+				Регистрируясь, оформляя заказ, подписываясь на рассылки - я подписываюсь на SMS-рассылку, email-рассылку, рассылку в мессенджерах https://dirijer-sada.ru/ или третьих лиц, уполномоченных на рассылку от имени https://dirijer-sada.ru/, в сети Интернет https://dirijer-sada.ru/, я соглашаюсь получать информационную рассылку на телефон и электронный адрес, указанный мной при регистрации, оформлении заказа, подписке через сервис подписки информационной рассылки на сайте https://dirijer-sada.ru/. Я проинформирован о том, что в случае, если у меня возникнет желание отказаться от информационной рассылки https://dirijer-sada.ru/, мне будет необходимо самостоятельно перейти по ссылке «Отписаться от рассылки», указанной в тексте отправляемых сайтом сообщений с электронного адреса Сайта info@dirijer-sada.ru или же сообщить о несогласии получения информационныхрассылок по адресам, указанным в разделе «Контакты» данного Соглашения. Я также даю разрешение Сайту или третьим лицам, уполномоченным на рассылку от имени Сайта, собирать, хранить и обрабатывать все переданные мною в адрес Сайта персональные данные с целью информирования о новостях и других событиях Сайта.
+			</p>
+			<p>
+				2.6 Все вопросы по информационной поддержке Вы можете задать по адресу info@dirijer-sada.ru
+			</p>
+			<p>
+				2.7 Вы признаёте, что сопровождающее товар описание на Сайте не претендует на исчерпывающую информативность и может содержать неточности. Вы вправе направить все замечания по неточному описанию товара Сайту по адресу info@dirijer-sada.ru
+			</p>
+			<p>
+				2.8 Вы признаёте, что Сайт прилагает достаточные усилия, чтобы внешний вид, упаковка и характеристики товаров соответствовали описаниям, приведенным в каталоге Сайта. Одновременно Сайт доводит до вашего сведения, что фактические внешний вид, упаковка и характеристики товара могут отличаться от этих описаний в случае ассортиментного товара, а также в случае внесения изменений в товар непосредственно производителем.
+			</p>
+			<p>
+				2.9 Вы проинформированы, что цена и наличие товара на Сайте изменяется круглосуточно без предварительного уведомления об этом и указывается в индивидуальном статусе и подробной карточке товара, отображаемым в каталоге на Сайте.
+			</p>
+			<p class="text-body-0 text--bold">3. ОБЯЗАТЕЛЬСТВА ПОЛЬЗОВАТЕЛЯ ПРИ ИСПОЛЬЗОВАНИИ САЙТА</p>
+			<p>
+				3.1 Вы соглашаетесь не использовать сервисы Сайта с целью:
+			</p>
+			<p>
+				3.1.1 загрузки контента, который является незаконным, нарушает любые права третьих лиц; пропагандирует насилие, жестокость, ненависть и/или дискриминацию по расовому, национальному, половому, религиозному, социальному признакам; содержит недостоверные сведения и/или оскорбления в адрес конкретных лиц, организаций, органов власти;
+			</p>
+			<p>
+				3.1.2 побуждения к совершению противоправных действий, а также содействия лицам, действия которых направлены на нарушение ограничений и запретов, действующих на территории РФ;
+			</p>
+			<p>
+				3.1.3 нарушения прав несовершеннолетних лиц и/или причинение им вреда в любой форме;
+			</p>
+			<p>
+				3.1.4 ущемления прав меньшинств
+			</p>
+			<p>
+				3.1.5 выдачи себя за другого человека или представителя организации и/или сообщества без достаточных на то прав, в том числе за сотрудников Сайта;
+			</p>
+			<p>
+				3.1.6 введения в заблуждение относительно свойств и характеристик каких-либо товаров из каталога на Сайте; некорректного сравнения товаров, а также формирования негативного отношения к лицам, (не) пользующимся определенными товарами, или осуждения таких лиц;
+			</p>
+			<p>
+				3.1.7 загрузки контента, который вы не имеете права делать доступным по законодательству РФ или согласно каким-либо контрактным отношениям;
+			</p>
+			<p>
+				3.1.8 загрузки контента, который затрагивает и/или содержит какой-либо патент, торговый знак, коммерческую тайну, фирменное наименование, авторские и смежные с ними права, а равно прочие права на результаты интеллектуальной деятельности, принадлежащие или правомерно используемые третьими лицами;
+			</p>
+			<p>
+				3.1.9 размещение рекламных материалов и ссылок, рекламирующих другие сайты и магазины;
+			</p>
+			<p>
+				3.1.10 сбора и обработки персональных данных, информации о частной жизни любых лиц;
+			</p>
+			<p>
+				3.1.11 нарушения нормальной работы Сайта;
+			</p>
+			<p>
+				3.1.12 нарушения российских или международных норм права.
+			</p>
+			<p>
+				3.2 Вы соглашаетесь не использовать на Сайте нецензурную лексику, непристойные и оскорбительные образы, сравнения и выражения, в том числе в отношении пола, расы, национальности, профессии, социальной категории, возраста, языка человека и гражданина, а также в отношении организаций, органов власти, официальных государственных символов (флагов, гербов, гимнов), религиозных символов, объектов культурного наследия (памятников истории и культуры).
+			</p>
+			<p>
+				3.3 Вы признаете и соглашаетесь, что Сайт имеет право (но не обязанность) по своему усмотрению отказать в размещении и/или удалить любой контент, доступный через сервисы Сайта.
+			</p>
+			<p class="text-body-0 text--bold">4. ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+			<p>
+				4.1 Условия Политики конфиденциальности и отношения между вами и Сайтом, связанные с обработкой персональных данных, регулируются Федеральным Законом РФ №152-ФЗ от 27 июля 2006г. «О персональных данных».
+			</p>
+			<p>
+				4.2 Политика конфиденциальности действует в отношении персональных данных, которые Сайт получил или может получить от вас при регистрации и/или оформлении заказа на Сайте, и необходимые для выполнения обязательств со стороны Сайта в отношении приобретаемого вами товара/услуги и/или вашего доступа к сервисам Сайта.
+			</p>
+			<p class="text-body-0 text--bold">5 УСЛОВИЯ ПРИОБРЕТЕНИЯ И ДОСТАВКИ ТОВАРА</p>
+			<p>
+				5.1 Вы можете приобрести товар на Сайте, оплатив его следующими способами: кредитной картой, электронными деньгами, средствами с баланса члена клуба.
+			</p>
+			<p>
+				5.2 Настоящим вы соглашаетесь, что выбранный вами способ оплаты не подлежит изменению с момента оформления заказа на Сайте.
+			</p>
+			<p>
+				5.3 Настоящим вы соглашаетесь, что подтверждение заказа, оплаченного электронными деньгами, кредитной картой происходит только после подтверждения списания денежных средств в счёт оплаты заказа.
+			</p>
+			<p>
+				5.4 Вы подтверждаете, что оплата заказа электронными деньгами, кредитной картой, должна быть произведена в течение 5 календарных дней с момента его оформления на Сайте. Вы соглашаетесь, что в случае неоплаты заказа по истечении указанного срока, заказ может быть аннулирован.
+			</p>
+			<p>
+				5.5 Сайт осуществляет доставку товара следующими способами: доставка в пункты самовывоза и курьером («СДЭК»), а также доставка Почтой России. Вы вправе выбрать любой удобный для вас способ доставки в соответствии с условиями доставки в свой регион или исходя из своих предпочтений.
+			</p>
+			<p>
+				5.6 Вы соглашаетесь с тем, что Вы были проинформированы о том, что посадочный материал, продаваемый на Сайте доступен только для предзаказа.
+			</p>
+			<p>
+				5.7 Вы проинформированы, что отправка по предзаказу будет осуществляться в несколько этапов: - с 30 сентября по 14 октября 2022 г.; - с 15 октября по 29 октября 2022 г.; - с 30 октября по 9 ноября 2022 г.; - с 10 ноября по 30 ноября 2022 г..
+			</p>
+			<p>
+				5.8 Все заказы, сделанные в период с 05.07.2022 по 29.09.22 будут отправлены в период с 30.09.22 по 14.10.22. Отправка осуществляется в порядке очереди. Заказы, сделанные в период с 30.09.22 по 14.10.22, будут отправлены в период с 15.10.22 по 29.10.22. Заказы, сделанные в период с 15.10.22 по 29.10.22, будут отправлены в период с 30.10.22 по 09.11.22. Заказы, сделанные в период с 30.10.22 по 09.11.22, будут отправлены с 10.11.22 по 30.11.22. После 10.11.22 будут приниматься только предзаказы на весну 2023 г.
+			</p>
+			<p>
+				5.9 Вы проинформированы, что отправка заказов осуществляется в порядке очереди, соответственно, Ваш заказ может быть отправлен в любой из дней указанного периода отправки, в который он попал.
+			</p>
+			<p>
+				5.10 Вы соглашаетесь, что в случае невозможности передачи вам товара по вашей вине, в том числе нарушения вами срока, в течение которого вы обязаны забрать товар, будет расцениваться Сайтом как ваш отказ от товара. При этом товар возвращается Сайту, а заказ считается аннулированным.
+			</p>
+			<p>
+				5.11 Все вопросы, связанные со сроками и условиями доставки товара, вы можете направить Сайту по адресу: info@dirijer-sada.ru
+			</p>
+			<p class="text-body-0 text--bold">6. ОТВЕТСТВЕННОСТЬ</p>
+			<p>
+				6.1 Сервисы Сайта могут содержать ссылки на другие ресурсы. Вы признаете и соглашаетесь с тем, что Сайт не несет никакой ответственности за доступность этих ресурсов и за их контент, а также за любые последствия, связанные с использованием вами контента этих ресурсов.
+			</p>
+			<p>
+				6.2 Вы также соглашаетесь с тем, что Сайт не несёт никакой ответственности за ваши персональные данные, которые вы предоставляете сторонним ресурсам и/или иным третьим лицам в случае перехода на них с Сайта.
+			</p>
+			<p>
+				6.3 Вы подтверждаете, что Сайт не отвечает за возможную потерю и/или порчу данных, которая может произойти из-за нарушения вами положений настоящего Соглашения, а также неправильного доступа и/или использования персонализированных сервисов Сайта.
+			</p>
+			<p>
+				6.4 Ответственность за действия несовершеннолетних, включая приобретение ими товаров из каталога на Сайте, лежит на законных представителях несовершеннолетних.
+			</p>
+			<p>
+				6.5 Вы соглашаетесь, что в случае неисполнения и/или ненадлежащего исполнения Сайтом обязательств по продаже и/или доставке вам товара в связи с предоставлением вами недостоверных и/или недействительных данных о себе, а равно невыполнение вами условий настоящего Соглашения, Сайт ответственности не несет.
+			</p>
+			<p class="text-body-0 text--bold">7. РЕКВИЗИТЫ САЙТА</p>
+			<p>Наименование организации: ИП Белоусов Александр Андреевич</p>
+			<p>ОГРН: 320237500326338</p>
+			<p>ИНН: 233803715292</p>
+			<p>Юридический адрес: Краснодарский край, Крыловский район, с-ца Октябрьская, ул Красногвардейская</p>
+			<p>Электронная почта: info@dirijer-sada.ru</p>
+			<p>Директор: Белоусов Александр Андреевич</p>
+		</div>
+	</section>
+
+	<section class="container-block social">
+		<div class="text-h6 text-md-h2 mb-10 text--bold text--center">Мы всегда на связи</div>
+		<div class="social__items">
+			<a class="social__item" href="#">
+				<img class="social__icon" src="img/oazis-roz/tg-1.svg" alt="">
+				<span class="social__text">Telegram</span>
+			</a>
+			<a class="social__item" href="#">
+				<img class="social__icon" src="img/oazis-roz/wt-1.svg" alt="">
+				<span class="social__text">WhatsApp</span>
+			</a>
+			<a class="social__item" href="#">
+				<img class="social__icon" src="img/oazis-roz/wb-1.svg" alt="">
+				<span class="social__text">Viber</span>
+			</a>
+		</div>
+	</section>
+
+	<!-- Подвал -->
+	<footer class="footer container-block">
+		<div class="footer__block">
+			<div class="footer__info">
+				<a class="footer__logo" href="">
+					<img src="img/cvetoriya/logo.png" alt="">
+				</a>
+				<div class="footer__items">
+					<a class="footer__item" href="mailto: cvetoria@mail.ru">
+						<div class="footer__item-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#emeil"></use>
+							</svg>
+						</div>
+						<div class="footer__item-content">
+							<div class="fade-60 text-body-2">Наша почта</div>
+							<div class="footer__item-text">cvetoria@mail.ru</div>
+						</div>
+					</a>
+					<div class="footer__item footer__item--big">
+						<div class="footer__item-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#geo"></use>
+							</svg>
+						</div>
+						<div class="footer__item-content">
+							<div class="fade-60 text-body-2">Наш адрес</div>
+							<div class="footer__item-text">г. Смоленск ул. Рыленкова, д. 50 </div>
+						</div>
+					</div>
+					<a class="footer__item" href="tel: 8 (800) 100-89-75">
+						<div class="footer__item-img">
+							<svg class="icon">
+								<use xlink:href="img/icons.svg#phone-2"></use>
+							</svg>
+						</div>
+						<div class="footer__item-content">
+							<div class="fade-60 text-body-2">Наш телефон</div>
+							<div class="footer__item-text">8 (800) 100-89-75</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="footer__requisites">
+				<div class="requisites br-main mb-3">
+					<div class="requisites__title">Реквизиты</div>
+					<div class="requisites__items">
+						<div class="requisites__item">ООО “Зеленый мир”</div>
+						<div class="requisites__item">КПП 236001001</div>
+						<div class="requisites__item">ИНН 2360011971</div>
+						<div class="requisites__item">ОГРН 11 923 750 645 95</div>
+					</div>
+				</div>
+				<div class="footer__social">
+					<div class="text-body-1 text--bold mb-2">Мы всегда на связи</div>
+					<div class="footer__social-items">
+						<a class="footer__social-item" href="">
+							<img src="img/cvetoriya/tg.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/cvetoriya/wa.svg" alt="">
+						</a>
+						<a class="footer__social-item" href="">
+							<img src="img/cvetoriya/wb.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__nav br-main">
+				<div class="footer__nav-title">Покупателям</div>
+				<div class="footer__nav-items">
+					<a class="btn btn--white btn--light">Оплата и доставка</a>
+					<a class="btn btn--white btn--light">Контакты</a>
+					<a class="btn btn--white btn--light">Гарантия</a>
+					<a class="btn btn--white btn--light">Условия покупки</a>
+					<a class="btn btn--white btn--light">Отследить заказ</a>
+					<a class="btn btn--white btn--light">Помощь с заказом</a>
+					<a class="footer__nav-item btn btn--white btn--light">Пользовательское соглашение</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Мобильный подвал -->
+	<div class="container-block modil-footer">
+		<div class="modil-footer-icon">
+			<img src="img/mf_1.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Избранное</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_2.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Профиль</span>
+		</div>
+		<div class="modil-footer-icon">
+			<img src="img/mf_3.svg" class="modil-footer-icon__image">
+			<span class="modil-footer-icon__title">Сервисы</span>
+		</div>
+	</div>
+
+	<script src="js/swiper.js"></script>
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<!-- <script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script> -->
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+	<script src="source/ion.rangeSlider.min.js"></script>
+	<script src="source/frontend--swipe.js"></script>
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/input-tel.js"></script>
+</body>
+
+</html>

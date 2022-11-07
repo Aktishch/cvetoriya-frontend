@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/frontend--style.css">
-	<link rel="stylesheet" href="css/lk-styles.css">
 
 	<!-- Лимитированные предложения -->
 	<link rel="stylesheet" href="css/index-limited.css">
@@ -236,7 +235,7 @@
 		</div>
 	</section>
 
-	<section class="container-block page--block pb-0">
+	<section class="container-block page--block">
 		<div class="back-btn-mobile">
 			<svg class="icon">
 				<use xlink:href="img/icons.svg#navigate-left" />
@@ -252,167 +251,26 @@
 				</svg>
 				Назад
 			</a>
-		<div class="page--title">Личный кабинет</div>
-	</section>
+		<div class="page--title">Избранное</div>
 
-	<section class="lk-wrapper container-block">
-		<div class="lk-aside br-main">
-			<div class="lk-aside-user mb-5">
-				<div class="lk-aside-user__img" data-fancybox data-type="ajax" data-src="dialog-ava.html">
-					<img class="-lk-ava-" src="https://picsum.photos/id/550/600/400" alt="">
-					<div class="lk-aside-user__circle">
-						<svg class="icon">
-							<use xlink:href="img/icons.svg#pen" />
-						</svg>
-					</div>
+		<div class="favourites-products br-main">
+			<div class="favourites-products__info">
+				<div class="favourites-products__pic">
+					<img class="icon" src="img/cvetoriya/heart.svg" alt="">
 				</div>
-				<div class="lk-aside-user__title">Администратор ТЕСТОВИЧ</div>
-			</div>
-
-			<div class="lk-aside-links" data-toggle-cover>
-				<div class="lk-aside-link lk-aside-toggler" data-toggle-link>Мой аккаунт
-					<svg class="icon">
-						<use xlink:href="img/icons.svg#navigate-right" />
-					</svg>
-				</div>
-				<div class="lk-aside-links-inner" data-toggle-height="true" data-toggle-static="true" data-toggle-content>
-
-					<div class="lk-aside-link active waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#box-5" />
-						</svg>
-						Мои заказы
-					</div>
-					<div class="lk-aside-link waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#settings" />
-						</svg>
-						Настройки профиля
-					</div>
-					<div class="lk-aside-link waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#pass" />
-						</svg>
-						Изменить пароль
-					</div>
-					<div class="lk-aside-link waves">
-						<svg class="icon mr-4">
-							<use xlink:href="img/icons.svg#like-2" />
-						</svg>
-						Избранное
-					</div>
-					<hr>
-					<button class="lk-aside__exit btn btn--accent mt-5">
-						<svg class="text-h6 icon">
-							<use xlink:href="img/icons.svg#door" />
-						</svg>
-						Выйти
-					</button>
+				<div class="favourites-products__text">
+					Вы еще не добавили ни один товар в избранное
 				</div>
 			</div>
+			<a class="favourites-products__btn btn btn--accent br-main" href="#">
+				<svg class="header-bottom__icon icon">
+					<use xlink:href="img/icons.svg#squares"></use>
+				</svg>
+				В каталог
+			</a>
 		</div>
 
-		<div class="lk-content">
-			<div class="lk-content-title">История заказов</div>
-
-			<div class="lk-orders">
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
-						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
-						</div>
-						<div class="lk-order-date">20.04.2021</div> 
-					</div>
-				</div>
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
-						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
-						</div>
-						<div class="lk-order-date">20.04.2021</div> 
-					</div>
-				</div>
-				<div class="lk-order br-main waves">
-					<div class="lk-order-content lk-order-content--top">
-						<button class="btn btn--accent">
-							<svg class="text-h6 icon">
-								<use xlink:href="img/icons.svg#eye"></use>
-							</svg>
-							Детали заказа
-						</button>
-						<div class="lk-order-status">
-							<div class="lk-order-desk mb-4">
-								<div class="lk-order-count">1 товар</div>
-								<div class="lk-order-status-id">№4322</div>
-							</div>
-							<div class="lk-order-cost ml-auto">1798 ₽ </div>
-						</div>
-					</div>
-					<div class="lk-order-content lk-order-content--bottom">
-						<div class="lk-order-status-info">
-							<span class="lk-order-status-icon mr-2">
-								<svg class="icon">
-									<use xlink:href="img/icons.svg#check-3" />
-								</svg>
-							</span>
-							<span class="lk-order-status-text">
-								Заказ оплачен
-							</span>
-						</div>
-						<div class="lk-order-date">20.04.2021</div> 
-					</div>
-				</div>
-			</div>
-			<button class="btn btn--accent mx-auto mt-7">Показать еще</button>
-		</div>
 	</section>
-
-
-
 
 		<!-- Подвал -->
 		<footer class="footer container-block">

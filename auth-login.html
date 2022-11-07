@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
 	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="source/waves.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
 
 
 	<link rel="stylesheet" href="css/auth-page.css">
@@ -25,37 +25,48 @@
 <body>
 
 	<section class="container-block page--block auth-page">
+		<div class="flex mb-5">
+			<a href="javascript:window.history.back();" class="btn btn--accent btn--contur">
+				<svg class="icon">
+					<use xlink:href="img/icons.svg#arrow-left"></use>
+				</svg>
+				Назад
+			</a>
+		</div>
+		<div class="text-h5 text-md-h1 text--center mb-6 mb-md-7">Вход в личный кабинет</div>
 		<div class="auth-form">
-			<div class="text-h5 text-md-h1 text--center mb-6 mb-md-7">Войти</div>
-			<div class="ui-form-field mb-4">
-				<div class="text-subtitle-2 mb-2">Телефон</div>
-				<div class="ui-form-input-cover">
-					<input type="text" class="ui-form-input">
-				</div>
-			</div>
-			<div class="ui-form-field">
-				<div class="text-subtitle-2 mb-2">Пароль</div>
-				<div class="ui-form-input-cover">
-					<input type="password" class="ui-form-input" id="pass">
-					<div class="ui-form-input-end pr-4">
-						<button type="button" class="btn btn--link" data-show-pass="pass">
-							<svg class="icon">
-								<use xlink:href="img/icons.svg#eye" />
-							</svg>
-						</button>
+			<div class="auth-form__inner">
+				<div class="ui-form-field mb-4">
+					<div class="text-subtitle-2 mb-2">Телефон</div>
+					<div class="ui-form-input-cover">
+						<input type="text" class="ui-form-input">
+						<svg class="icon start-icon"><use xlink:href="img/icons.svg#phone-2" /></svg>
 					</div>
 				</div>
+				<div class="ui-form-field">
+					<div class="text-subtitle-2 mb-2">Пароль</div>
+					<div class="ui-form-input-cover">
+						<input type="password" class="ui-form-input" id="pass">
+						<svg class="icon start-icon"><use xlink:href="img/icons.svg#lock" /></svg>
+						<div class="ui-form-input-end pr-4">
+							<button type="button" class="btn btn--link" data-show-pass="pass">
+								<svg class="icon">
+									<use xlink:href="img/icons.svg#eye" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<a href="" class="btn btn--link mt-5">Забыли пароль?</a>
+				<button class="btn btn--primary btn--fill mt-7 w-100 btn--big">Войти</button>
+
+				<a href="/auth-reg.html" class="d-block text-body-1 text--center mt-7">
+					<div class="fade-60">Я ещё не зарегистрировался</div>
+					<div class="btn btn--link">Зарегистрироваться</div>
+				</a>
+
 			</div>
-
-			<a href="" class="btn btn--link mt-5">Забыли пароль?</a>
-			<button class="btn btn--accent btn--fill mt-7 w-100">Войти</button>
-
-			<a href="/auth-reg.html" class="d-block text-body-1 text--center mt-7">
-				<div class="fade-60">Я ещё не зарегистрировался</div>
-				<div class="btn btn--link">Зарегистрироваться</div>
-			</a>
-
-
 		</div>
 
 	</section>

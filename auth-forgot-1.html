@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
 	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
 	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
@@ -25,39 +25,52 @@
 <body>
 
 	<section class="container-block page--block auth-page">
-		<div class="auth-form">
-			<div class="text-h5 text-md-h1 text--center mb-5">Смена пароля</div>
-			<div class="fade-80 text--center mb-6 mb-md-7">
-				Введите номер телефона.
-				Код для смены пароля будет выслан по СМС
+		<section class="container-block page--block auth-page">
+			<div class="flex mb-5">
+				<a href="javascript:window.history.back();" class="btn btn--accent btn--contur">
+					<svg class="icon">
+						<use xlink:href="img/icons.svg#arrow-left"></use>
+					</svg>
+					Назад
+				</a>
 			</div>
-			<div class="ui-form-field mb-4">
-				<div class="text-subtitle-2 mb-2">Телефон</div>
-				<div class="ui-form-input-cover">
-					<input type="text" class="ui-form-input" placeholder="+7">
+			<div class="text-h5 text-md-h1 text--center mb-6 mb-md-7">Восстановление пароля</div>
+			<div class="auth-form">
+				<div class="auth-form__inner">
+					<div class="fade-80 text--center mb-6 mb-md-7">
+						Введите номер телефона.
+						Код для смены пароля будет выслан по СМС
+					</div>
+					<div class="ui-form-field mb-4">
+						<div class="text-subtitle-2 mb-2">Телефон</div>
+						<div class="ui-form-input-cover">
+							<input type="text" class="ui-form-input" placeholder="+7">
+							<svg class="icon start-icon">
+								<use xlink:href="img/icons.svg#phone-2" />
+							</svg>
+						</div>
+					</div>
+
+					<button class="btn btn--primary btn--fill mt-7 w-100 btn--big">Восстановить</button>
 				</div>
 			</div>
 
-			<button class="btn btn--accent btn--fill mt-7 w-100">Восстановить</button>
-
-		</div>
-
-	</section>
+		</section>
 
 
-	<script src="source/waves.js"></script>
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/maskedinput.js"></script>
-	<script src="source/maskedinput.custom.js"></script>
-	<script src="source/jquery.fancybox.min.js"></script>
-	<script src="source/jquery.fancybox.custom.js"></script>
-	<script src="source/ion.rangeSlider.min.js"></script>
-	<script src="source/frontend--swipe.js"></script>
-	<script src="source/ui--tab.js"></script>
-	<script src="source/ui--toggle.js"></script>
-	<script src="js/slider.js"></script>
-	<script src="js/show-pass.js"></script>
-	<script src="js/main.js"></script>
+		<script src="source/waves.js"></script>
+		<script src="source/jquery-3.5.0.min.js"></script>
+		<script src="source/maskedinput.js"></script>
+		<script src="source/maskedinput.custom.js"></script>
+		<script src="source/jquery.fancybox.min.js"></script>
+		<script src="source/jquery.fancybox.custom.js"></script>
+		<script src="source/ion.rangeSlider.min.js"></script>
+		<script src="source/frontend--swipe.js"></script>
+		<script src="source/ui--tab.js"></script>
+		<script src="source/ui--toggle.js"></script>
+		<script src="js/slider.js"></script>
+		<script src="js/show-pass.js"></script>
+		<script src="js/main.js"></script>
 
 </body>
 

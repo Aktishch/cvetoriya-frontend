@@ -1,74 +1,85 @@
 .limited {
-  padding-top: 35px;
+  padding-top   : 35px;
   padding-bottom: 80px;
-  width: calc(100% - 30px);
-  margin: 0 auto;
+  width         : calc(100% - 30px);
+  margin        : 0 auto;
 }
+
 .limited-item {
   background: #FFFFFF;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  position: relative;
+  overflow  : hidden;
+  position  : relative;
   transition: 0.2s ease;
-  cursor: pointer;
-  display: block;
+  cursor    : pointer;
+  display   : block;
 }
+
 @media (hover) {
   .limited-item:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    color: #272727;
+    color     : #272727;
   }
+
   .limited-item:hover .limited-item__title {
     text-decoration: underline;
   }
 }
+
 .limited-item__sign {
-  background: #FF2F5A;
-  border-radius: 0;
-  position: absolute;
-  top: 188px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  background     : #FF2F5A;
+  border-radius  : 6px 6px 0 0;
+  position       : absolute;
+  top            : 188px;
+  left           : 0;
+  right          : 0;
+  width          : 100%;
+  display        : flex;
+  align-items    : center;
   justify-content: center;
-  font-weight: 500;
-  font-size: 18px;
-  color: #fff;
-  padding: 12px;
-  text-align: center;
+  font-weight    : 500;
+  font-size      : 18px;
+  color          : #fff;
+  padding        : 12px;
+  text-align     : center;
 }
+
 .limited-item__sign .icon {
-  font-size: 24px;
+  font-size   : 24px;
   margin-right: 12px;
 }
+
 .limited-item__img {
   height: 258px;
 }
+
 .limited-item__img img {
-  width: 100%;
-  height: 100%;
+  width     : 100%;
+  height    : 100%;
   object-fit: cover;
 }
+
 .limited-item__content {
   padding: 18px 20px;
 }
+
 .limited-item__title {
-  display: flex;
+  display    : flex;
   align-items: center;
 }
+
 .limited-item__block {
-  color: #fff;
+  color           : #fff;
   background-color: var(--color-primary);
-  padding: 35px 25px;
+  padding         : 35px 25px;
 }
 
 @media(max-width: 576px) {
   .limited-item__sign {
     font-size: 14px;
   }
-  .limited-item__content  {
+
+  .limited-item__content {
     padding: 10px;
   }
 }

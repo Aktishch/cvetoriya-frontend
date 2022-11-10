@@ -2370,7 +2370,7 @@ body {
 	flex-wrap      : wrap;
 	align-items    : center;
 	justify-content: space-between;
-	grid-gap       : 30px;
+	grid-gap       : 15px;
 	padding        : 30px;
 	background     : #FFFFFF;
 	box-shadow     : 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -2444,6 +2444,21 @@ body {
 }
 
 .basket-products-order__price {
+	display       : flex;
+	flex-direction: column;
+}
+
+.basket-products-order__price-old {
+	text-align          : right;
+	font-weight         : 600;
+	font-size           : 16px;
+	line-height         : 19px;
+	text-decoration-line: line-through;
+	color               : #1A1A1A;
+	opacity             : 0.4;
+}
+
+.basket-products-order__price-new {
 	text-align : center;
 	font-weight: 600;
 	font-size  : 24px;
@@ -2496,6 +2511,7 @@ body {
 
 .basket-price__product {
 	font-size  : 18px;
+	font-weight: 400;
 	line-height: 20px;
 }
 
@@ -2658,7 +2674,7 @@ body {
 		width  : 100%;
 	}
 
-	.basket-products-order__price {
+	.basket-products-order__price-old {
 		text-align: left;
 		font-size : 16px;
 	}
@@ -2722,7 +2738,11 @@ body {
 		margin-left: auto;
 	}
 
-	.basket-products-order__price {
+	.basket-products-order__price-old {
+		font-size: 14px;
+	}
+
+	.basket-products-order__price-new {
 		font-size: 18px;
 	}
 

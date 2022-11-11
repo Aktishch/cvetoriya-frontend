@@ -2446,6 +2446,7 @@ body {
 .basket-products-order__price {
 	display       : flex;
 	flex-direction: column;
+	min-width     : 110px;
 }
 
 .basket-products-order__price-old {

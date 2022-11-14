@@ -2367,7 +2367,6 @@ body {
 
 .basket-products-order {
 	display        : flex;
-	flex-wrap      : wrap;
 	align-items    : center;
 	justify-content: space-between;
 	grid-gap       : 15px;
@@ -2616,6 +2615,10 @@ body {
 		width    : 100%;
 		max-width: 500px;
 		margin   : 0 auto;
+	}
+
+	.basket-products-order {
+		flex-wrap: wrap;
 	}
 }
 

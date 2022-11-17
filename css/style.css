@@ -6931,6 +6931,7 @@ body {
 }
 
 .pagination__link {
+	padding  : 0 !important;
 	min-width: 42px;
 }
 
@@ -6942,6 +6943,8 @@ body {
 @media(max-width: 576px) {
 	.pagination {
 		margin-top: 30px;
+		grid-gap  : 3px;
+		width     : auto;
 	}
 
 	.pagination__text {
@@ -6949,9 +6952,10 @@ body {
 	}
 
 	.pagination__link {
-		min-width: 32px;
-		width    : 32px;
-		height   : 32px !important;
+		font-size: 14px !important;
+		min-width: auto;
+		width    : 30px;
+		height   : 30px !important;
 	}
 }
 

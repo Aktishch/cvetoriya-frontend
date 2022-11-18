@@ -5520,6 +5520,10 @@ body {
 	grid-gap       : 15px;
 }
 
+.header-bottom__catalog {
+	min-width: max-content;
+}
+
 .header-bottom__icon {
 	font-size: 24px;
 }
@@ -5527,7 +5531,6 @@ body {
 .header-bottom__label {
 	position : relative;
 	width    : 100%;
-	max-width: 280px;
 }
 
 .header-bottom__search {

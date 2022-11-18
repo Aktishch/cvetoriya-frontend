@@ -5529,18 +5529,20 @@ body {
 }
 
 .header-bottom__label {
-	position : relative;
-	width    : 100%;
+	margin-bottom: 0 !important;
+	position     : relative;
+	width        : 100%;
 }
 
 .header-bottom__search {
 	background-color: #FFFFFF;
 	border          : 1px solid #CCCCCC;
 	border-radius   : 10px;
-	padding         : 12px 20px;
+	padding         : 8px 20px;
 	padding-right   : 38px;
 	width           : 100%;
 	max-width       : 100%;
+	height          : 42px;
 	color           : #272727;
 	padding-left    : 38px;
 	font-family     : 'SF Pro Display';

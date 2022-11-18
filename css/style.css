@@ -5560,6 +5560,10 @@ body {
 	margin  : auto 0;
 }
 
+.header-bottom__search-btn {
+	min-width: 130px;
+}
+
 .header-bottom__btns {
 	display    : flex;
 	align-items: center;

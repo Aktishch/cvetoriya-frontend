@@ -917,10 +917,9 @@ body {
 }
 
 .form__perdan {
-	/* text-align  : center; */
+	text-align  : center;
 	padding-left: 25px;
 	margin-top  : 25px;
-	opacity     : 0.5;
 }
 
 #perdan {
@@ -949,6 +948,10 @@ body {
 }
 
 @media(max-width: 1200px) {
+	#perdan br {
+		display: none;
+	}
+
 	.formSubmit {
 		grid-template-columns: repeat(2, 1fr);
 		align-items          : flex-end;
@@ -1368,7 +1371,7 @@ body {
 }
 
 .product-description-aside-form-perdan {
-	margin-top : 20px;
+	margin-top : 10px;
 	line-height: 1.1;
 	color      : #fff;
 	padding    : 24px;
@@ -1376,12 +1379,11 @@ body {
 }
 
 .product-description-aside-form-perdan #perdan {
-	font-weight   : 400;
-	font-size     : 10px;
-	line-height   : 14px;
-	color         : #FFFFFF;
-	opacity       : 0.8;
-	padding-bottom: 35px;
+	font-weight: 400;
+	font-size  : 14px;
+	line-height: 17px;
+	color      : #FFFFFF;
+	opacity    : 0.8;
 }
 
 .product-description-aside-form-perdan #perdan::before {

@@ -5107,6 +5107,13 @@ body {
 	padding-top: 30px;
 }
 
+.product-empty {
+	font-weight: 500;
+	font-size  : 16px;
+	color      : rgba(26, 26, 26, 0.5);
+	line-height: 1.4;
+}
+
 @media(max-width: 1200px) {
 	.product-detail-desc {
 		padding-top: 0;

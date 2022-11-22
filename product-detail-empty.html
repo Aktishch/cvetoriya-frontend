@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
+	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+
+	<script src="js/swiper.js"></script>
+	<title>Карточка товара</title>
+</head>
+
+<body>
+
+
+	<nav class="container-block nav-bottom">
+		<a class="nav-bottom__link" href="#">
+			<img class="nav-bottom__link-icon" src="img/oazis-roz/flow.svg" alt="">
+			<span>Акции</span>
+		</a>
+		<a class="nav-bottom__link" href="#">Аллиум</a>
+		<a class="nav-bottom__link" href="#">Бархатцы</a>
+		<a class="nav-bottom__link" href="#">Астра</a>
+		<a class="nav-bottom__link" href="#">Василек</a>
+		<a class="nav-bottom__link" href="#">Вербена</a>
+		<a class="nav-bottom__link" href="#">Гербера</a>
+		<a class="nav-bottom__link" href="#">Календула</a>
+	</nav>
+
+	<header class="header-mobile">
+		<div class="container-block header-mobile__top">
+			<button class="header-mobile__burger burger" id="burger" data-toggle-link="mobil">
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+				<span class="header-mobile__line"></span>
+			</button>
+			<a class="header-mobile__main" href="">
+				<img class="header-mobile__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="header-mobile__text">ОАЗИС РОЗ</span>
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--basket" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/basket.svg" alt="">
+			</a>
+			<a class="header-mobile__btn header-mobile__btn--user" href="">
+				<img class="header-mobile__btn-icon" src="img/oazis-roz/user.svg" alt="">
+			</a>
+		</div>
+		<div class="container-block header-mobile__bottom">
+			<label class="header-mobile__label">
+				<input class="header-mobile__search" type="text" placeholder="Поиск по сайту">
+				<img class="header-mobile__search-icon" src="img/oazis-roz/search.svg" alt="">
+			</label>
+		</div>
+	</header>
+
+	<section class="modal-menu" id="mobil">
+		<div class="modal-menu__head">
+			<button class="modal-menu__close" data-toggle-link="mobil">
+				<img class="modal-menu__close-icon" src="img/oazis-roz/close.svg" alt="">
+			</button>
+			<a class="modal-menu__main" href="">
+				<img class="modal-menu__logo" src="img/oazis-roz/header-logo.svg" alt="">
+				<span class="modal-menu__text">ОАЗИС РОЗ</span>
+			</a>
+		</div>
+		<div class="modal-menu__body">
+			<nav class="modal-menu__nav">
+				<a class="modal-menu__link" href="">О нас</a>
+				<a class="modal-menu__link" href="">Главная</a>
+				<a class="modal-menu__link" href="">Гарантия</a>
+				<a class="modal-menu__link" href="">Оплата и доставка</a>
+				<a class="modal-menu__link" href="">Контакты</a>
+			</nav>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/heart.svg" alt="">
+					<span class="modal-menu__item-text">Избранное</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/basket.svg" alt="">
+					<span class="modal-menu__item-text">Корзина</span>
+				</a>
+			</div>
+			<div class="modal-menu__items">
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/info.svg" alt="">
+					<span class="modal-menu__item-text">Помощь</span>
+				</a>
+				<a class="modal-menu__item" href="">
+					<img class="modal-menu__item-icon" src="img/oazis-roz/cub.svg" alt="">
+					<span class="modal-menu__item-text">Отследить заказ</span>
+				</a>
+			</div>
+			<div class="modal-menu__phones">
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (800) 100-89-75">8 (800) 100-89-75</a>
+					</div>
+				</div>
+				<div class="modal-menu__phone">
+					<div class="modal-menu__pic">
+						<img class="modal-menu__tel" src="img/oazis-roz/phone.svg" alt="">
+					</div>
+					<div class="modal-menu__department">
+						<span class="modal-menu__name">Отдел продаж</span>
+						<a class="modal-menu__department-link" href="8 (999) 444-16-97">8 (999) 444-16-97</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-block page--block  ">
+
+		<div class="row  bx-blue" id="bx_117848907_776">
+			<div>
+				<div class="hidden-mobile">
+					<div class="page--link" itemprop="http://schema.org/breadcrumb" itemscope=""
+						itemtype="http://schema.org/BreadcrumbList">
+						<a href="/" title="Главная" itemprop="item">
+							<span itemprop="name">Главная</span>
+						</a>
+						/
+						<a href="/catalog/" title="Каталог" itemprop="item">
+							<span itemprop="name">Каталог</span>
+						</a>
+						/
+						<a href="/catalog/vinograd/" title="Виноград" itemprop="item">
+							<span itemprop="name">Виноград</span>
+						</a>
+						/
+						<a href="/catalog/rozovyy/" title="Розовый" itemprop="item">
+							<span itemprop="name">Розовый</span>
+						</a>
+						/ <span>Виноград Оригинал</span>
+					</div>
+				</div>
+				<div class="flex mb-5">
+					<a href="javascript:window.history.back();" class="btn btn--accent btn--contur waves-effect">
+						<svg class="icon">
+							<use xlink:href="img/icons.svg#arrow-left"></use>
+						</svg>
+						Назад
+					</a>
+				</div>
+			</div>
+			<h1 class="product-detail-title">Виноград Оригинал</h1>
+			<h3 class="product-detail-subtitle">Naborus izus teanus gibridus rose</h3>
+			<div class="product-detail-elements">
+				<div class="product-detail-element">
+					<img class="product-detail-element__icon mr-2 icon" src="img/oazis-roz/clock.svg" alt="">
+					Долгоцветущие
+				</div>
+				<div class="product-detail-element">
+					<img class="product-detail-element__icon mr-2 icon" src="img/oazis-roz/winter.svg" alt="">
+					Морозостойкие
+				</div>
+				<div class="product-detail-element">
+					<img class="product-detail-element__icon mr-2 icon" src="img/oazis-roz/parfyum.svg" alt="">
+					Ароматные
+				</div>
+				<div class="product-detail-element">
+					<img class="product-detail-element__icon mr-2 icon" src="img/oazis-roz/box.svg" alt="">
+					Для горшков и контейнеров
+				</div>
+			</div>
+			<div class="product-detail__block">
+				<div class="product-detail-info">
+					<div class="product-detail-gallery">
+
+						<div class="product-detail-shildiks">
+							<div class="product-detail-shildik">
+								<div class="product-detail-shildik__bg"></div>
+								<div class="product-detail-shildik__content">Новинка</div>
+
+							</div>
+							<div class="product-detail-shildik product-detail-shildik--red">
+								<div class="product-detail-shildik__bg"></div>
+								<img src="img/fire.png" alt="">
+								<div class="product-detail-shildik__content">Хит </div>
+
+							</div>
+						</div>
+
+						<div class="product-detail-gallery-slider new-product">
+							<div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+								<div class="swiper-wrapper" id="swiper-wrapper-5d0e519581c933a1" aria-live="polite">
+
+									<a data-fancybox="detail-gallery"
+										class="product-detail-gallery-slide swiper-slide swiper-slide-active"
+										href="https://picsum.photos/id/111/300/300" role="group" aria-label="1 / 1"
+										style="width: 392px; margin-right: 20px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал"> </a>
+									<a data-fancybox="detail-gallery"
+										class="product-detail-gallery-slide swiper-slide swiper-slide-active"
+										href="https://picsum.photos/id/111/300/300" role="group" aria-label="1 / 1"
+										style="width: 392px; margin-right: 20px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал"> </a>
+									<a data-fancybox="detail-gallery"
+										class="product-detail-gallery-slide swiper-slide swiper-slide-active"
+										href="https://picsum.photos/id/111/300/300" role="group" aria-label="1 / 1"
+										style="width: 392px; margin-right: 20px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал"> </a>
+									<a data-fancybox="detail-gallery"
+										class="product-detail-gallery-slide swiper-slide swiper-slide-active"
+										href="https://picsum.photos/id/111/300/300" role="group" aria-label="1 / 1"
+										style="width: 392px; margin-right: 20px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал"> </a>
+								</div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+							</div>
+							<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+						</div>
+						<div class="product-detail-gallery-thumbs">
+							<div class="swiper-container swiper-container-initialized swiper-container-thumbs">
+								<div class="swiper-wrapper" id="swiper-wrapper-9c23a1b888a91d82" aria-live="polite"
+									style="transform: translate3d(0px, 0px, 0px);">
+
+									<div class="product-detail-gallery-thumb swiper-slide swiper-slide-active swiper-slide-thumb-active"
+										role="group" aria-label="1 / 1" style="height: 65.8px; margin-bottom: 6px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал">
+									</div>
+									<div class="product-detail-gallery-thumb swiper-slide swiper-slide-active swiper-slide-thumb-active"
+										role="group" aria-label="1 / 1" style="height: 65.8px; margin-bottom: 6px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал">
+									</div>
+									<div class="product-detail-gallery-thumb swiper-slide swiper-slide-active swiper-slide-thumb-active"
+										role="group" aria-label="1 / 1" style="height: 65.8px; margin-bottom: 6px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал">
+									</div>
+									<div class="product-detail-gallery-thumb swiper-slide swiper-slide-active swiper-slide-thumb-active"
+										role="group" aria-label="1 / 1" style="height: 65.8px; margin-bottom: 6px;">
+										<img src="https://picsum.photos/id/111/300/300" alt="Виноград Оригинал"
+											title="Виноград Оригинал">
+									</div>
+								</div>
+								<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-detail-desc ">
+
+					<div class="product-detail-desc__card">
+						<div class="product-detail__subtitle mb-5">Инфо о товаре</div>
+
+						<div class="product-detail__items mb-6">
+							<div class="product-detail-prop">
+								<span>Артикул</span>
+								<span>2070</span>
+							</div>
+							<div class="product-detail-prop">
+								<span>Наличие</span>
+								<span>
+									<svg class="product-detail__icon icon">
+										<use xlink:href="img/icons.svg#check-circle"></use>
+									</svg>
+									есть в наличии
+								</span>
+							</div>
+							<div class="product-detail-prop">
+								<span>Производитель</span>
+								<span>ООО Лучшее для сада</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="product-detail-desc__card">
+						<div class="product-detail__subtitle mb-5">Характеристики</div>
+
+						<div class="product-empty">
+							<div class="mb-5">
+								Скоро здесь появятся характеристики данного товара. 
+							</div>
+							<div>
+								Вы можете уточнить информацию по <br>
+								номеру: <a href="tel: +7(800)100-89-75">+7(800)100-89-75</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="product-stock__price-wrap">
+					<div class="product-stock__price br-main">
+						<div class="product-stock__price-content">
+							<div>
+								<div class="product-detail-cost">
+									<span id="bx_117848907_776_price" class="product-detail-newcost product-item-price"
+										style="font-size: 36px;">115 ₽</span>
+									<div id="bx_117848907_776_block_price"
+										class="product-detail-oldcost product-item-price-discount-container">
+										<span class="product-item-price-discount" id="bx_117848907_776_old_price">249
+											₽</span>
+									</div>
+								</div>
+								<div class="product-detail-counter product-item-detail-quantity-container"
+									data-entity="quantity-block">
+									<!-- <div class="product-stock__timing-title">Количество:</div> -->
+									<div class="counter product-item-detail-quantity-field-container">
+										<button
+											class="counter-btn product-item-detail-quantity-btn-minus no-select product-item-amount-field-btn-disabled"
+											id="bx_117848907_776_quant_down">-</button>
+										<input class="counter-input product-item-detail-quantity-field"
+											id="bx_117848907_776_quantity" type="text" inputmode="numeric" value="1">
+										<div class="product-item-detail-quantity-field" id="bx_117848907_776_counter"
+											contenteditable="true" inputmode="numeric" name="quantity" value=""
+											style="display: none;">1</div>
+										<button class="counter-btn product-item-detail-quantity-btn-plus no-select"
+											id="bx_117848907_776_quant_up">+</button>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div data-entity="main-button-container" class="mb-3">
+								<div id="bx_117848907_776_basket_actions">
+									<button class="btn btn--big btn--primary br-main w-100">
+										<svg class="icon mr-1">
+											<use xlink:href="img/icons.svg#basket"></use>
+										</svg>
+										В корзину
+									</button>
+								</div>
+							</div>
+							<div class="mb-3" id="bx_117848907_776_not_avail" style="display: none;">
+								<a class="product-item-detail-buy-button btn btn-primary disabled rounded-pill waves-effect"
+									href="javascript:void(0)" rel="nofollow">Нет в наличии</a>
+							</div>
+
+							<a href="tel:+78001008975" class="product-detail-phone">
+								<div class="product-detail-phone-img">
+									<!-- <img src="img/icons/phone.svg" alt="" class="icon"> -->
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#tel"></use>
+									</svg>
+								</div>
+								<div class="product-detail-phone-content">
+									<div class="product-detail-phone-title">Купить по телефону:</div>
+									<div class="product-detail-phone-value">8 800 100 89 75</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="product-stock__timing">
+						<div class="product-stock__timing-block timing">
+							<div class="timing__item">
+								<div class="timing__int">15</div>
+								<div class="timing__subtitle">дней</div>
+							</div>
+							<div class="timing__item">
+								<div class="timing__int">13</div>
+								<div class="timing__subtitle">часов</div>
+							</div>
+							<div class="timing__item">
+								<div class="timing__int">54</div>
+								<div class="timing__subtitle">минут</div>
+							</div>
+							<div class="timing__item">
+								<div class="timing__int">55</div>
+								<div class="timing__subtitle">секунд</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<script>
+		(() => {
+			const thumbs = new Swiper('.product-detail-gallery-thumbs .swiper-container', {
+				spaceBetween: 6,
+				slidesPerView: 5,
+				slidesPerGroup: 1,
+				direction: "vertical",
+
+				breakpoints: {
+
+				}
+			});
+			const slider = new Swiper('.product-detail-gallery-slider .swiper-container', {
+				pagination: {
+					el: '.product-detail-gallery-slider .swiper-pagination',
+					clickable: true,
+				},
+				spaceBetween: 20,
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+
+				navigation: {
+					nextEl: '.-slider-next',
+					prevEl: '.-slider-prev',
+				},
+				thumbs: {
+					swiper: thumbs
+				}
+
+			});
+		})();
+	</script>
+
+	<div class="product-description container-block">
+		<div class="product-description-content" data-tab-cover>
+			<div class="product-description-tabs">
+				<button class="product-description-tab br-main" data-tab-link="product-description-1">Описание</button>
+				<button class="product-description-tab br-main"
+					data-tab-link="product-description-2">Характеристики</button>
+				<button class="product-description-tab br-main" data-tab-link="product-description-3">Оплата и
+					доставка</button>
+				<!-- <button class="product-description-tab" data-tab-link="product-description-4">Отзывы</button> -->
+			</div>
+
+			<div class="product-description-cover">
+				<div class="product-description-inner" data-tab-content="product-description-1">
+					<div class="product-description-props">
+						<div class="product-description-prop">
+							<img src="img/sempl/cold.svg" alt="" class="icon">
+							Морозостойкость -30°C
+						</div>
+						<div class="product-description-prop">
+							<img src="img/sempl/height.svg" alt="" class="icon">
+							Высота саженца 100 см
+						</div>
+						<div class="product-description-prop">
+							<img src="img/sempl/timesort.svg" alt="" class="icon">
+							Среднеспелый сорт
+						</div>
+					</div>
+					<div class="product-description-title">Внешний вид</div>
+					<div class="product-description-text">
+						Среднерослое растение достигает в высоту 4 м. Крона средней густоты, овальной формы, ветви
+						достаточно
+						прочные.
+						Основной окрас яблок зеленовато-желтый, покрывной – оранжево-красный, распределяется по всему
+						плоду
+						равномерно. Форма яблока округлая, его вес может достигать 150 г. Кожица плотная, не слишком
+						толстая, скорее
+						нежная. Мякоть сочная, сладкая на вкус.
+					</div>
+					<div class="product-description-title">Всхожесть</div>
+					<div class="product-description-text">75, 70, 69, 70 </div>
+					<div class="product-description-title">Подвой </div>
+					<div class="product-description-text">Сеянец Алычи </div>
+					<div class="product-description-title">Посадочный материал</div>
+					<div class="product-description-text">Саженец </div>
+					<div class="product-description-title">Описание</div>
+					<div class="product-description-text">
+						Помповый садовый опрыскиватель VERTO 2 л 15G503 с регулировкой струи имеет резервуар, который
+						вмещает до 2
+						литров воды. Подходит для обработки растений в саду. Конструкция обеспечивает равномерное
+						распыление
+						жидкости.
+						Красная кнопка блокировка струи обеспечивает непрерывный полив. <br>
+
+						Наличие помпы - есть <br>
+						Материал - пластик <br>
+						Объем, л - 2 <br>
+						Цвет (рисунок) - белый/зеленый <br>
+						Вес нетто, кг - 0,37 <br>
+					</div>
+					<div class="product-description-title">Эксплуатация</div>
+					<div class="product-description-text">
+						Возможна эксплуатация при температуре от 0°С до +45°C
+						<b>Внимание!</b> Опрыскиватель не может использоваться с гербицидными и пестицидными растворами.
+					</div>
+					<div class="product-description-title">Условия хранения</div>
+					<div class="product-description-text">Нет </div>
+
+					<div class="product-description-history">
+						<div class="product-description-title">История селекции</div>
+						<div class="product-description-text">
+							Яблоня была выведена в 50-х годах прошлого века. Над работами трудился селекционер Дж. Х.
+							Кидд.
+							Скрещивание
+							происходило между популярными сортами Голден Делишес и Кидс Оранж Ред. За несколько десятков
+							лет после
+							выведения сорта, Гала стала одним из лидеров среди плодовых растений, используемых для
+							промышленного
+							выращивания на территории Европы, Америки, в частности Бразилии и Канады. Сорт
+							зарегистрировали в США в
+							1974
+							году. В мировом рейтинге по востребованности Гала стала второй после Ред Делишес в 2006
+							году.
+						</div>
+					</div>
+
+					<div class="product-description-faq" data-toggle-cover data-toggle-link>
+						<div class="product-description-faq-title">
+							<div class="product-description-prop">
+								<img src="img/sempl/pollinator.svg" alt="" class="icon">
+								Опылители
+							</div>
+
+							<svg class="icon product-description-faq-arrow">
+								<use xlink:href="img/icons.svg#navigate-up" />
+							</svg>
+						</div>
+						<div class="product-description-faq-content product-description-text" data-toggle-content
+							data-toggle-height="true" data-toggle-static="true">
+							Гала является частично самоопыляемым растением. Чтобы повысить урожайность, по соседству
+							следует
+							высаживать
+							такие сорта, как Катя, Эльстар, Джеймс Грив.
+						</div>
+					</div>
+
+					<div class="product-description-faq" data-toggle-cover data-toggle-link>
+						<div class="product-description-faq-title">
+							<div class="product-description-prop">
+								<img src="img/sempl/flower.svg" alt="" class="icon">
+								Цветение
+							</div>
+
+							<svg class="icon product-description-faq-arrow">
+								<use xlink:href="img/icons.svg#navigate-up" />
+							</svg>
+						</div>
+						<div class="product-description-faq-content product-description-text" data-toggle-content
+							data-toggle-height="true" data-toggle-static="true">
+							Цветение приходится на середину мая или начало июня. Возвратные морозы в этом случае не
+							навредят
+							плодоносным
+							почкам. Цветы формируются среднего размера, окрашены они в белый цвет.
+
+						</div>
+					</div>
+
+					<div class="product-description-faq" data-toggle-cover data-toggle-link>
+						<div class="product-description-faq-title">
+							<div class="product-description-prop">
+								<img src="img/sempl/productivity.svg" alt="" class="icon">
+								Урожайность
+							</div>
+
+							<svg class="icon product-description-faq-arrow">
+								<use xlink:href="img/icons.svg#navigate-up" />
+							</svg>
+						</div>
+						<div class="product-description-faq-content product-description-text" data-toggle-content
+							data-toggle-height="true" data-toggle-static="true">
+							Деревья среднеплодные. Плодоношение отмечается только на 6 год после посадки саженца. Если
+							подвой
+							карликовый, первые яблоки будут формироваться уже на 3 год. Собирать урожай можно во второй
+							половине
+							сентября. Урожайность этого сорта делает его достаточно популярным в производственной
+							промышленности.
+							Взрослое дерево может дать до 80 кг яблок за сезон.
+						</div>
+					</div>
+					<div class="product-description-faq" data-toggle-cover data-toggle-link>
+						<div class="product-description-faq-title">
+							<div class="product-description-prop">
+								<img src="img/sempl/fruits.svg" alt="" class="icon">
+								Плоды
+							</div>
+
+							<svg class="icon product-description-faq-arrow">
+								<use xlink:href="img/icons.svg#navigate-up" />
+							</svg>
+						</div>
+						<div class="product-description-faq-content product-description-text" data-toggle-content
+							data-toggle-height="true" data-toggle-static="true">
+							Специалисты подчеркивают отменный вкус укропа и насыщенный аромат кустов. Также укроп
+							получает
+							положительные
+							отзывы садоводов за хороший срок хранения - собранная зелень долго остается свежей и не
+							теряет товарных
+							свойств. Назначение сорта Аврора универсальное. Укроп Аврора используют в основном для
+							выращивания зелени,
+							но часть позднего урожая можно применять и для консервирования
+						</div>
+					</div>
+
+					<div class="product-description-title">Посадка и уход </div>
+					<div class="product-description-text">
+						<p>Укроп Аврора высаживают с 3-й декады апреля, срок посадки приходится на последние дни мая.
+							Чтобы
+							того,чтобы
+							получит раннюю зелень весной, посев можно проводить под зиму, а посадочный материал можно
+							высевать как
+							прямо
+							в открытый грунт, так и на рассаду.
+						</p>
+
+						<p>Посадочный материал замачивают в растворе марганцовки накануне посева, достаточно 2-3 часов.
+							Эта
+							процедура
+							профилактическая - так укроп меньше болеет. Высушенные семена высевают в борозды глубиной
+							около 2 см,
+							соблюдая расстояние 20 см, так как кусты разветвленные и при более близкой посадке мешают
+							друг другу.
+							Затем
+							семена накрывают и посадки умеренно поливают. Кроме того, можно мульчировать грядки слоем
+							торфа толщиной 3
+							см.
+						</p>
+
+						<p>Дальнейший уход за укропом сорта Аврора заключается в рыхлении междурядий, прополке,
+							регулярном, но
+							умеренном поливе и подкормках. Также рекомендуется проредить рассаду, чтобы избежать
+							загущения посадок.
+						</p>
+
+						<p>Чтобы избавиться от вредителей, по возможности используют исключительно народные средства.
+							Обработка
+							укропа
+							химическими препаратами нежелательна - растение быстро впитывает ядохимикаты и становится
+							токсичным.
+						</p>
+					</div>
+
+					<div class="product-description-title">Преимущества сорта</div>
+					<div class="product-description-text">
+						<p>Преимущества сорта</p>
+						<ul>
+							<li>Хорошая зимостойкость.</li>
+							<li>Отличные вкусовые данные.</li>
+							<li>Высокая транспортабельность.</li>
+							<li>Устойчивость к болезням и вредителям.</li>
+						</ul>
+					</div>
+
+					<div class="product-description-title">Сочетание с другими растениями </div>
+					<div class="product-description-text">
+						<p>Лучшими соседями для яблони считаются ясенелистный клен и малина. Первый спасет плодородное
+							дерево от
+							плодожорки за счет выработки фитонцидов. Малиновые кустарники хорошо рыхлят почву своими
+							корнями, обогащая
+							ее воздухом и влагой. Вредным соседством считается близкое расположение вишни, черешни,
+							грецкого ореха,
+							персика или смородины.</p>
+					</div>
+
+
+				</div>
+				<div class="product-description-inner" data-tab-content="product-description-2">
+					<div class="product-empty">
+						Скоро здесь появятся характеристики данного товара. Вы можете уточнить информацию по номеру телефона: <a href="tel: +7(800)100-89-75">+7(800)100-89-75</a>
+					</div>
+				</div>
+				<div class="product-description-inner tab-active" data-tab-content="product-description-3">
+					<div class="product-plug">
+						<div class="product-plug__item">
+							<div class="product-plug__pic">
+								<img class="product-plug__img" src="img/oazis-roz/product-plug.svg" alt="">
+							</div>
+							<div class="product-plug__lines">
+								<div class="product-plug__line product-plug__line--1"></div>
+								<div class="product-plug__line product-plug__line--2"></div>
+							</div>
+						</div>
+						<div class="product-plug__item">
+							<div class="product-plug__pic">
+								<img class="product-plug__img" src="img/oazis-roz/product-plug.svg" alt="">
+							</div>
+							<div class="product-plug__lines">
+								<div class="product-plug__line product-plug__line--1"></div>
+								<div class="product-plug__line product-plug__line--2"></div>
+							</div>
+						</div>
+						<div class="product-plug__item">
+							<div class="product-plug__pic">
+								<img class="product-plug__img" src="img/oazis-roz/product-plug.svg" alt="">
+							</div>
+							<div class="product-plug__lines">
+								<div class="product-plug__line product-plug__line--1"></div>
+								<div class="product-plug__line product-plug__line--2"></div>
+							</div>
+						</div>
+						<div class="product-plug__item">
+							<div class="product-plug__pic">
+								<img class="product-plug__img" src="img/oazis-roz/product-plug.svg" alt="">
+							</div>
+							<div class="product-plug__lines">
+								<div class="product-plug__line product-plug__line--1"></div>
+								<div class="product-plug__line product-plug__line--2"></div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="product-description-title">Упаковка</div>
+				<div class="product-description-text">
+					<p>Наши саженцы -— это живые растения! Они требуют особого внимания к упаковке при
+						транспортировке.<br>
+						Компания КСП (Клуб садоводов-профессионалов) использует трехступенчатую систему упаковки,
+						которая
+						гарантирует сохранность растения на протяжении всего пути к Вам.
+					</p>
+				</div>
+				<div class="product-description-title">Доставка</div>
+				<div class="product-description-text">
+					<p>После оплаты заказа специалисты компании КСП готовят Ваш заказ к отправке.</p>
+					<ul>
+						<li>Посадочный материал (семена и луковицы) отправляют к Вам в течении 24 часов.</li>
+						<li>Саженцы отправляют 2 раза в год весной и осенью.</li>
+						<li>Зимой саженцы находятся в спящем состоянии, летом в фазе активного роста и развития.
+						</li>
+						<li>Для комфортной адаптации и для сохранности растения живыми, пересадка возможна только в
+							осенне-весенний
+							период.</li>
+						<li>В любое время компания готова принять заказ и персонально для Вас, с учетом всех
+							погодных сезонов,
+							подготовить здоровые селективные саженцы.</li>
+					</ul>
+				</div>
+				<div class="product-description-title">Курьерская служба СДЭК</div>
+				<div class="product-description-text">
+					<ul>
+						<li>Стоимость доставки в отделение - от 400 рублей</li>
+						<li>Сроки доставки – от 2 до 5 дней после отправки </li>
+						<li>В стоимость товара НЕ ВКЛЮЧЕНЫ почтовые сборы</li>
+					</ul>
+				</div>
+				<div class="product-description-title">Почта России</div>
+				<div class="product-description-text">
+					<ul>
+						<li>Стоимость доставки – от 250 рублей</li>
+						<li>Сроки доставки – от 3 до 14 дней с момента отправки</li>
+						<li>В стоимость товара НЕ ВКЛЮЧЕНЫ почтовые сборы </li>
+					</ul>
+				</div>
+				<div class="product-description-title">Способы оплаты</div>
+				<div class="product-description-text">
+					<ul>
+						<li>Банковской картой на сайте</li>
+						<li>Пополнив Баланс в личном кабинете </li>
+						<li>Оплата через Баланс в личном кабинете предоставляет функцию заморозки средств на Вашем
+							Балансе до
+							момента получения товара.</li>
+						<li>Это является Вашей гарантией и аналогом наложенного платежа.</li>
+						<li>Средства списываются с Вашего Баланса после получения посылки.</li>
+					</ul>
+				</div>
+				<div class="product-description-title">Как пополнить Баланс </div>
+				<div class="product-description-text">
+					<p>Для пополнения Баланса в личном кабинете необходимо зарегистрироваться на
+						сайте.<br>Регистрация дает
+						дополнительные преимущества. <br>
+						Зарегистрированный пользователь имеет возможность следить за статусом своего заказа и
+						этапами доставки от
+						питомника до транспортной компании и Вашего дома.</p>
+				</div>
+				<div class="product-description-text">с 30 сентября по 14 октября</div>
+				<div class="product-description-text">с 15 октября по 29 октября </div>
+				<div class="product-description-text">с 30 октября по 9 ноября </div>
+				<div class="product-description-text">с 10 ноября по 30 ноября </div> -->
+				</div>
+				<!-- <div class="product-description-inner tab-active" data-tab-content="product-description-4">
+				<div class="feedback-nick">
+					<div class="feedback-nick__icon"></div>
+					<div class="feedback-nick-info">
+						<div class="feedback-nick__name">Виктория Р.</div>
+						<div class="feedback-nick__date">11 июля, 11:20</div>
+					</div>
+					<div class="feedback-nick-stars">
+						<img src="img/star-2.svg">
+						<img src="img/star-2.svg">
+						<img src="img/star-2.svg">
+						<img src="img/star-2.svg">
+						<img src="img/star-2.svg">
+					</div>
+				</div>
+				<div class="product-description-text">Здравствуйте, я посадила клубнику в горшки на балконе, сначала
+					они
+					принялись.,но после первого полива начали вянуть. Хочу ещё раз попробовать посадить. Вы не
+					подскажите какого
+					размера должен быть горшок, нужно ли подрезать корни, как часто поливать, ещё какие то
+					особенности
+					выращивания
+					клубники на балконе?
+				</div>
+				<div class="feedback-imgs">
+					<div class="grid grid-spacing-lg-4">
+						<div class="grid-col-md-2 grid-col-3">
+							<a data-fancybox="comment-1-gallery" class="feedback-img"
+								href="https://picsum.photos/id/1060/1920/1080">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</a>
+						</div>
+						<div class="grid-col-md-2 grid-col-3">
+							<a data-fancybox="comment-1-gallery" class="feedback-img"
+								href="https://picsum.photos/id/1060/1920/1080">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</a>
+						</div>
+						<div class="grid-col-md-2 grid-col-3">
+							<a data-fancybox="comment-1-gallery" class="feedback-img"
+								href="https://picsum.photos/id/1060/1920/1080">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</a>
+						</div>
+						<div class="grid-col-md-2 grid-col-3">
+							<a data-fancybox="comment-1-gallery" class="feedback-img"
+								href="https://picsum.photos/id/1060/1920/1080">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</a>
+						</div>
+						<div class="grid-col-md-2 grid-col-3">
+							<a data-fancybox="comment-1-gallery" class="feedback-img"
+								href="https://picsum.photos/id/1060/1920/1080">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</a>
+						</div>
+						<div class="grid-col-md-2 grid-col-3">
+							<a data-fancybox="comment-1-gallery" class="feedback-img"
+								href="https://picsum.photos/id/1060/1920/1080">
+								<img src="https://picsum.photos/id/1060/600/400" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="feedback-answer">
+					<div class="feedback-answer-icon">
+						<picture>
+							<source srcset="img/logo.webp" type="image/webp">
+							<img src="img/logo.png" loading="lazy">
+						</picture>
+					</div>
+					<div class="feedback-answer__info">Виктория, добрый день. Если на одном участке растут разные
+						сора
+						земляники,
+						то да, они буду переопыляться. И это только увеличит их урожайность.</div>
+				</div>
+				<div class="feedback-nick">
+					<div class="feedback-nick__icon"></div>
+					<div class="feedback-nick-info">
+						<div class="feedback-nick__name">Наталья</div>
+						<div class="feedback-nick__date">11 июля, 11:20</div>
+					</div>
+					<div class="feedback-nick-stars">
+						<img src="img/star-1.svg">
+						<img src="img/star-1.svg">
+						<img src="img/star-2.svg">
+						<img src="img/star-2.svg">
+						<img src="img/star-2.svg">
+					</div>
+				</div>
+				<div class="product-description-text">А этот сорт на подокольнике можно растить до следущего лета.И
+					вообще
+					поподробнее когда его садить на рассаду ,когда в грунт можно будет высадить</div>
+
+
+				<div class="feedback__title">Оставить отзыв</div>
+				<form class="feedback-form">
+					<label class="feedback-form-lable">
+						<span class="feedback-form-lable__title">Имя</span>
+						<input type="text" class="feedback-form-lable__input" placeholder="Введите имя">
+					</label>
+					<label class="feedback-form-lable">
+						<span class="feedback-form-lable__title">Email</span>
+						<input type="text" class="feedback-form-lable__input" placeholder="email@mail.ru">
+					</label>
+					<textarea class="feedback-form__textarea"
+						placeholder="Опишите Ваши впечатления от товара"></textarea>
+					<div class="feedback-form-estimation">
+						<div class="feedback-form-estimation-block rating-stars rating-stars-control">
+							<span class="feedback-form-estimation__title">Оценка</span>
+
+							<input type="radio" name="review-star" id="rating-control-star-1" checked>
+							<label class="rating-stars-check" for="rating-control-star-1">
+								<svg class="icon rating-stars-item">
+									<use xlink:href="img/utils.svg#star" />
+								</svg>
+							</label>
+							<input type="radio" name="review-star" id="rating-control-star-2">
+							<label class="rating-stars-check" for="rating-control-star-2">
+								<svg class="icon rating-stars-item">
+									<use xlink:href="img/utils.svg#star" />
+								</svg>
+							</label>
+							<input type="radio" name="review-star" id="rating-control-star-3">
+							<label class="rating-stars-check" for="rating-control-star-3">
+								<svg class="icon rating-stars-item">
+									<use xlink:href="img/utils.svg#star" />
+								</svg>
+							</label>
+							<input type="radio" name="review-star" id="rating-control-star-4">
+							<label class="rating-stars-check" for="rating-control-star-4">
+								<svg class="icon rating-stars-item">
+									<use xlink:href="img/utils.svg#star" />
+								</svg>
+							</label>
+							<input type="radio" name="review-star" id="rating-control-star-5">
+							<label class="rating-stars-check" for="rating-control-star-5">
+								<svg class="icon rating-stars-item">
+									<use xlink:href="img/utils.svg#star" />
+								</svg>
+							</label>
+
+						</div>
+						<div class="feedback-form-estimation-block">
+							<label class="feedback-form-estimation feedback-form-estimation-pl">
+								<input type="file" accept="image/*">
+								<span class="feedback-form-estimation__title">Добавить фото</span>
+								<span class="feedback-form-estimation__image">
+									<svg class="icon">
+										<use xlink:href="img/icons.svg#picture" />
+									</svg>
+								</span>
+							</label>
+						</div>
+					</div>
+					<div class="feedback-form-submit">
+						<button class="feedback-form-submit__button btn btn--accent">Оставить отзыв</button>
+					</div>
+				</form>
+			</div> -->
+			</div>
+		</div>
+		<div class="product-description-aside br-main">
+			<form class="product-description-aside-form">
+				<div class="product-description-aside__title">Возникли вопросы?</div>
+				<div class="product-description-aside__subtitle">
+					Оставьте свои контакты и наш
+					специалист свяжется с вами!
+				</div>
+				<label class="product-description-aside-form-field form-field">
+					<div class="product-description-aside-form-label">Имя</div>
+					<input class="product-description-aside-form-input pray-form-input form-input" type="text" />
+				</label>
+				<label class="product-description-aside-form-field form-field form-field-error">
+					<div class="product-description-aside-form-label">Телефон</div>
+					<input class="product-description-aside-form-input pray-form-input form-input" placeholder="+7 "
+						type="tel" />
+					<span class="form__err">Обязательное поле для заполнения</span>
+				</label>
+				<button class="product-description-aside-form-btn btn btn--accent">Получить консультацию</button>
+			</form>
+			<div class="form__perdan product-description-aside-form-perdan">
+				<span id="perdan">
+					Нажимая на кнопку “Задать вопрос”, Вы соглашаетесь на обработку персональных данных
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<section class="subscribe container-block">
+		<div class="subscribe-form br-main">
+			<div class="subscribe-form__content">
+				<div class="subscribe-form__title">Узнайте о всех скидках первыми! </div>
+				<div class="subscribe-form__desc">
+					Оставьте свою почту и мы сможем вам присылать <br>
+					информацию о всех скидках и акциях
+				</div>
+
+			</div>
+			<div class="subscribe-form__field">
+				<svg class="icon "><use xlink:href="img/icons.svg#email" /></svg>
+				<input type="text" class="subscribe-form__input" placeholder="Введите ваш e-mail">
+				<button class="btn btn--accent btn--fill subscribe-form__btn">Отправить</button>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script src="source/jquery-3.5.0.min.js"></script>
+	<script src="source/maskedinput.js"></script>
+	<script src="source/maskedinput.custom.js"></script>
+	<script src="source/jquery.fancybox.min.js"></script>
+	<script src="source/jquery.fancybox.custom.js"></script>
+
+	<script src="source/frontend--swipe.js"></script>
+	<script src="source/ui--tab.js"></script>
+	<script src="source/ui--toggle.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

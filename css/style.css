@@ -5219,7 +5219,8 @@ body {
 }
 
 .footer {
-	background   : #FFFFFF;
+	/* background   : #FFFFFF; */
+	background   : url('../img/new-year/footer-bg.png') no-repeat center / cover;
 	box-shadow   : 0px 4px 12px rgba(0, 0, 0, 0.1);
 	border-radius: 15px;
 	margin       : 20px;
@@ -5369,6 +5370,9 @@ body {
 }
 
 @media(max-width: 576px) {
+	.footer {
+		background: #ffffff;
+	}
 
 	.footer__items,
 	.footer__nav-items {
@@ -5387,13 +5391,14 @@ body {
 }
 
 .nav-top__block {
-	background-color: #FFFFFF;
-	display         : flex;
-	align-items     : center;
-	justify-content : space-between;
-	box-shadow      : 0px 4px 12px rgba(0, 0, 0, 0.1);
-	border-radius   : 15px;
-	padding         : 5px;
+	/* background-color: #FFFFFF; */
+	background     : url('../img/new-year/header-bg-top.png') no-repeat center / cover;
+	display        : flex;
+	align-items    : center;
+	justify-content: space-between;
+	box-shadow     : 0px 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius  : 15px;
+	padding        : 5px;
 }
 
 .nav-top__links {
@@ -5453,7 +5458,8 @@ body {
 }
 
 .header__block {
-	background     : #FFFFFF;
+	/* background     : #FFFFFF; */
+	background     : url('../img/new-year/header-bg-bottom.png') no-repeat center / cover;
 	box-shadow     : 0px 4px 12px rgba(0, 0, 0, 0.1);
 	border-radius  : 15px;
 	padding        : 10px;

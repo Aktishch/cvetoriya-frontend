@@ -7005,3 +7005,57 @@ body {
 		padding: 15px;
 	}
 }
+
+.banner-pre-order {
+	background-color: var(--color-primary);
+	padding         : 20px;
+	margin-bottom   : 30px;
+	overflow        : hidden;
+	position        : relative;
+}
+
+.banner-pre-order::before,
+.banner-pre-order::after {
+	content   : '';
+	position  : absolute;
+	width     : 232px;
+	height    : 157px;
+	top       : -25px;
+	background: url('../img/cvetoriya/flow.png') no-repeat center / cover;
+}
+
+.banner-pre-order::before {
+	left: -50px;
+}
+
+.banner-pre-order::after {
+	right    : -50px;
+	transform: scale(-1, 1);
+}
+
+.banner-pre-order__text {
+	position   : relative;
+	z-index    : 1;
+	font-weight: 600;
+	font-size  : 20px;
+	line-height: 140%;
+	color      : #fff;
+	text-align : center;
+	z-index    : 1;
+}
+
+@media(max-width: 1200px) {
+
+	.banner-pre-order::before,
+	.banner-pre-order::after {
+		opacity: 0.5;
+	}
+}
+
+@media(max-width: 576px) {
+
+	.banner-pre-order::before,
+	.banner-pre-order::after {
+		display: none;
+	}
+}

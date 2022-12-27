@@ -7059,3 +7059,69 @@ body {
 		display: none;
 	}
 }
+
+.documentation {
+	display       : flex;
+	flex-direction: column;
+	grid-gap      : 32px;
+}
+
+.documentation__item {
+	background : #FFFFFF;
+	box-shadow : 0px 4px 12px rgba(0, 0, 0, 0.1);
+	padding    : 24px;
+	display    : flex;
+	align-items: center;
+	grid-gap   : 32px;
+}
+
+.documentation__pic {
+	min-width       : 106px;
+	width           : 106px;
+	height          : 148px;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	border-radius   : 15px;
+	background-color: var(--color-primary-10);
+}
+
+.documentation__img {
+	font-size: 46px;
+}
+
+.documentation__content {
+	display       : flex;
+	flex-direction: column;
+}
+
+.documentation__text {
+	color      : #1A1A1A;
+	font-weight: 400;
+	font-size  : 16px;
+	line-height: 140%;
+}
+
+.documentation__btn {
+	width: max-content !important;
+}
+
+@media(max-width: 768px) {
+	.documentation {
+		grid-gap: 20px;
+	}
+
+	.documentation__item {
+		flex-direction: column;
+		align-items   : flex-start;
+		grid-gap      : 20px;
+	}
+
+	.documentation__pic {
+		height: 106px;
+	}
+
+	.documentation__text {
+		font-size: 14px;
+	}
+}

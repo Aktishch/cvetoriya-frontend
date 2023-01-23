@@ -1295,7 +1295,7 @@ body {
 	bottom         : 0;
 	width          : 326px;
 	height         : 446px;
-	background     : url('../img/oazis-roz/list.png') no-repeat center;
+	background     : url('../img/icons2/list.png') no-repeat center;
 	background-size: contain;
 }
 
@@ -4835,7 +4835,7 @@ body {
 	display        : flex;
 	align-items    : center;
 	justify-content: center;
-	background     : url('../img/oazis-roz/stock.png') no-repeat 100% 100%;
+	background     : url('../img/icons2/stock.png') no-repeat 100% 100%;
 	background-size: 100% 100%;
 	font-style     : normal;
 	font-weight    : bold;
@@ -6740,7 +6740,7 @@ body {
 	height         : 320px;
 	position       : relative;
 	margin-bottom  : 24px;
-	background     : #F5F5F5 url('../img/oazis-roz/user.svg') no-repeat center;
+	background     : #F5F5F5 url('../img/icons2/user.svg') no-repeat center;
 	background-size: 120px 154px;
 }
 

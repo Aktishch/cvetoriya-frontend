@@ -5525,6 +5525,17 @@ body {
 	opacity    : 0.6;
 }
 
+.header-top__social__btn {
+	border-radius: 10px;
+	padding      : 0;
+	min-width    : 35px;
+	width        : 35px;
+}
+
+.header-top__social-icon {
+	font-size: 20px;
+}
+
 .header-bottom {
 	display        : flex;
 	align-items    : center;

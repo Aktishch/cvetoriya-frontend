@@ -5227,7 +5227,6 @@ body {
 
 .footer__block {
 	display        : flex;
-	align-items    : flex-end;
 	justify-content: space-between;
 	flex-wrap      : wrap;
 	grid-gap       : 15px;
@@ -5283,7 +5282,7 @@ body {
 
 .footer__item-text {
 	font-weight: 700;
-	font-size  : 18px;
+	font-size  : 14px;
 }
 
 .footer__requisites {

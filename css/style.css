@@ -7161,3 +7161,173 @@ body {
 .new-year-theme .footer {
 	background: url('../img/new-year/footer-bg.png') no-repeat center / cover;
 }
+
+.reiew-page {
+	width          : 100%;
+	min-height     : 100vh;
+	position       : relative;
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+	flex-direction : column;
+	padding        : 40px 16px;
+}
+
+.reiew-page--green {
+	background-color: #44A60F;
+}
+
+.reiew-page--grey {
+	background-color: #F2F8FA;
+}
+
+.reiew-page__bg {
+	position  : absolute;
+	inset     : 0;
+	width     : 100%;
+	height    : 100%;
+	object-fit: cover;
+}
+
+.reiew-page--green .reiew-page__bg {
+	mix-blend-mode: multiply;
+}
+
+.reiew-page--grey .reiew-page__bg {
+	mix-blend-mode: luminosity;
+}
+
+.reiew__content {
+	position       : relative;
+	width          : 100%;
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+}
+
+.reiew-page__main {
+	width          : 100%;
+	max-width      : 370px;
+	display        : flex;
+	flex-direction : column;
+	align-items    : center;
+	justify-content: center;
+	text-align     : center;
+	color          : #fff;
+}
+
+.reiew-page__pic {
+	width           : 100%;
+	position        : relative;
+	background-color: #fff;
+	margin-bottom   : 38px;
+}
+
+.reiew-page__pic::before {
+	content    : "";
+	position   : static;
+	display    : block;
+	padding-top: 100%;
+}
+
+.reiew-page__logo {
+	position  : absolute;
+	inset     : 0;
+	width     : 100%;
+	height    : 100%;
+	object-fit: scale-down;
+}
+
+.reiew-page__title {
+	font-weight: 600;
+	font-size  : 36px;
+	line-height: 1.4;
+}
+
+.reiew-page__block {
+	width           : 100%;
+	max-width       : 460px;
+	color           : #1A1A1A;
+	text-align      : center;
+	background-color: #fff;
+	box-shadow      : 0px 4px 12px rgba(0, 0, 0, 0.06);
+	padding         : 57px 40px;
+}
+
+.reiew-page__form {
+	text-align: left;
+}
+
+.reiew-page__label {
+	display       : flex;
+	flex-direction: column;
+	position      : relative;
+}
+
+.reiew-page__label--tel::before {
+	content        : '';
+	position       : absolute;
+	left           : 0;
+	bottom         : 0;
+	width          : 52px;
+	height         : 52px;
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+	pointer-events : none;
+	background     : url('../img/cvetoriya/tel.svg') no-repeat center;
+	background-size: 24px;
+}
+
+.reiew-page__input {
+	height       : 52px;
+	padding      : 14px;
+	background   : #FFFFFF;
+	border       : 1px solid rgba(26, 26, 26, 0.4);
+	border-radius: 10px;
+}
+
+.reiew-page__input--tel {
+	padding-left: 48px;
+}
+
+.reiew-page__input--textarea {
+	height: 168px;
+}
+
+.reiew-page__perdan {
+	text-align : center;
+	opacity    : 0.5;
+	font-weight: 400;
+	font-size  : 12px;
+}
+
+@media(max-width: 576px) {
+	.reiew-page__bg {
+		object-position: -200px;
+	}
+
+	.reiew-page__main {
+		max-width: 310px;
+	}
+
+	.reiew-page__pic {
+		margin-bottom: 27px;
+	}
+
+	.reiew-page__logo {
+		padding: 40px;
+	}
+
+	.reiew-page__title {
+		font-size: 24px;
+	}
+
+	.reiew-page__block {
+		padding: 32px 16px;
+	}
+
+	.reiew-page__input--textarea {
+		height: 100px;
+	}
+}

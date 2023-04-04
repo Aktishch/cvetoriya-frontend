@@ -5,57 +5,60 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="fonts/stylesheet.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="fonts/Inter/stylesheet.css">
+	<link rel="stylesheet" href="fonts/SFProDispaly/stylesheet.css">
 	<link rel="stylesheet" href="source/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="source/ion.rangeSlider.min.css">
 	<link rel="stylesheet" href="css/swiper.css">
-	<link rel="stylesheet" href="css/frontend--style.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/frontend--style.css">
+
+	<!-- Лимитированные предложения -->
+	<link rel="stylesheet" href="css/index-limited.css">
+	<!-- Наши преимущества -->
+	<link rel="stylesheet" href="css/new-advantages.css">
 
 
-	<script src="js/swiper.js"></script>
-	<title>Оставьте отзыв</title>
+	<title>Главная</title>
 </head>
 
 <body>
 
-	<!-- Оставьте отзыв -->
-	<section class="leave leave--bg">
-		<div class="reiew-dialog">
-			<div class="leave-review__title">Написать директору</div>
-			<br>
-			<div class="leave-review__text leave-review__text--mb">
-				<p>
-					Расскажите, что вам не понравилось и что мы можем
-					делать лучше. Директор накажет виновных, свяжется
-					с вами и предложит решение проблемы.
-				</p>
+	<section class="reiew-page reiew-page--grey">
+		<img class="reiew-page__bg" src="img/flowers.png" alt="">
+		<div class="reiew__content">
+			<div class="reiew-page__block br-main">
+				<div class="reiew-page__title mb-5 mb-md-7">Написать директору</div>
+				<div class="text-body-2 text-md-body-1 lh-1-5 mb-10">
+					Расскажите, что вам не понравилось и что мы можем делать лучше. Директор накажет виновных, свяжется с вами и предложит решение проблемы.
+				</div>
+				<form class="reiew-page__form w-100">
+					<label class="reiew-page__label reiew-page__label--tel mb-5">
+						<span class="text-body-2 text-md-body-1 text--demibold mb-2">Оставьте ваш контакт для связи</span>
+						<input class="reiew-page__input reiew-page__input--tel" type="tel" placeholder="+7 (" required>
+					</label>
+					<label class="reiew-page__label mb-5 mb-md-8">
+						<span class="text-body-2 text-md-body-1 text--demibold mb-2">Расскажите, что вам не понравилось</span>
+						<textarea class="reiew-page__input reiew-page__input--textarea" required></textarea>
+					</label>
+					<button class="btn btn--primary btn--fill w-100 mb-5" type="submit">Отправить</button>
+					<div class="reiew-page__perdan">
+						Нажимая на кнопку “Заказать обратный звонок”, Вы соглашаетесь на обработку персональных данных
+					</div>
+				</form>
 			</div>
-			<br>
-			<form class="reiew-dialog__form">
-				<label class="reiew-dialog__label">
-					<span class="reiew-dialog__label-text">Оставьте ваш контакт для связи</span>
-					<input class="reiew-dialog__label-input" type="tel" placeholder="+7">
-				</label>
-				<label class="reiew-dialog__label">
-					<span class="reiew-dialog__label-text">Расскажите, что вам не понравилось</span>
-					<textarea class="reiew-dialog__label-input reiew-dialog__label-textarea"></textarea>
-				</label>
-				<button class="reiew-dialog__btn reiew-dialog__btn--submit btn btn--accent" type="submit">Отправить</button>
-			</form>
 		</div>
-
 	</section>
 
-
-	<script src="source/jquery-3.5.0.min.js"></script>
-	<script src="source/maskedinput.js"></script>
-	<script src="source/maskedinput.custom.js"></script>
-	<script src="source/jquery.fancybox.min.js"></script>
-	<script src="source/jquery.fancybox.custom.js"></script>
-
-	<script src="source/ui--tab.js"></script>
-	<script src="source/ui--toggle.js"></script>
-	<script src="js/slider.js"></script>
 </body>
 
 </html>

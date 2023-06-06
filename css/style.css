@@ -5369,6 +5369,11 @@ body {
 	cursor          : pointer;
 }
 
+
+.footer__btn--full {
+	grid-column: span 2;
+}
+
 @media(max-width: 768px) {
 	.footer {
 		margin       : 0;
@@ -5389,6 +5394,10 @@ body {
 
 	.footer__nav-items {
 		grid-template-columns: 1fr;
+	}
+
+	.footer__btn--full {
+		grid-column: span 1;
 	}
 
 	.footer__item {

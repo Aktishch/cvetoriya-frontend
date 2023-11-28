@@ -6903,7 +6903,7 @@ input:checked ~ .rating-stars-check:hover .rating-stars-item {
   height: 100%;
   width: max-content;
   line-height: 68px;
-  animation: buner-line 10s infinite linear;
+  animation: buner-line 20s infinite linear;
 }
 @media (max-width: 992px) {
   .banner-blackfriday-text {

@@ -1051,6 +1051,27 @@
 	<script src="js/slider.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/input-tel.js"></script>
+
+
+	<script>
+		(()=>{
+			function getCookie(name) {
+				let matches = document.cookie.match(new RegExp(
+					"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+				));
+				return matches ? decodeURIComponent(matches[1]) : undefined;
+			}
+
+			const cookieName = 'dialog_new_user_sale_showed'
+
+			if(!getCookie(cookieName)) {
+				jQuery.fancybox.openModal('dialog-new-user-sale.html')
+				let date = new Date('2050.01.01');
+				date = date.toUTCString();
+				document.cookie = cookieName + '=1; path=/; expires=' + date;
+			}
+		})()
+	</script>
 </body>
 
 </html>

@@ -1,0 +1,86 @@
+<div class="dialog-new-user-sale br-main">
+  <div class="dialog-new-user-sale-plashka">
+    <span>10%</span>
+  </div>
+  <div class="dialog-new-user-sale-content">
+    <div class="dialog-new-user-sale-title">
+      КУПОН <br>
+      НА СКДИКУ
+    </div>
+    <div class="dialog-new-user-sale-subtitle">
+      Сделай первый заказ на сайте и получи <span>скидку в 10%!</span>
+    </div>
+    <div class="dialog-new-user-sale-separator"></div>
+    <div class="dialog-new-user-sale-sign">Ваш промокод</div>
+    <div class="dialog-new-user-sale-code-wrapper">
+      <div class="dialog-new-user-sale-code">МАК</div>
+      <button class="dialog-new-user-sale-btn btn  btn--primary br-main" id="copy-button" data-copy="МАК">Скопировать</button>
+    </div>
+  </div>
+</div>
+
+<!-- script for copy code -->
+<script>
+  (() => {
+    const copyButton = document.getElementById('copy-button')
+    const copyButtonText = copyButton.textContent
+
+    let timeOut
+
+    copyButton.addEventListener('click', () => {
+      copyTextToClipboard(copyButton.getAttribute('data-copy'))
+
+      copyButton.textContent = 'Скопировано!'
+    //   copyButton.classList.remove('btn--accent')
+      copyButton.classList.add('btn--contur')
+
+      clearTimeout(timeOut)
+
+      timeOut = setTimeout(() => {
+        copyButton.textContent = copyButtonText
+        copyButton.classList.remove('btn--contur')
+        // copyButton.classList.add('btn--accent')
+      }, 1500)
+    })
+
+
+    function fallbackCopyTextToClipboard(text) {
+      var textArea = document.createElement("textarea");
+      textArea.value = text;
+
+      // Avoid scrolling to bottom
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.position = "fixed";
+
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Fallback: Copying text command was ' + msg);
+      } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+      }
+
+      document.body.removeChild(textArea);
+    }
+
+    function copyTextToClipboard(text) {
+      if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+      }
+      navigator.clipboard.writeText(text).then(function() {
+        console.log('Async: Copying to clipboard was successful!');
+      }, function(err) {
+        console.error('Async: Could not copy text: ', err);
+      });
+    }
+
+
+
+  })()
+</script>

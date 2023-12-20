@@ -6876,7 +6876,7 @@ input:checked ~ .rating-stars-check:hover .rating-stars-item {
   }
 }
 .banner-blackfriday {
-  background: #000;
+  background: linear-gradient(90deg, #FFAABC, #FF2F5A, #FFA3B6);
   color: #fff;
   overflow: hidden;
   width: 100%;
@@ -6888,7 +6888,7 @@ input:checked ~ .rating-stars-check:hover .rating-stars-item {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("../img/banner-blackfriday.png") no-repeat center / cover, linear-gradient(90deg, rgba(255, 46, 88, 0.8), rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, rgba(67, 163, 15, 0.8)), linear-gradient(90deg, #000000, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, #000000);
+  background: url("../img/banner-blackfriday.png") no-repeat center / cover;
   z-index: 2;
 }
 .banner-blackfriday-text {

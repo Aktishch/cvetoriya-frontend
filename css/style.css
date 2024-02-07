@@ -7468,3 +7468,16 @@ body {
 	background-color: #fff !important;
 	border: 1px solid #fff !important;
 }
+
+.dialog-discount {
+	max-width: 345px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.dialog-discount__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

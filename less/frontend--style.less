@@ -4724,7 +4724,7 @@ body {
 }
 
 .banner-blackfriday {
-	background: linear-gradient(90deg,#FFAABC, #FF2F5A, #FFA3B6);
+	background: linear-gradient(90deg, #FFAABC, #FF2F5A, #FFA3B6);
 	color: #fff;
 	overflow: hidden;
 	width: 100%;
@@ -4896,6 +4896,54 @@ body {
 
 		@media(max-width:580px) {
 			width: 100%;
+		}
+	}
+}
+
+.free-delivery {
+	padding: 36px 32px;
+	border-radius: 28px;
+	margin-bottom: 16px;
+	background: rgba(68, 166, 15, 0.2);
+
+
+	@media(max-width:480px) {
+		border-radius: 0;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&-post {
+		background: rgba(68, 166, 15, 0.2);
+		border-radius: 15px;
+		padding: 16px 20px;
+		align-items: center;
+		display: flex;
+
+		@media(max-width:480px) {
+			font-size: 14px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&-list {
+		padding-left: 20px;
+
+		&-item {
+			list-style: disc;
+
+
+			@media(max-width:480px) {
+				font-size: 14px;
+			}
+
+			&+& {
+				margin-top: 15px;
+			}
+
 		}
 	}
 }

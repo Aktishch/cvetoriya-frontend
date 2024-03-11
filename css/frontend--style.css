@@ -6875,3 +6875,208 @@ input:checked ~ .rating-stars-check:hover .rating-stars-item {
     border-radius: 0;
   }
 }
+.banner-blackfriday {
+  background: linear-gradient(90deg, #FFAABC, #FF2F5A, #FFA3B6);
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 68px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner-blackfriday::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("../img/banner-blackfriday.png") no-repeat center / cover;
+  z-index: 2;
+}
+.banner-blackfriday-text {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2.56px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: max-content;
+  line-height: 68px;
+  animation: buner-line 20s infinite linear;
+}
+@media (max-width: 992px) {
+  .banner-blackfriday-text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .banner-blackfriday-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 476px) {
+  .banner-blackfriday-text {
+    font-size: 16px;
+  }
+}
+.banner-blackfriday-text-dublicate {
+  left: 100%;
+  animation: none;
+}
+@keyframes buner-line {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.dialog-new-user-sale {
+  display: flex;
+  width: 1170px;
+  max-width: 100%;
+  background: url("../img/dialog-new-user-sale-flower.png") no-repeat bottom right, #fff;
+}
+@media (max-width: 992px) {
+  .dialog-new-user-sale {
+    flex-direction: column;
+  }
+}
+.dialog-new-user-sale-plashka {
+  width: 285px;
+  flex-shrink: 0;
+  background: url("../img/dialog-new-user-sale-bg.png") no-repeat center right / cover, var(--color-accent);
+  font-size: 128px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.dialog-new-user-sale-plashka span {
+  transform: rotateZ(-90deg);
+}
+@media (max-width: 992px) {
+  .dialog-new-user-sale-plashka {
+    display: none;
+  }
+}
+.dialog-new-user-sale-content {
+  padding: 70px 48px;
+}
+@media (max-width: 520px) {
+  .dialog-new-user-sale-content {
+    padding: 48px 20px;
+  }
+}
+.dialog-new-user-sale-title {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+}
+@media (max-width: 680px) {
+  .dialog-new-user-sale-title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 520px) {
+  .dialog-new-user-sale-title {
+    font-size: 36px;
+  }
+}
+.dialog-new-user-sale-subtitle {
+  font-size: 22px;
+  margin-top: 24px;
+}
+.dialog-new-user-sale-subtitle span {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+.dialog-new-user-sale-separator {
+  border: 1px dashed #1A1A1A;
+  opacity: 0.4;
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+.dialog-new-user-sale-sign {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.dialog-new-user-sale-code {
+  border-radius: 10px;
+  border: 1px dashed #CCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 48px;
+  height: 52px;
+}
+.dialog-new-user-sale-code-wrapper {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 580px) {
+  .dialog-new-user-sale-code-wrapper {
+    flex-direction: column;
+  }
+}
+.dialog-new-user-sale-btn {
+  width: 250px;
+  height: 52px;
+  max-width: 100%;
+}
+@media (max-width: 580px) {
+  .dialog-new-user-sale-btn {
+    width: 100%;
+  }
+}
+.free-delivery {
+  padding: 36px 32px;
+  border-radius: 28px;
+  margin-bottom: 16px;
+  background: rgba(68, 166, 15, 0.2);
+}
+@media (max-width: 480px) {
+  .free-delivery {
+    border-radius: 0;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.free-delivery-post {
+  background: rgba(68, 166, 15, 0.2);
+  border-radius: 15px;
+  padding: 16px 20px;
+  align-items: center;
+  display: flex;
+}
+@media (max-width: 480px) {
+  .free-delivery-post {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.free-delivery-list {
+  padding-left: 20px;
+}
+.free-delivery-list-item {
+  list-style: disc;
+}
+@media (max-width: 480px) {
+  .free-delivery-list-item {
+    font-size: 14px;
+  }
+}
+.free-delivery-list-item + .free-delivery-list-item {
+  margin-top: 15px;
+}

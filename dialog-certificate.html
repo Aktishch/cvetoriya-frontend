@@ -1,0 +1,38 @@
+<div class="dialog-certificate fancybox-content">
+	<div class="dialog-certificate__top text-subtitle-2 pb-5 mb-5">Отправить сертификат</div>
+	<form class="d-block" data-form>
+		<label class="d-block mb-5">
+			<div class="text--medium text-body-1 mb-1">Почта</div>
+			<input class="dialog-certificate__input pray-form-input" placeholder="Ваша почта" type="email" required>
+		</label>
+		<button class="btn btn--accent btn--fill br-main w-100" type="submit">Отправить сертификат</button>
+	</form>
+</div>
+
+<script>
+	document.addEventListener('submit', (event) => {
+    	if (event.target.hasAttribute('data-form')) {
+			event.preventDefault()
+			
+			const form = event.target
+			const formData = new FormData(form)
+			const canvas = document.querySelector('#certificate-canvas-1')
+			const url = canvas.toDataURL()
+		
+			formData.append('certificate', url)
+
+			fetch('путь', {
+        		method: 'POST',
+        		body: formData,
+      		})
+        	.then((response) => {
+          		response.text()
+        	})
+        	.then(() => {
+				$.fancybox.close()
+		  		$.fancybox.openModal('модалка что отправлено')
+        	})
+        	.catch((error) => console.log('The form has not been sent', error))
+		}
+  	})
+</script>

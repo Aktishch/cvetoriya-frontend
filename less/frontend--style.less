@@ -4947,3 +4947,70 @@ body {
 		}
 	}
 }
+
+.wasap {
+	&-block {
+		background: url("../img/wasap-bg.jpg") no-repeat center / cover, #44A60F;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		gap: 58px;
+		padding-left: 100px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+
+		@media(max-width:992px) {
+			padding: 20px;
+			gap: 20px;
+		}
+
+		@media(max-width:580px) {
+			align-items: flex-start;
+			background: #44A60F;
+		}
+	}
+
+	&-image {
+		flex-shrink: 0;
+
+		@media(max-width:580px) {
+			width: 40px;
+			margin-top: 5px;
+		}
+	}
+
+	&-content {
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 20px;
+		padding: 4px 24px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media(max-width:580px) {
+			padding: 0;
+			background: none;
+		}
+	}
+
+	&-title {
+		font-size: 32px;
+		font-weight: 800;
+
+		@media(max-width:580px) {
+			font-size: 24px;
+			line-height: 1.1;
+			margin-bottom: 10px;
+		}
+	}
+
+	&-subtitle {
+		@media(max-width:580px) {
+			font-size: 14px;
+		}
+	}
+
+	&-btn {
+		margin-top: 16px;
+	}
+}

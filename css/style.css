@@ -7049,17 +7049,17 @@ body {
 
 .banner-pre-order__before,
 .banner-pre-order__after {
-	width     : 232px;
-	top       : -25px;
+	bottom: 0;
+	height: 100%;
 	position: absolute;
 }
 
 .banner-pre-order__before {
-	left: -50px;
+	left: 0;
 }
 
 .banner-pre-order__after {
-	right    : -50px;
+	right    : 0;
 	transform: scale(-1, 1);
 }
 

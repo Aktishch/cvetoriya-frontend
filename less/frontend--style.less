@@ -405,9 +405,7 @@ body {
 	}
 }
 
-.swiper-container {
-	width: 100%;
-}
+
 
 .product-detail {
 	padding-top: 30px;
@@ -732,7 +730,7 @@ body {
 
 	@media(max-width: 991px) {
 		& {
-			display: none !important;
+			// display: none !important;
 		}
 	}
 }
@@ -1706,6 +1704,7 @@ body {
 	font-size: 14px;
 	padding: 5px;
 	margin-right: 8px;
+	display: none;
 }
 
 @media(min-width: 1200px) {
@@ -4365,6 +4364,12 @@ body {
 
 .br-main {
 	border-radius: 40px 0 40px 0 !important;
+}
+@media (max-width:580px) {
+	.br-main {
+		border-radius: 20px 0 20px 0 !important;
+
+	}
 }
 
 .product-stock__price {
